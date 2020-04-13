@@ -1,0 +1,226 @@
+body {
+/*   background: #ECEFF1; */
+/* background: red !important; */
+  color: rgba(0, 0, 0, 0.87);
+  font-family:"Montserrat", Arial, sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+#message {
+  background: white;
+  max-width: 360px;
+  margin: 100px auto 16px;
+  padding: 32px 24px;
+  border-radius: 3px;
+}
+
+#message h2 {
+  color: #ffa100;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+#message h1 {
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 16px;
+}
+
+#message p {
+  line-height: 140%;
+  margin: 16px 0 24px;
+  font-size: 14px;
+}
+
+#message a {
+  display: block;
+  text-align: center;
+  background: #039be5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+#message,
+#message a {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#load {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 13px;
+}
+
+
+
+/* NAVBAR */
+
+nav, .dropdown-menu {
+  background: #fcf1e3 !important;
+
+}
+
+.nav-link{
+  font-family:"Montserrat", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.9) 
+}
+
+
+.espacioLogo {
+  width: 33.33%;
+}
+
+
+.navFont  {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "Montserrat", Arial, sans-serif !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
+  z-index: 1;
+  background: #fcf1e3;
+}
+
+/* SECCION PRODUCTOS GENERAL */
+
+.titProd{
+  color: #000000;
+  text-decoration: none;
+  }
+
+/* Filtros menú izq*/
+
+.labelFiltros{
+  position: relative;
+font-weight: initial;
+font-size: 18px;
+padding: 2px;
+}
+
+.labelFiltros:hover{
+  font-weight: initial;
+  color: #00C4C1;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+} 
+
+
+/* Escnder el checkbox original */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Crear un diseño propio de checkbox */
+.checkmark {
+  position: absolute;
+  top: 0.3rem;
+  left: -10px;
+  height: 16px;
+  width: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #1E1E1E;
+}
+
+/* Hover del input */
+.container:hover input ~ .checkmark {
+  background-color: #00C4C1;
+}
+
+/* Fondo del input cuando se selecciona */
+.container input:checked ~ .checkmark {
+  border: #00C4C1;
+  background-color: #00C4C1;
+}
+
+/* Creacion del check */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+  left: 0.35rem;
+  top:0.02rem;
+  width: 6px;
+  height: 14px;
+  border: solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* ============ SUBMENU ============ */
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+/*   right: 6px; */
+  top: 16px;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+/* DETALLES PRODUCTOS */
+
+.ingreProd {
+  column-count: 2 ;
+} 
+
+.img-responsiveA {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  body,
+  #message {
+    margin-top: 0;
+    background: white;
+    box-shadow: none;
+  }
+
+  body {
+    border-top: 16px solid #ffa100;
+  }
+}
