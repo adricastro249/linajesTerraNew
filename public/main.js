@@ -83,7 +83,7 @@ function listaProductos(array) {
 listaProductos(data[0].productos); //mostrar todos los productos al iniciar la página
 
 /* =============== FILTRO PRODUCTOS =============== */
-var productos = data.productos
+var productos = data[0].productos
 
 /* HACER QUE ME DETECTE LOS CAMBIOS EN LOS FILTROS */
 document.getElementById('productosGeneral').addEventListener('change', function () {

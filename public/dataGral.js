@@ -233,6 +233,7 @@ var data =  [
          "img": "imagen1",
          "id": 1, 
          "categoria": "ferias",
+
          "fotos":"images/ferias/feria1.jpeg"
         },
         {
