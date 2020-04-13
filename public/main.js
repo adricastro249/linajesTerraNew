@@ -69,15 +69,6 @@ llenaCat(capilares, "capilares");
 
 
 
-/* =============== MENU HAMBURGUESA ===============  */
-function hamburguesa() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "navbar") {
-      x.className += " responsiveB";
-    } else {
-      x.className = "navbar";
-    }
-  }
 
 
 /* =============== LLENA SECCION DE LISTA PRODUCTOS ===============  */
