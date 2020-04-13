@@ -287,7 +287,6 @@ console.log("prueba");
 galeria(data[1].imagenes); 
 
 fotos = data[1].imagenes
-console.log(fotos);
 
 document.getElementById('filtrosGaleria').addEventListener('change', function () {
     document.getElementById("imgGaleria").innerHTML = "";

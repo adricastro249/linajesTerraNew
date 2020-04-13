@@ -417,16 +417,20 @@
   #fh5co-started,
   #fh5co-author,
   #fh5co-work,
+  #fh5co-work2,
   #fh5co-about,
   #fh5co-contact,
   #fh5co-footer, #fh5co-galeria {
-    padding: 4em 0;
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
     clear: both;
   }
   @media screen and (max-width: 768px) {
     #fh5co-started,
     #fh5co-author,
     #fh5co-work,
+    #fh5co-work2,
     #fh5co-about,
     #fh5co-contact,
     #fh5co-footer {
@@ -1100,13 +1104,13 @@
   }
   
   .btn-primary {
-    background: #cabcab;
-    color: #fff;
-    border: 2px solid #cabcab;
+    background: #cabcab !important;
+    color: #fff !important;
+    border: 2px solid #cabcab !important;
   }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #0062cc !important;
-    border-color: #0062cc !important;
+    background: #1E1E1E !important;
+    border-color: #1E1E1E !important;
   }
   .btn-primary.btn-outline {
     background: transparent;

@@ -28,11 +28,12 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light" id="myTopnav">
+  <nav class="navbar navbar-expand-lg navbar-light navFont">
 
     <div class="espacioLogo">
       <a class="navbar-brand" href="#">
-        <img src="./images/logo/LogoLinajesN.png" width="100" height="70" class="mt-2 d-inline-block align-top" onclick="showHide('home')" alt="">
+        <img src="./images/logo/LogoLinajesN.png" width="100" height="70" class="mt-2 d-inline-block align-top"
+          onclick="showHide('home')" alt="">
       </a>
     </div>
 
@@ -49,9 +50,9 @@
           <a class="nav-link" href="#">Sobre nosotros</a>
         </li>
 
-        <li class="nav-item dropdown" >
-          <a onclick="showHide('productosGeneral')" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+        <li class="nav-item dropdown">
+          <a onclick="showHide('productosGeneral')" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Productos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -86,12 +87,73 @@
 
   </nav>
 
-  <section id="home" style="display:block;">
-    <h1>Hola Pepito soy home</h1>
+  <section id="home" style="display:block;" class="home">
+    <div id="fh5co-work" class="fhHeader-bg-section">
+
+      <div class="container">
+        <div class="row animate-box linHeder ml-5 pl-5">
+          <div class="col-6 mx-auto frasesHeader" >
+            <h1>Nacemos de la tierra</h1>
+            <h2>Somos </h2>
+            <h3>Algo no se que poner</h3>
+            <p>No se que poner</p>
+          </div>
+
+          <div class="col-6 imgHeader">
+            <img class="logoHeader" src="images/logo/LogoLinajesN.png">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="fh5co-work2">
+      <div class="container mt-1">
+        <div class="row seccProductos">
+
+          <div class="col-md-4 text-center animate-box">
+            <div class="card text-right fhHeader-bg-Card">
+              <div class="card-body">
+                <h3 class="card-title">CUIDADO CORPORAL</h3>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                  industry.</p>
+                <a href="productos.html" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center animate-box">
+            <div class="card text-right">
+              <div class="card-body">
+                <h3 class="card-title">CUIDADO FACIAL</h3>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                  industry.</p>
+                <a href="productos.html" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center animate-box">
+            <div class="card text-right">
+              <div class="card-body">
+                <h3 class="card-title">CUIDADO CAPILAR</h3>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting
+                  industry.</p>
+                <a href="productos.html" class="btn btn-primary">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="about" style="display:none;">
     <h1>Hola Pepito soy nosotrs</h1>
+
+
   </section>
 
   <section id="productosGeneral" style="display:none;">
@@ -121,7 +183,7 @@
     </div>
   </section>
 
-  <section  id="productosDetalles" style="display:none;">
+  <section id="productosDetalles" style="display:none;">
     <div class="container" id="productDetails">
 
       <div id="fh5co-author">
@@ -187,32 +249,32 @@
     </div>
   </section>
 
-<section class="galeria" id="galeria" style="display:none">
-  <div id="fh5co-galeria">
+  <section class="galeria" id="galeria" style="display:none">
+    <div id="fh5co-galeria">
 
-    <div class="container">
+      <div class="container">
 
 
-      <form id="filtrosGaleria" class="filtros mx-auto d-flex justify-content-between" style="width: 400px;">
+        <form id="filtrosGaleria" class="filtros mx-auto d-flex justify-content-between" style="width: 400px;">
 
-        <label class="container labelFiltros"> Todas <input type="checkbox" name="galeria" value="todas"
-            checked="checked">
-          <span class="checkmark"></span>
-        </label>
-  
-        <label class="container labelFiltros"> Kits <input type="checkbox" name="galeria" value="kits"
-            checked="checked">
-          <span class="checkmark"></span>
-        </label>
-  
-        <label class="container labelFiltros"> Ferias <input type="checkbox" name="galeria" value="ferias"
-            checked="checked">
-          <span class="checkmark"></span>
-        </label>
-  
-      </form>
+          <label class="container labelFiltros"> Todas <input type="checkbox" name="galeria" value="todas"
+              checked="checked">
+            <span class="checkmark"></span>
+          </label>
 
-    <!--   <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <label class="container labelFiltros"> Kits <input type="checkbox" name="galeria" value="kits"
+              checked="checked">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container labelFiltros"> Ferias <input type="checkbox" name="galeria" value="ferias"
+              checked="checked">
+            <span class="checkmark"></span>
+          </label>
+
+        </form>
+
+        <!--   <div class="row justify-content-center mb-5" data-aos="fade-up">
         <div id="filters" class="filters text-center button-group">
           <button class="btn btn-primary active" data-filter="*">All</button>
           <button class="btn btn-primary" data-filter=".kits">Kits</button>
@@ -220,21 +282,21 @@
         </div>
       </div> -->
 
-      <div id="imgGaleria" class="row no-gutter">
+        <div id="imgGaleria" class="row no-gutter">
 
 
 
 
+        </div>
       </div>
+
+
     </div>
+  </section>
 
-
-  </div>
-</section>
-
-<section id="contacto" style="display:none;">
-  <h1>Hola Pepito soy contacto</h1>
-</section>
+  <section id="contacto" style="display:none;">
+    <h1>Hola Pepito soy contacto</h1>
+  </section>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
