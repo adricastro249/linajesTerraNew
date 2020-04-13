@@ -1,3 +1,32 @@
+// MOSTRAR Y OCULTAR SECCIONES
+
+var home = document.getElementById("home")
+var about = document.getElementById("about")
+var productosGrl = document.getElementById("productosGeneral")
+var productosDetalles = document.getElementById("productosDetalles")
+var galeriaA = document.getElementById("galeria")
+var contacto = document.getElementById("contacto")
+
+
+function showHide(section){
+ console.log("entre a showHide");
+ 
+    home.style.display = "none"
+    about.style.display = "none"
+    productosGrl.style.display = "none"
+    productosDetalles.style.display = "none"
+    galeriaA.style.display = "none"
+    contacto.style.display = "none"
+
+    var muestra = section
+    console.log(muestra);
+    document.getElementById(muestra).style.display = "block";
+
+
+    
+}
+
+
 /* SUB MENU */
 
 $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
@@ -119,7 +148,8 @@ document.getElementById('productosGeneral').addEventListener('change', function 
 
 
 function llenaProductDetails(array, id) {
-	console.log("funcion llenar detalles de prod");
+    console.log("funcion llenar detalles de prod");
+    showHide("productosDetalles")
 
 
 	let product = array.filter(prod => prod.id == id);

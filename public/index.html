@@ -31,7 +31,7 @@
 
     <div class="espacioLogo">
       <a class="navbar-brand" href="#">
-        <img src="./images/logo/LogoLinajesN.png" width="100" height="70" class="mt-2 d-inline-block align-top" alt="">
+        <img src="./images/logo/LogoLinajesN.png" width="100" height="70" class="mt-2 d-inline-block align-top" onclick="showHide('home')" alt="">
       </a>
     </div>
 
@@ -41,15 +41,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item active" onclick="showHide('home')">
           <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" onclick="showHide('about')">
           <a class="nav-link" href="#">Sobre nosotros</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        <li class="nav-item dropdown" >
+          <a onclick="showHide('productosGeneral')" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Productos
           </a>
@@ -72,10 +72,10 @@
 
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" onclick="showHide('galeria')">
           <a class="nav-link" href="#">Galeria</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" onclick="showHide('contacto')">
           <a class="nav-link" href="#">Contacto</a>
         </li>
 
@@ -85,12 +85,15 @@
 
   </nav>
 
-
-  <section id="home" style="display:none;">
+  <section id="home" style="display:block;">
     <h1>Hola Pepito soy home</h1>
   </section>
 
-  <section id="productosGeneral" style="display:block;">
+  <section id="about" style="display:none;">
+    <h1>Hola Pepito soy nosotrs</h1>
+  </section>
+
+  <section id="productosGeneral" style="display:none;">
 
     <form id="filtrosProductos" class="filtros mx-auto d-flex justify-content-between" style="width: 400px;">
 
@@ -183,7 +186,7 @@
     </div>
   </section>
 
-<section class="galeria" id="galeria">
+<section class="galeria" id="galeria" style="display:none">
   <div id="fh5co-galeria">
 
     <div class="container">
@@ -268,6 +271,10 @@
 
 
   </div>
+</section>
+
+<section id="contacto" style="display:none;">
+  <h1>Hola Pepito soy contacto</h1>
 </section>
 
 
