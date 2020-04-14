@@ -132,6 +132,8 @@ input[type="checkbox"] {
 
 .dropdown-submenu {
   position: relative;
+  font-size: x-small !important;
+  
 }
 
 .dropdown-submenu a::after {
@@ -139,6 +141,11 @@ input[type="checkbox"] {
   position: absolute;
 /*   right: 6px; */
   top: 16px;
+  
+}
+
+#faciales, #corporales, #capilares{
+  font-size: xx-small !important;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -181,4 +188,45 @@ input[type="checkbox"] {
 }
 .home p {
   font-size: smaller !important
+}
+
+.fhHeader-bg-Card{
+  background: rgb(247, 211, 195);
+  background: -moz-linear-gradient(top, rgb(247, 211, 195) 0%, rgba(252,241,227,1) 35%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,241,227,1)), color-stop(35%, rgba(252,241,227,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top,rgb(247, 211, 195) 0%, rgba(252,241,227,1) 35%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top,rgb(247, 211, 195) 0%, rgba(252,241,227,1) 35%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgb(247, 211, 195) 0%, rgba(252,241,227,1) 35%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgb(247, 211, 195) 0%, rgba(252,241,227,1) 35%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf1e3', endColorstr='#ffffff', GradientType=0 );
+  border: none !important;
+}
+
+.tituloCard{
+  font-weight: bold !important;
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  text-transform: capitalize;
+}
+
+@media  screen and (max-width: 768px){
+
+  .logoHeader {
+    width: 60%;
+    height: 80%;
+  }
+
+  .home h1 {
+    font-size: medium !important
+  }
+  
+  .home h2 {
+    font-size: small !important
+  }
+  .home h3 {
+    font-size: x-small !important
+  }
+  .home p {
+    font-size: xx-small !important
+  }
+
 }
