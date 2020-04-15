@@ -7,8 +7,16 @@ body {
   padding: 0;
 }
 
+.about, .productosGeneral, .productosDetalles, .galeria, .contacto{
+  margin-top: 10%;
+}
 
 /* NAVBAR */
+
+
+.navbar{
+  position: fixed !important;
+}
 
 nav, .dropdown-menu {
   background: #fcf1e3 !important;
@@ -47,7 +55,45 @@ nav, .dropdown-menu {
   background: #fcf1e3;
 }
 
+.logoNav{
+  width: 25%; 
+  margin-top: 3%;
+  margin-left: 3%;
+}
 
+
+
+/* HOME */
+
+.testimonios{
+  margin-top: 5%;
+}
+
+/* ABOUT */
+.logoAbout {
+  width: 30%;
+  left: 30%;
+}
+
+.circle-bg {
+  position: relative;
+}
+
+.circle-bg:after {
+  width: 300px;
+  height: 300px;
+  content: "";
+  z-index: -1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -90px;
+  right: -90px;
+  background: #f8f9fa;
+}
+
+
+
+/* SECCION CONTACTO */
 
 
 /* SECCION PRODUCTOS GENERAL */
@@ -182,6 +228,11 @@ input[type="checkbox"] {
   height: 80%;
 }
 
+.headerT{
+  margin-top:6%
+}
+
+
 .home h1 {
   font-size: x-large !important
 }
@@ -215,7 +266,22 @@ input[type="checkbox"] {
 }
 
 
+footer {
+  position: fixed;
+/*   left: 0;
+  right: 0; */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 @media  screen and (max-width: 768px){
+
+
+  .about, .productosGeneral, .productosDetalles, .galeria, .contacto{
+    margin-top: 25%;
+  }
+
 
   .imgHeader {
     width: 100%;
@@ -223,9 +289,7 @@ input[type="checkbox"] {
   }
 
   .logoHeader{
-    width: 90%;
-    height: 90%;
-    margin-right: 10%;
+display: none;
   }
   #fh5co-work2{
     padding-top: 0% !important;
@@ -265,8 +329,34 @@ input[type="checkbox"] {
 
 }
 
+.headerT{
+  margin-top:10%
+}
 
+footer{
+  font-size: xx-small;
+}
 
+.logoNav{
+  width: 60%; 
+  margin-top: 3%;
+  margin-left: 3%;
+}
 
+.circle-bg:after {
+  bottom: 0px;
+  top: 4%;
+  right:-35px !important;
+}
+
+.circle-bg:after {
+  width: 180px;
+  height: 180px;
+}
+
+.logoAbout {
+  width: 70% !important;
+left: 0 !important;
+}
 
 }

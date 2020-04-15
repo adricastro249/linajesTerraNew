@@ -280,7 +280,39 @@ var data = [
                 "fotos": "images/Kits/kitFacial2.jpg"
             }
         ]
-
+    },{
+        "testimoniales":[
+            {
+                "id": 1,
+                "categoria": "testimonial",
+                "autor":"Pepeito",
+                "testimonio": "Han salvado mi cabello",
+            },
+            {
+                "id": 2,
+                "categoria": "testimonial",
+                "autor":"Pepeito",
+                "testimonio": "Te quería comentar que alucinamos mi hijo y yo con el sabor de los aceites de romero y albahaca... ¡Dios! de verdad tus productos son muy muy buenos... te felicito",
+            },
+            {
+                "id": 3,
+                "categoria": "testimonial",
+                "autor":"Pepeito",
+                "testimonio": "Te cuento que estoy encantada con el sérum. Me ha parecido una maravilla. Y con el desodorante, no huelo a nada, creo que hasta la axila está un poco más clara y no me irrita cuando me rasuro.",
+            }, 
+            {
+                "id": 4,
+                "categoria": "testimonial",
+                "autor":"Pepeito",
+                "testimonio": "Estoy amando el desodorante que me mandaste, es un espectáculo, sobretodo porque sudo haciendo la práctica y dando clases y sigo oliendo rico. Bueno, tambien amo el serum, la bomba capilar, los óleos. ",
+            }
+            {
+                "id": 5,
+                "categoria": "testimonial",
+                "autor":"Pepeito",
+                "testimonio": "Despues de estar usando el serum facial noto menos reseca la piel debajo de los ojos",
+            }
+        ]
     }
 
 ]
