@@ -26,6 +26,12 @@ nav, .dropdown-menu {
 }
 
 
+
+.imgHeader{
+  width: 300px !important;
+}
+
+
 .navFont  {
   margin: 0;
   font-size: small;
@@ -208,13 +214,23 @@ input[type="checkbox"] {
   text-transform: capitalize;
 }
 
+
 @media  screen and (max-width: 768px){
 
-  .logoHeader {
-    width: 60%;
-    height: 80%;
+  .imgHeader {
+    width: 100%;
+    height: auto;
   }
 
+  .logoHeader{
+    width: 90%;
+    height: 90%;
+    margin-right: 10%;
+  }
+  #fh5co-work2{
+    padding-top: 0% !important;
+  }
+ 
   .home h1 {
     font-size: medium !important
   }
@@ -228,5 +244,29 @@ input[type="checkbox"] {
   .home p {
     font-size: xx-small !important
   }
+
+  .linHeder{
+    margin-left: 0% !important;
+    padding-left: 0%  !important;
+  }
+
+  .frasesHeader{
+    margin-left: -5px;
+  }
+.card{
+  width: 70% !important;
+  margin-left: 15% !important;
+
+  /* display: flexbox !important;
+  align-items: center !important;
+  justify-items: center !important;
+  justify-content: center !important;
+  align-content: center !important; */
+
+}
+
+
+
+
 
 }
