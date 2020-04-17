@@ -184,7 +184,7 @@ input[type="checkbox"] {
 
 .dropdown-submenu {
   position: relative;
-  font-size: x-small !important;
+  font-size: small !important;
   
 }
 
@@ -192,12 +192,12 @@ input[type="checkbox"] {
   transform: rotate(-90deg);
   position: absolute;
 /*   right: 6px; */
-  top: 16px;
+  top: 10px;
   
 }
 
 #faciales, #corporales, #capilares{
-  font-size: xx-small !important;
+  font-size: small !important;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -205,6 +205,10 @@ input[type="checkbox"] {
   left: 100%;
   margin-left: .1rem;
   margin-right: .1rem;
+}
+
+.dropdown-item {
+  font-size: small !important;
 }
 
 /* DETALLES PRODUCTOS */
