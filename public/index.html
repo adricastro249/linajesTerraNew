@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
 
- <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css"> -->
 <link rel="stylesheet" href="./style/fontawesome-free-5.13.0-web/css/all.css">
 
 
@@ -105,7 +104,7 @@
 </div>
 
 
-  </nav>
+  </nav> 
 
   <section id="home" style="display:block;" class="home">
     <div id="fh5co-work" class="fhHeader-bg-section headerT">
@@ -127,60 +126,9 @@
     </div>
     <div id="fh5co-work2" class="mb-3 mt-3">
       <div class="container mt-1">
-        <div class="row seccProductos">
+        <div class="row seccProductos" id="seccProductos">
 
-          <div class="col-md-3 text-center animate-box">
-            <div class="card text-right fhHeader-bg-Card">
-              <div class="card-body">
-                <h3 class="card-title tituloCard">CUIDADO CORPORAL</h3>
-                <p class="card-text">Prepárate para tener una piel suave y saludable.
-                  Nutre y protege, y humecta tu cuerpo con nuestros bálsamos, sales, mantequilla corporal, exfoliantes y
-                  aceites altamente efectivos.
-                  El poder de la naturaleza actuando en ti.
-                </p>
-                <a href="productos.html" class="btn btn-primary">Leer más</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 text-center animate-box">
-            <div class="card text-right fhHeader-bg-Card">
-              <div class="card-body">
-                <h3 class="card-title tituloCard">CUIDADO FACIAL</h3>
-                <p class="card-text">Prepárate para tener una piel suave y saludable.
-                  Nutre y protege, y humecta tu cuerpo con nuestros bálsamos, sales, mantequilla corporal, exfoliantes y
-                  aceites altamente efectivos.
-                  El poder de la naturaleza actuando en ti.
-                </p>
-                <a href="productos.html" class="btn btn-primary">Leer más</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 text-center animate-box">
-            <div class="card text-right fhHeader-bg-Card">
-              <div class="card-body">
-                <h3 class="card-title tituloCard">CUIDADO CAPILAR</h3>
-                <p class="card-text">¿Quieres un cabello brillante, abundante y sano?
-                  Estamos aquí para ti. Nuestra bomba capilar repara, nutre, fortalece, protege y estimula el
-                  crecimiento de tu cabello. Ven y descúbrela junto a otros tratamientos capilares.
-                </p>
-                <a href="productos.html" class="btn btn-primary">Leer más</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 text-center animate-box">
-            <div class="card text-right fhHeader-bg-Card">
-              <div class="card-body">
-                <h3 class="card-title tituloCard">AROMATERAPIA</h3>
-                <p class="card-text">Nuestros óleos son una armoniosa combinación de aceites esenciales y aceites
-                  vegetales de primera calidad, que mejoran nuestro ánimo,calman la ansiedad, estimulan la creatividad,
-                  armonizan cuerpo y mente.</p>
-                <a href="productos.html" class="btn btn-primary">Leer más</a>
-              </div>
-            </div>
-          </div>
+      
         </div>
       </div>
     </div>
@@ -461,14 +409,8 @@
   </section>
 
   <section id="contacto" style="display:none;" class="contacto">
-
-
     <div class="container">
-
-
 					<div class="row">
-
-				
 								<div class=" col-md-5 fh5co-contact-info">
                   <h3 class="subtitulo-seccion">Información de contacto</h3>
 									<ul>
@@ -487,7 +429,7 @@
 									<div class="row form-group">
 										<div class="col-md-12">
 											<input type="text" id="name" name="name" class="form-control"
-												placeholder="Nombre">
+												placeholder="Nombre" required>
 										</div>
 
 									</div>
@@ -495,7 +437,7 @@
 									<div class="row form-group">
 										<div class="col-md-12">
 											<input type="email" id="email" name="email" class="form-control"
-												placeholder="Email">
+												placeholder="Email" required>
 										</div>
 									</div>
 
@@ -510,7 +452,7 @@
 										<div class="col-md-12">
 											<textarea name="message" id="message" cols="30" rows="10"
 												class="form-control"
-												placeholder="Escriba su mensaje aquí..."></textarea>
+												placeholder="Escriba su mensaje aquí..." required></textarea>
 										</div>
 									</div>
 									<div class="form-group btnEnviar">
@@ -551,6 +493,7 @@
 
   <script src="dataGral.js"></script>
   <script src="main.js"></script>
+
 
 </body>
 

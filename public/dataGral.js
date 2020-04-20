@@ -355,10 +355,10 @@ var data = [
 
 var data222 = {
     "productos": [{
-            "nombreSecc": "Faciales",
+            "nombreSecc": "facial",
             "titulo": "CUIDADO FACIAL",
-            "id": 1,
-            "descripcion": "Humecta, regenera, y suaviza tu piel con nuestros productos, pensados para llenar de vida tu rostro. Disfruta de una limpieza profunda, seguida de una mascarilla nutritiva. Tu piel te lo va ha agradecer… los resultados son inmediatos.",
+       /*      "id": 1, */
+            "descripcion": "Humecta, regenera, y suaviza tu piel con nuestros productos, pensados para llenar de vida tu rostro. Disfruta de una limpieza profunda Tu piel te lo va ha agradecer… los resultados son inmediatos.",
             "categoria": "faciales",
             "produc": [{
                     "nombre": "Serum facial",
@@ -407,9 +407,9 @@ var data222 = {
             ]
         },
         {
-            "nombreSecc": "Corporal",
+            "nombreSecc": "corporal",
             "titulo": "CUIDADO CORPORAL",
-            "id": 2,
+       /*      "id": 2, */
             "descripcion": "Prepárate para tener una piel suave y saludable. Nutre y protege, y humecta tu cuerpo con nuestros bálsamos, sales, mantequilla corporal, exfoliantes y aceites altamente efectivos. El poder de la naturaleza actuando en ti.",
             "categoria": "corporal",
             "produc": [{
@@ -542,10 +542,10 @@ var data222 = {
             ]
         },
         {
-            "nombreSecc": "Capilar",
+            "nombreSecc": "capilar",
             "titulo": "CUIDADO CAPILAR",
-            "id": 3,
-            "descripcion": "¿Quieres un cabello brillante, abundante y sano? Pues aquí estamos para ti. Nuestra bomba capilar repara, nutre, fortalece, protege y estimula el crecimiento de tu cabello. Ven y descúbrela junto a otros tratamientos tratamientos capilares.",
+ /*            "id": 3, */
+            "descripcion": "¿Quieres un cabello brillante, abundante y sano? Estamos aquí para ti. Nuestra bomba capilar repara, nutre, fortalece, protege y estimula el crecimiento de tu cabello. Ven y descúbrela junto a otros tratamientos capilares.",
             "categoria": "capilar",
             "produc": [{
                     "nombre": "Bomba capilar",
@@ -592,9 +592,9 @@ var data222 = {
 
             ]
         }, {
-            "nombreSecc": "Aromaterapia",
+            "nombreSecc": "aromaterapia",
             "titulo": "AROMATERAPIA",
-            "id": 4,
+ /*            "id": 4, */
             "descripcion": "Nuestros óleos son una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que mejoran nuestro ánimo,calman la ansiedad, estimulan la creatividad, armonizan cuerpo y mente.",
             "categoria": "aromaterapia",
             "produc": [{

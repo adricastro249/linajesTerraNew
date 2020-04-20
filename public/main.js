@@ -9,7 +9,6 @@ var contacto = document.getElementById("contacto")
 
 
 function showHide(section){
- console.log("entre a showHide");
  
     home.style.display = "none"
     about.style.display = "none"
@@ -19,17 +18,18 @@ function showHide(section){
     contacto.style.display = "none"
 
     var muestra = section
-    console.log(muestra);
     document.getElementById(muestra).style.display = "block";
-
-
-    
+ 
 }
 
 
 /* SUB MENU */
 
 $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+
+
+
+    
     if (!$(this).next().hasClass('show')) {
         $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
     }
@@ -61,6 +61,7 @@ function llenaCat(params, id) {
         node1.appendChild(tituloCateg)
         categoria.appendChild(node0);
     })
+    
 }
 
 llenaCat(faciales, "faciales");
@@ -69,6 +70,56 @@ llenaCat(capilares, "capilares");
 llenaCat(aromaterapia, "aromaterapia");
 
 
+/* =============== HOME ===============  */
+
+/* TARJETAS INDEX */
+var nodeTjtIndex = document.getElementById("seccProductos");
+
+var tarjetas = data222.productos
+
+
+tarjetas.forEach(tarj =>{
+
+
+    let nodeT = document.createElement("DIV");
+    nodeT.classList.add("col-md-3");
+    nodeT.classList.add("text-center");
+nodeT.classList.add("animate-box");
+
+let nodeT1 = document.createElement("DIV");
+nodeT1.classList.add("card");
+nodeT1.classList.add("text-right");
+nodeT1.classList.add("fhHeader-bg-Card");
+
+let nodeT2 = document.createElement("DIV");
+nodeT2.classList.add("card-body")
+
+let nodeT3 = document.createElement("H3");
+nodeT3.classList.add("tituloCard")
+nodeT3.classList.add("card-title")
+nodeT3a = document.createTextNode(tarj.titulo)
+
+let nodeT4 = document.createElement("P");
+nodeT4.classList.add("card-text")
+nodeT4a = document.createTextNode(tarj.descripcion)
+
+let nodeT5 = document.createElement("A");
+nodeT5.classList.add("btn")
+nodeT5.classList.add("btn-primary")
+nodeT5a = document.createTextNode("Leer más")
+
+
+nodeTjtIndex.appendChild(nodeT);
+nodeT.appendChild(nodeT1);
+nodeT1.appendChild(nodeT2);
+nodeT2.appendChild(nodeT3);
+nodeT3.appendChild(nodeT3a);
+nodeT2.appendChild(nodeT4);
+nodeT4.appendChild(nodeT4a);
+nodeT2.appendChild(nodeT5);
+nodeT5.appendChild(nodeT5a);
+
+})
 
 
 /* =============== LLENA SECCION DE LISTA PRODUCTOS ===============  */
@@ -149,16 +200,12 @@ document.getElementById('productosGeneral').addEventListener('change', function 
 
 /* =============== LLENA PAGINA DE DETALLE DE PRODUCTOS =============== */
 
-
 function llenaProductDetails(array, id) {
     console.log("funcion llenar detalles de prod");
     showHide("productosDetalles")
 
-
-
-    
 	let product = array.filter(prod => prod.id == id);
-	console.log(product[0]);
+
 	let imgPerfil = document.getElementById("imgPerfil")
 	imgPerfil.setAttribute("src", product[0].imgPerfil)
 	let nombreProd = document.getElementById("nombreProducto")
@@ -232,9 +279,6 @@ itemI.classList.add("img-responsiveA");
 itemI.setAttribute("src", imgVar)
 	
 
-console.log(imgVar);
-
-
 
 imgVarias.appendChild(item);
 item.appendChild(itemP);
@@ -245,7 +289,6 @@ itemP.appendChild(itemI);
 
 }
 
-
 /* =============== GALERIA =============== */
 
 
@@ -254,7 +297,6 @@ function galeria(array){
     
     array.forEach(gal => {
 
-console.log("prueba");
 
 
         let nodeG = document.createElement("DIV");
