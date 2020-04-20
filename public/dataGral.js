@@ -90,7 +90,7 @@ var data = [
             {
                 "nombre": "Oleo Macerados",
                 "id": 7,
-                "categoria": "corporal",
+                "categoria": "aromaterapia",
                 "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
                 "imgPerfil": "images/productos/oleosMacerados.jpeg",
                 "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
@@ -224,6 +224,20 @@ var data = [
                 "ingredientes": ["Aceite de ricino", "Aceite de coco"],
                 "versiones": [],
                 "contenidoNeto": ["10ml"],
+                "comentario": ["XXXXXX"],
+                "href": "./productoDetails.html"
+            },
+            {
+                "nombre": "Oleo para masajes",
+                "id": 17,
+                "categoria": "aromaterapia",
+                "descripcion": "Déjate seducir por la magia que creará este óleo sobre tu cuerpo. Elaborado para consentir y cuidar de ti. ",
+                "imgPerfil": "images/productos/oleosMasajes.jpeg",
+                "imgGrande": "images/productos/imgVarias/OleoMasajes/oleoM1.png",
+                "imgVarias": ["images/productos/imgVarias/OleoMasajes/oleoM1.png", "images/productos/imgVarias/OleoMasajes/oleoM1.png"],
+                "ingredientes": [ "Aceite de coco virgen", "Aceites esenciales", "Plantas"],
+                "versiones": ["Canela", "Herbal", "Naranja"],
+                "contenidoNeto": ["24ml"],
                 "comentario": ["XXXXXX"],
                 "href": "./productoDetails.html"
             }
@@ -1171,5 +1185,36 @@ var capilares = [{
         "comentario": ["XXXXXX"],
         "href": "./productoDetails.html"
     }
+
+]
+
+var aromaterapia = [{
+    "nombre": "Oleo Macerados",
+    "id": 7,
+    "categoria": "aromaterapia",
+    "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
+    "imgPerfil": "images/productos/oleosMacerados.jpeg",
+    "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
+    "imgVarias": ["images/productos/imgVarias/Oleos/oleosMacerados2.jpeg", "images/productos/imgVarias/Oleos/oleosMacerados7.jpg"],
+    "ingredientes": ["Aceite de coco virgen", "Plantas"],
+    "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
+    "contenidoNeto": ["10ml"],
+    "comentario": ["XXXXXX"],
+    "href": "./productoDetails.html"
+},
+{
+    "nombre": "Oleo para masajes",
+    "id": 16,
+    "categoria": "aromaterapia",
+    "descripcion": "Déjate seducir por la magia que creará este óleo sobre tu cuerpo. Elaborado para consentir y cuidar de ti. ",
+    "imgPerfil": "images/productos/oleosMasajes.jpeg",
+    "imgGrande": "images/productos/imgVarias/OleoMasajes/oleoM1.png",
+    "imgVarias": ["images/productos/imgVarias/OleoMasajes/oleoM1.png", "images/productos/imgVarias/OleoMasajes/oleoM1.png"],
+    "ingredientes": [ "Aceite de coco virgen", "Aceites esenciales", "Plantas"],
+    "versiones": ["Canela", "Herbal", "Naranja"],
+    "contenidoNeto": ["24ml"],
+    "comentario": ["XXXXXX"],
+    "href": "./productoDetails.html"
+}
 
 ]

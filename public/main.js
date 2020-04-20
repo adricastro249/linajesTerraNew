@@ -66,7 +66,7 @@ function llenaCat(params, id) {
 llenaCat(faciales, "faciales");
 llenaCat(corporales, "corporales");
 llenaCat(capilares, "capilares");
-
+llenaCat(aromaterapia, "aromaterapia");
 
 
 
@@ -155,6 +155,8 @@ function llenaProductDetails(array, id) {
     showHide("productosDetalles")
 
 
+
+    
 	let product = array.filter(prod => prod.id == id);
 	console.log(product[0]);
 	let imgPerfil = document.getElementById("imgPerfil")
