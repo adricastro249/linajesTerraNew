@@ -235,7 +235,7 @@ var data = [
                 "imgPerfil": "images/productos/oleosMasajes.jpeg",
                 "imgGrande": "images/productos/imgVarias/OleoMasajes/oleoM1.png",
                 "imgVarias": ["images/productos/imgVarias/OleoMasajes/oleoM1.png", "images/productos/imgVarias/OleoMasajes/oleoM1.png"],
-                "ingredientes": [ "Aceite de coco virgen", "Aceites esenciales", "Plantas"],
+                "ingredientes": ["Aceite de coco virgen", "Aceites esenciales", "Plantas"],
                 "versiones": ["Canela", "Herbal", "Naranja"],
                 "contenidoNeto": ["24ml"],
                 "comentario": ["XXXXXX"],
@@ -356,7 +356,9 @@ var data = [
 var data222 = {
     "productos": [{
             "nombreSecc": "Faciales",
+            "titulo": "CUIDADO FACIAL",
             "id": 1,
+            "descripcion": "Humecta, regenera, y suaviza tu piel con nuestros productos, pensados para llenar de vida tu rostro. Disfruta de una limpieza profunda, seguida de una mascarilla nutritiva. Tu piel te lo va ha agradecer… los resultados son inmediatos.",
             "categoria": "faciales",
             "produc": [{
                     "nombre": "Serum facial",
@@ -406,7 +408,9 @@ var data222 = {
         },
         {
             "nombreSecc": "Corporal",
+            "titulo": "CUIDADO CORPORAL",
             "id": 2,
+            "descripcion": "Prepárate para tener una piel suave y saludable. Nutre y protege, y humecta tu cuerpo con nuestros bálsamos, sales, mantequilla corporal, exfoliantes y aceites altamente efectivos. El poder de la naturaleza actuando en ti.",
             "categoria": "corporal",
             "produc": [{
                     "nombre": "Desodorante",
@@ -451,22 +455,8 @@ var data222 = {
                     "href": "./productoDetails.html"
                 },
                 {
-                    "nombre": "Oleo Macerados",
-                    "id": 7,
-                    "categoria": "corporal",
-                    "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
-                    "imgPerfil": "images/productos/oleosMacerados.jpeg",
-                    "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
-                    "imgVarias": ["images/productos/imgVarias/Oleos/oleosMacerados2.jpeg", "images/productos/imgVarias/Oleos/oleosMacerados7.jpg"],
-                    "ingredientes": ["Aceite de coco virgen", "Plantas"],
-                    "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
-                    "contenidoNeto": ["10ml"],
-                    "comentario": ["XXXXXX"],
-                    "href": "./productoDetails.html"
-                },
-                {
                     "nombre": "Sales terapéuticas",
-                    "id": 8,
+                    "id": 7,
                     "categoria": "corporal",
                     "descripcion": "Nuestras sales tienen un poder inigualable para la depuración energética y eliminación de toxina",
                     "imgPerfil": "images/productos/salesTerapeuticas.jpeg",
@@ -481,7 +471,7 @@ var data222 = {
 
                 {
                     "nombre": "Mantequilla corporal",
-                    "id": 9,
+                    "id": 8,
                     "categoria": "corporal",
                     "descripcion": "Humecta y nutre profundamente, derritiéndose sobre tu piel",
                     "imgPerfil": "images/productos/mantequilla.jpeg",
@@ -495,7 +485,7 @@ var data222 = {
                 },
                 {
                     "nombre": "Jabón exfoliante",
-                    "id": 10,
+                    "id": 9,
                     "categoria": "corporal",
                     "descripcion": "Estimula la circulación y elimina con delicadeza la piel muerta de todo tu cuerpo",
                     "imgPerfil": "images/productos/jabonExfoliante.jpeg",
@@ -509,7 +499,7 @@ var data222 = {
                 },
                 {
                     "nombre": "Herbal: bálsamo huméctante",
-                    "id": 11,
+                    "id": 10,
                     "categoria": "corporal",
                     "descripcion": "Humecta, nutre y revitaliza tu piel",
                     "imgPerfil": "images/productos/herbal.jpeg",
@@ -523,7 +513,7 @@ var data222 = {
                 },
                 {
                     "nombre": "Chocoamor: bálsamo huméctante",
-                    "id": 12,
+                    "id": 11,
                     "categoria": "corporal",
                     "descripcion": "Humecta, nutre y revitaliza tu piel",
                     "imgPerfil": "images/productos/chocoamor.jpeg",
@@ -537,7 +527,7 @@ var data222 = {
                 },
                 {
                     "nombre": "Natural: bálsamo huméctante",
-                    "id": 13,
+                    "id": 12,
                     "categoria": "corporal",
                     "descripcion": "Humecta, nutre y revitaliza tu piel",
                     "imgPerfil": "images/productos/natural.jpeg",
@@ -553,11 +543,13 @@ var data222 = {
         },
         {
             "nombreSecc": "Capilar",
+            "titulo": "CUIDADO CAPILAR",
             "id": 3,
+            "descripcion": "¿Quieres un cabello brillante, abundante y sano? Pues aquí estamos para ti. Nuestra bomba capilar repara, nutre, fortalece, protege y estimula el crecimiento de tu cabello. Ven y descúbrela junto a otros tratamientos tratamientos capilares.",
             "categoria": "capilar",
             "produc": [{
                     "nombre": "Bomba capilar",
-                    "id": 14,
+                    "id": 13,
                     "categoria": "capilar",
                     "descripcion": "Mixtura de aceites vegetales. Repara, protege, nutre y estimula el crecimiento del cabello",
                     "imgPerfil": "images/productos/bomba.jpeg",
@@ -571,7 +563,7 @@ var data222 = {
                 },
                 {
                     "nombre": "Gel de linaza",
-                    "id": 15,
+                    "id": 14,
                     "categoria": "capilar",
                     "descripcion": "Define tu peinado, a la vez que nutre tu cabello",
                     "imgPerfil": "images/productos/linaza.jpeg",
@@ -585,7 +577,7 @@ var data222 = {
                 },
                 {
                     "nombre": "Activador folicular",
-                    "id": 16,
+                    "id": 15,
                     "categoria": "capilar",
                     "descripcion": "Fortalece y estimula el crecimiento del vello y cabello",
                     "imgPerfil": "images/productos/activador.jpeg",
@@ -594,6 +586,42 @@ var data222 = {
                     "ingredientes": ["Aceite de ricino", "Aceite de coco"],
                     "versiones": [],
                     "contenidoNeto": ["10ml"],
+                    "comentario": ["XXXXXX"],
+                    "href": "./productoDetails.html"
+                }
+
+            ]
+        }, {
+            "nombreSecc": "Aromaterapia",
+            "titulo": "AROMATERAPIA",
+            "id": 4,
+            "descripcion": "Nuestros óleos son una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que mejoran nuestro ánimo,calman la ansiedad, estimulan la creatividad, armonizan cuerpo y mente.",
+            "categoria": "aromaterapia",
+            "produc": [{
+                    "nombre": "Oleo Macerados",
+                    "id": 16,
+                    "categoria": "aromaterapia",
+                    "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
+                    "imgPerfil": "images/productos/oleosMacerados.jpeg",
+                    "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
+                    "imgVarias": ["images/productos/imgVarias/Oleos/oleosMacerados2.jpeg", "images/productos/imgVarias/Oleos/oleosMacerados7.jpg"],
+                    "ingredientes": ["Aceite de coco virgen", "Plantas"],
+                    "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
+                    "contenidoNeto": ["10ml"],
+                    "comentario": ["XXXXXX"],
+                    "href": "./productoDetails.html"
+                },
+                {
+                    "nombre": "Oleo para masajes",
+                    "id": 17,
+                    "categoria": "aromaterapia",
+                    "descripcion": "Déjate seducir por la magia que creará este óleo sobre tu cuerpo. Elaborado para consentir y cuidar de ti. ",
+                    "imgPerfil": "images/productos/oleosMasajes.jpeg",
+                    "imgGrande": "images/productos/imgVarias/OleoMasajes/oleoM1.png",
+                    "imgVarias": ["images/productos/imgVarias/OleoMasajes/oleoM1.png", "images/productos/imgVarias/OleoMasajes/oleoM1.png"],
+                    "ingredientes": ["Aceite de coco virgen", "Aceites esenciales", "Plantas"],
+                    "versiones": ["Canela", "Herbal", "Naranja"],
+                    "contenidoNeto": ["24ml"],
                     "comentario": ["XXXXXX"],
                     "href": "./productoDetails.html"
                 }
@@ -951,7 +979,6 @@ var data2 = [
 ]
 
 
-
 var faciales = [
 
     {
@@ -1043,20 +1070,7 @@ var corporales = [{
         "comentario": ["XXXXXX"],
         "href": "./productoDetails.html"
     },
-    {
-        "nombre": "Oleo Macerados",
-        "id": 7,
-        "categoria": "oleos",
-        "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
-        "imgPerfil": "images/productos/oleosMacerados.jpeg",
-        "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
-        "imgVarias": ["images/productos/imgVarias/Oleos/oleosMacerados2.jpeg", "images/productos/imgVarias/Oleos/oleosMacerados7.jpg"],
-        "ingredientes": ["Aceite de coco virgen", "Plantas"],
-        "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
-        "contenidoNeto": ["10ml"],
-        "comentario": ["XXXXXX"],
-        "href": "./productoDetails.html"
-    },
+
     {
         "nombre": "Sales terapéuticas",
         "id": 8,
@@ -1189,32 +1203,32 @@ var capilares = [{
 ]
 
 var aromaterapia = [{
-    "nombre": "Oleo Macerados",
-    "id": 7,
-    "categoria": "aromaterapia",
-    "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
-    "imgPerfil": "images/productos/oleosMacerados.jpeg",
-    "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
-    "imgVarias": ["images/productos/imgVarias/Oleos/oleosMacerados2.jpeg", "images/productos/imgVarias/Oleos/oleosMacerados7.jpg"],
-    "ingredientes": ["Aceite de coco virgen", "Plantas"],
-    "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
-    "contenidoNeto": ["10ml"],
-    "comentario": ["XXXXXX"],
-    "href": "./productoDetails.html"
-},
-{
-    "nombre": "Oleo para masajes",
-    "id": 16,
-    "categoria": "aromaterapia",
-    "descripcion": "Déjate seducir por la magia que creará este óleo sobre tu cuerpo. Elaborado para consentir y cuidar de ti. ",
-    "imgPerfil": "images/productos/oleosMasajes.jpeg",
-    "imgGrande": "images/productos/imgVarias/OleoMasajes/oleoM1.png",
-    "imgVarias": ["images/productos/imgVarias/OleoMasajes/oleoM1.png", "images/productos/imgVarias/OleoMasajes/oleoM1.png"],
-    "ingredientes": [ "Aceite de coco virgen", "Aceites esenciales", "Plantas"],
-    "versiones": ["Canela", "Herbal", "Naranja"],
-    "contenidoNeto": ["24ml"],
-    "comentario": ["XXXXXX"],
-    "href": "./productoDetails.html"
-}
+        "nombre": "Oleo Macerados",
+        "id": 7,
+        "categoria": "aromaterapia",
+        "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las planta",
+        "imgPerfil": "images/productos/oleosMacerados.jpeg",
+        "imgGrande": "images/productos/imgVarias/Oleos/oleosMacerados3.jpeg",
+        "imgVarias": ["images/productos/imgVarias/Oleos/oleosMacerados2.jpeg", "images/productos/imgVarias/Oleos/oleosMacerados7.jpg"],
+        "ingredientes": ["Aceite de coco virgen", "Plantas"],
+        "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
+        "contenidoNeto": ["10ml"],
+        "comentario": ["XXXXXX"],
+        "href": "./productoDetails.html"
+    },
+    {
+        "nombre": "Oleo para masajes",
+        "id": 16,
+        "categoria": "aromaterapia",
+        "descripcion": "Déjate seducir por la magia que creará este óleo sobre tu cuerpo. Elaborado para consentir y cuidar de ti. ",
+        "imgPerfil": "images/productos/oleosMasajes.jpeg",
+        "imgGrande": "images/productos/imgVarias/OleoMasajes/oleoM1.png",
+        "imgVarias": ["images/productos/imgVarias/OleoMasajes/oleoM1.png", "images/productos/imgVarias/OleoMasajes/oleoM1.png"],
+        "ingredientes": ["Aceite de coco virgen", "Aceites esenciales", "Plantas"],
+        "versiones": ["Canela", "Herbal", "Naranja"],
+        "contenidoNeto": ["24ml"],
+        "comentario": ["XXXXXX"],
+        "href": "./productoDetails.html"
+    }
 
 ]

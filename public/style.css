@@ -20,12 +20,29 @@ body {
 
 nav, .dropdown-menu {
   background: #fcf1e3 !important;
-
 }
 
+
+.dropdown-item{
+  background: #fcf1e3 !important;
+}
+
+.dropdown-item:hover, .dropdown-item:active, .nav-item:active{
+color: #000000;
+font-weight: bold !important;
+}
+
+
+
+
 .nav-link{
-  font-family:"Montserrat", Arial, sans-serif;
+  font-family:"Montserrat", Arial, sans-serif !important;
   color: rgba(0, 0, 0, 0.9) 
+}
+
+.nav-link:hover{
+  color: #000000 !important;
+
 }
 
 
@@ -33,6 +50,20 @@ nav, .dropdown-menu {
   width: 33.33%;
 }
 
+.redes ul li {
+text-decoration: none  !important;
+list-style: none;
+font-size: large !important;
+}
+
+.fab{
+  color:#cabcab !important;
+  font-weight: bold;
+}
+
+.fab:hover{
+  color: black !important;
+}
 
 
 .imgHeader{
@@ -67,6 +98,7 @@ nav, .dropdown-menu {
 
 .testimonios{
   margin-top: 5%;
+  margin-bottom: 3.8%;
 }
 
 /* ABOUT */
@@ -124,7 +156,7 @@ input[type="checkbox"] {
 
 
 /* Escnder el checkbox original */
-.container input {
+.container  .check {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -269,6 +301,19 @@ input[type="checkbox"] {
   text-transform: capitalize;
 }
 
+
+
+
+/* CONTACTO */
+
+
+.subtitulo-seccion{
+  font-size: large;
+}
+
+.fh5co-contact-info ul li a{
+ color:#cabcab !important;
+}
 
 footer {
   position: fixed;
