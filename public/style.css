@@ -42,6 +42,11 @@ font-weight: bold !important;
   width: 33.33%;
 }
 
+.redes{
+  margin-left: 34% !important;
+}
+
+
 .redes ul li {
 text-decoration: none  !important;
 list-style: none;
@@ -322,7 +327,10 @@ footer {
   .about, .productosGeneral, .productosDetalles, .galeria, .contacto{
     margin-top: 25%;
   }
-
+  .redes{
+    margin-left: 0 !important;
+  }
+  
 
   .imgHeader {
     width: 100%;
@@ -358,6 +366,9 @@ display: none;
   .frasesHeader{
     margin-left: -5px;
   }
+
+
+
 .card{
   width: 70% !important;
   margin-left: 15% !important;
@@ -383,6 +394,8 @@ footer{
   margin-top: 3%;
   margin-left: 3%;
 }
+
+
 
 .circle-bg:after {
   bottom: 0px;
