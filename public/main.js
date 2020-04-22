@@ -101,7 +101,7 @@ nodeT3a = document.createTextNode(tarj.titulo)
 
 let nodeT4 = document.createElement("P");
 nodeT4.classList.add("card-text")
-nodeT4a = document.createTextNode(tarj.descripcion)
+nodeT4a = document.createTextNode(tarj.resumen)
 
 let nodeT5 = document.createElement("A");
 nodeT5.classList.add("btn")

@@ -358,7 +358,9 @@ var data222 = {
             "nombreSecc": "facial",
             "titulo": "CUIDADO FACIAL",
        /*      "id": 1, */
+       "imgProductos": "images//tarjetas/facial.svg",
             "descripcion": "Humecta, regenera, y suaviza tu piel con nuestros productos, pensados para llenar de vida tu rostro. Disfruta de una limpieza profunda Tu piel te lo va ha agradecer… los resultados son inmediatos.",
+            "resumen":"   Humecta, regenera, y suaviza tu piel. Disfruta de una limpieza profunda. Los resultados son inmediatos.",
             "categoria": "faciales",
             "produc": [{
                     "nombre": "Serum facial",
@@ -410,7 +412,9 @@ var data222 = {
             "nombreSecc": "corporal",
             "titulo": "CUIDADO CORPORAL",
        /*      "id": 2, */
+       "imgProductos": "images//tarjetas/corporal.svg",
             "descripcion": "Prepárate para tener una piel suave y saludable. Nutre y protege, y humecta tu cuerpo con nuestros bálsamos, sales, mantequilla corporal, exfoliantes y aceites altamente efectivos. El poder de la naturaleza actuando en ti.",
+            "resumen": "Tener una piel suave y saludable nunca fue más fácil. El poder de la naturaleza actuando en ti.",
             "categoria": "corporal",
             "produc": [{
                     "nombre": "Desodorante",
@@ -545,7 +549,9 @@ var data222 = {
             "nombreSecc": "capilar",
             "titulo": "CUIDADO CAPILAR",
  /*            "id": 3, */
+ "imgProductos": "images//tarjetas/capilar.svg",
             "descripcion": "¿Quieres un cabello brillante, abundante y sano? Estamos aquí para ti. Nuestra bomba capilar repara, nutre, fortalece, protege y estimula el crecimiento de tu cabello. Ven y descúbrela junto a otros tratamientos capilares.",
+           "resumen":" Nuestros tratamientos  reparan, nutren, fortalecen, protegen y estimula el crecimiento de tu cabello.",
             "categoria": "capilar",
             "produc": [{
                     "nombre": "Bomba capilar",
@@ -595,7 +601,9 @@ var data222 = {
             "nombreSecc": "aromaterapia",
             "titulo": "AROMATERAPIA",
  /*            "id": 4, */
+ "imgProductos": "images//tarjetas/aromaterapia.svg",
             "descripcion": "Nuestros óleos son una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que mejoran nuestro ánimo,calman la ansiedad, estimulan la creatividad, armonizan cuerpo y mente.",
+           "resumen": " Una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que  armonizan cuerpo y mente.",
             "categoria": "aromaterapia",
             "produc": [{
                     "nombre": "Oleo Macerados",
