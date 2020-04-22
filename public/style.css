@@ -96,6 +96,109 @@ font-size: large !important;
 
 /* HOME */
 
+/* TARJETAS DE PRODUCTOS INDEX */
+
+.title-card{
+  margin-top: 20%;
+  margin-left: -70% !important;
+
+}
+.card-bg {
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  left: 60px;
+  margin: 0 auto;
+
+} 
+
+.div-img {
+  display: block;
+  margin-left: 15%;
+  margin-right: auto;
+} 
+
+.div-img .img {
+  display: block;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 2;
+  width: 50%;
+  transform: translate(0px);
+  -ms-transform: translate(0px);
+  -moz-transform: translate(0px);
+  -webkit-transform: translate(0px);
+  -o-transform: translate(0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.div-img .text {
+  font-family: 'Open Sans';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  height: 50%;
+  width: 60%;
+  top: 100%;
+  left: 5%;
+  padding-left: 5px;
+  opacity: 0;
+  transition: all 600ms;
+  -webkit-transition: all 600ms ease-in;
+  -moz-transition: all 600ms ease-in;
+  -ms-transition: all 600ms ease-in;
+  -o-transition: all 600ms ease-in;
+}
+.div-img .overlay {
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 500%;
+  background: rgb(255,237,229);
+  background: linear-gradient(0deg, rgba(255,237,229,0.01) 0%, rgba(247,211,195,1) 100%);
+  border: none !important;
+  opacity: 0;
+  transition: opacity 190ms;
+  -webkit-transition: opacity 190ms ease-in-out;
+  -moz-transition: opacity 190ms ease-in-out;
+  -ms-transition: opacity 190ms ease-in-out;
+  -o-transition: opacity 190ms ease-in-out;
+}
+
+
+.btn-card{
+  z-index: 1;
+}
+
+.div-img:hover .img {
+  transform: translate(90px, 0px);
+  -ms-transform: translate(90px, 0px);
+  -moz-transform: translate(90px, 0px);
+  -webkit-transform: translate(90px, 0px);
+  -o-transform: translate(90px, 0px);
+}
+
+
+.div-img:hover .overlay {
+  opacity: 1;
+}
+.div-img:hover .text {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 .testimonios{
   margin-top: 5%;
   margin-bottom: 3.8%;
@@ -329,19 +432,20 @@ footer {
   .about, .productosGeneral, .productosDetalles, .galeria, .contacto{
     margin-top: 25%;
   }
+
+/*   NAVBAR */
   .redes{
     margin-left: 0 !important;
   }
   
 
-  .imgHeader {
-    width: 100%;
-    height: auto;
+  .logoNav{
+    width: 60%; 
+    margin-top: 3%;
+    margin-left: 3%;
   }
+  
 
-  .logoHeader{
-display: none;
-  }
   #fh5co-work2{
     padding-top: 0% !important;
   }
@@ -365,49 +469,93 @@ display: none;
     padding-left: 0%  !important;
   }
 
-  .frasesHeader{
-    margin-left: -5px;
+  #fh5co-work{
+   display: none;
   }
+
+  #fh5co-work2{
+    margin-top: 20%;
+  }
+
+
+
+/* TARJETAS PRODUCTOS INDEX */
+
+.title-card {
+  margin-top: 12%;
+font-size: small;
+margin-left: -20% !important;
+}
+
+.text p {
+  font-size: xx-small;
+}
+
+.div-img .text{
+  position: absolute;
+  margin-top: 5%;
+  width: 70%;
+  font-size: small;
+
+}
+
+.div-img .img {
+width: 20%;
+margin-top: 8%;
+margin-left: 0%;
+}
+
+.div-img {
+  margin-left: 30%;
+} 
+
+
+.div-img .overlay {
+  position: absolute;
+  height: 250%;
+  margin-bottom: 35%;
+ 
+}
+.btn-card{
+  font-size: xx-small !important;
+}
+
+.card-bg {
+  width: 80% !important;
+height: 20% !important;
+  margin-left: -5% !important;  
+} 
+
+.btn-card{
+  margin-top: -5%;
+z-index: 100;
+}
+
+.margin-bottom{
+  margin-bottom: 25%;
+}
 
 
 
 .card{
   width: 70% !important;
   margin-left: 15% !important;
-
-  /* display: flexbox !important;
-  align-items: center !important;
-  justify-items: center !important;
-  justify-content: center !important;
-  align-content: center !important; */
-
 }
 
 
 .tituloCard{
-
 margin-left: -50% !important;
 width: 150% !important;
-
 }
-
 
 
 .headerT{
   margin-top:10%
 }
 
-footer{
-  font-size: xx-small;
-}
-
-.logoNav{
-  width: 60%; 
-  margin-top: 3%;
-  margin-left: 3%;
-}
 
 
+/* ABOUT */
 
 .circle-bg:after {
   bottom: 0px;
@@ -423,6 +571,12 @@ footer{
 .logoAbout {
   width: 70% !important;
 left: 0 !important;
+}
+
+/* FOOTER */
+
+footer{
+  font-size: xx-small;
 }
 
 }

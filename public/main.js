@@ -80,16 +80,19 @@ var tarjetas = data222.productos
 
 tarjetas.forEach(tarj =>{
 
-
     let nodeT = document.createElement("DIV");
     nodeT.classList.add("col-md-3");
-    nodeT.classList.add("text-center");
-nodeT.classList.add("animate-box");
+    nodeT.classList.add("margin-bottom");
+    nodeT.classList.add("animated");
+    nodeT.classList.add("fadeInUp");
+
+let nodeT0 = document.createElement("DIV");
+nodeT0.classList.add("card");
+nodeT0.classList.add("fhHeader-bg-Card");
 
 let nodeT1 = document.createElement("DIV");
-nodeT1.classList.add("card");
-nodeT1.classList.add("text-right");
-nodeT1.classList.add("fhHeader-bg-Card");
+nodeT1.classList.add("div-img")
+nodeT1.classList.add("hidden")
 
 let nodeT2 = document.createElement("DIV");
 nodeT2.classList.add("card-body")
@@ -99,27 +102,47 @@ nodeT3.classList.add("tituloCard")
 nodeT3.classList.add("card-title")
 nodeT3a = document.createTextNode(tarj.titulo)
 
-let nodeT4 = document.createElement("P");
-nodeT4.classList.add("card-text")
-nodeT4a = document.createTextNode(tarj.resumen)
+let nodeT4 = document.createElement("IMG");
+nodeT4.classList.add("img")
+nodeT4.setAttribute("src", tarj.imgProductos)
+nodeT4.setAttribute("alt", "fotoIcono")
 
-let nodeT5 = document.createElement("A");
-nodeT5.classList.add("btn")
-nodeT5.classList.add("btn-primary")
-nodeT5a = document.createTextNode("Leer más")
+
+let nodeT5 = document.createElement("DIV");
+nodeT5.classList.add("overlay")
+nodeT5.classList.add("mb-5")
+
+let nodeT6 = document.createElement("DIV");
+nodeT6.classList.add("text")
+
+let nodeT7 = document.createElement("P");
+nodeT7.classList.add("card-text")
+nodeT7.classList.add("mt-2")
+nodeT7a = document.createTextNode(tarj.resumen)
+
+let nodeT8 = document.createElement("A");
+nodeT8.classList.add("btn")
+nodeT8.classList.add("btn-primary")
+nodeT8.classList.add("btn-card")
+nodeT8a = document.createTextNode("Más")
 
 
 nodeTjtIndex.appendChild(nodeT);
-nodeT.appendChild(nodeT1);
+nodeT.appendChild(nodeT0);
+nodeT0.appendChild(nodeT1);
 nodeT1.appendChild(nodeT2);
 nodeT2.appendChild(nodeT3);
 nodeT3.appendChild(nodeT3a);
 nodeT2.appendChild(nodeT4);
-nodeT4.appendChild(nodeT4a);
 nodeT2.appendChild(nodeT5);
-nodeT5.appendChild(nodeT5a);
+nodeT2.appendChild(nodeT6);
+nodeT6.appendChild(nodeT7);
+nodeT7.appendChild(nodeT7a);
+nodeT6.appendChild(nodeT8);
+nodeT8.appendChild(nodeT8a);
 
 })
+
 
 
 /* =============== LLENA SECCION DE LISTA PRODUCTOS ===============  */
@@ -296,24 +319,17 @@ function galeria(array){
     var nodeGaleria = document.getElementById("imgGaleria");
     
     array.forEach(gal => {
-
-
-
         let nodeG = document.createElement("DIV");
-        nodeG.classList.add("item");
-        nodeG.classList.add("kits");
-        nodeG.classList.add("col-sm-6");
-        nodeG.classList.add("col-md-4");
+nodeG.classList.add("col-sm-6");
+        nodeG.classList.add("col-md-4"); 
         nodeG.classList.add("col-lg-4");
         nodeG.classList.add("col-xl-3");
         nodeG.classList.add("mb-4");
 
         let nodeA = document.createElement("A");
         nodeA.classList.add("item-wrap");
-          nodeA.classList.add("fancybox");
           nodeA.setAttribute("href",   gal.fotos  )
 
-         
 
           let nodeI = document.createElement("IMG");
           nodeI.classList.add("img-fluid");
