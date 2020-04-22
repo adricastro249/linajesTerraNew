@@ -1,3 +1,5 @@
+
+
 // MOSTRAR Y OCULTAR SECCIONES
 
 var home = document.getElementById("home")
@@ -328,6 +330,10 @@ nodeG.classList.add("col-sm-6");
 
         let nodeA = document.createElement("A");
         nodeA.classList.add("item-wrap");
+        nodeA.setAttribute("data-fancybox", "gallery")
+    
+   
+
           nodeA.setAttribute("href",   gal.fotos  )
 
 

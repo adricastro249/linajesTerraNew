@@ -9,10 +9,22 @@ body{
  padding: 0;
  width: 100%;
  text-align: center;
+/*  background-image: url("./images/IMG_5416.JPG");
+background-size: 100%;
+background-repeat: no-repeat; */
  background-color: red;
  height: 100vh;
  display: table;
 }
+/* 
+button{
+    margin-top: 8%;
+    background-color: red;
+    border: none;
+width: 100%;
+height: 100%;
+cursor: pointer;
+} */
 
 .wrapper{
     position: absolute;
@@ -23,27 +35,12 @@ body{
 }
 
 svg{
+    margin-top: 10%;
     width: 50%;
 }
 
-#LINAJES_26_{
-    stroke: #000;
-   /*   fill: #fff; */
-     stroke-dasharray:1800 ;
-     opacity: 10;
-     animation: animate 3s cubic-bezier(0,0.23,1,.1);
- }
 
- #PUNTO{
-    stroke: #000;
-   /*   fill: #fff; */
-     stroke-dasharray:1800 ;
-     opacity: 10;
-     animation: animate 4s cubic-bezier(.17,.67,.83,.67);
- }
-
-
-#TERRA_25_{
+svg{
    stroke: #000;
   /*   fill: #fff; */
     stroke-dasharray: 1800 ;

@@ -1,3 +1,11 @@
+
+  AOS.init();
+
+
+
+
+// MOSTRAR Y OCULTAR SECCIONES
+
 var home = document.getElementById("home")
 var about = document.getElementById("about")
 var productosGrl = document.getElementById("productosGeneral")
@@ -8,15 +16,18 @@ var contacto = document.getElementById("contacto")
 
 function showHide(section){
  
- 
-
+    home.style.display = "none"
+    about.style.display = "none"
+    productosGrl.style.display = "none"
     productosDetalles.style.display = "none"
-
+    galeriaA.style.display = "none"
+    contacto.style.display = "none"
 
     var muestra = section
     document.getElementById(muestra).style.display = "block";
  
 }
+
 
 
 
