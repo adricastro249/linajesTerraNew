@@ -6,10 +6,10 @@ var productosGrl = document.getElementById("productosGeneral")
 var productosDetalles = document.getElementById("productosDetalles")
 var galeriaA = document.getElementById("galeria")
 var contacto = document.getElementById("contacto")
-
+var aux = [];
 
 function showHide(section) {
-
+    
     $("#sFaci").prop('checked', false);
     $("#sCor").prop('checked', false);
     $("#sCapi").prop('checked', false);
@@ -187,6 +187,7 @@ for (let i = 0; i < botonesTarjetas.length; i++) {
 
 function listaProductos(array) {
     var nodeProduc = document.getElementById("cuadroProductos");
+    nodeProduc.innerHTML = "";
 
     array.forEach(prod => {
 
@@ -232,7 +233,7 @@ var productos = data[0].productos
 /* HACER QUE ME DETECTE LOS CAMBIOS EN LOS FILTROS */
 document.getElementById('productosGeneral').addEventListener('change', function () {
 
-    let aux = [];
+    aux = [];
 
     /* FILTRA LOS ELEMENTOS SELECCIONADOS */
     var checkeds = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(element => element.value)
@@ -246,14 +247,12 @@ document.getElementById('productosGeneral').addEventListener('change', function 
             aux.push(element);
         }
         console.log(aux);
-        /*    if (checkeds.includes(element.categoria[0].value)) {
-               aux.push(element.id);
-           } */
+        
     });
 
     document.getElementById("cuadroProductos").innerHTML = "";
     listaProductos(aux)
-
+    aux = []
 
 
 }) //cierra el addEventListener de los checkbox
