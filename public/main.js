@@ -10,6 +10,11 @@ var contacto = document.getElementById("contacto")
 
 function showHide(section) {
 
+    $("#sFaci").prop('checked', false);
+    $("#sCor").prop('checked', false);
+    $("#sCapi").prop('checked', false);
+    $("#sAro").prop('checked', false);
+
     home.style.display = "none"
     about.style.display = "none"
     productosGrl.style.display = "none"
@@ -151,7 +156,7 @@ for (let i = 0; i < botonesTarjetas.length; i++) {
     botonesTarjetas[i].addEventListener("click", function (e) {
         //Aquí la función que se ejecutará cuando se dispare el evento
         console.log(e.target.title); //En este caso alertaremos el texto del cliqueado
-        
+
         $("#sFaci").prop('checked', false);
         $("#sCor").prop('checked', false);
         $("#sCapi").prop('checked', false);
@@ -171,7 +176,7 @@ for (let i = 0; i < botonesTarjetas.length; i++) {
                 document.getElementById("sAro").click();
                 break;
         }
-        
+
 
 
     });
