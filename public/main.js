@@ -364,7 +364,7 @@ function galeria(array) {
         nodeG.classList.add("mb-4");
 
         let nodeA = document.createElement("A");
-        nodeA.classList.add("item-wrap");
+        nodeA.classList.add("lightbox");
         nodeA.setAttribute("data-fancybox", "gallery")
 
 
