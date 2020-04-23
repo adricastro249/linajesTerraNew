@@ -1,5 +1,3 @@
-
-
 // MOSTRAR Y OCULTAR SECCIONES
 
 var home = document.getElementById("home")
@@ -10,8 +8,8 @@ var galeriaA = document.getElementById("galeria")
 var contacto = document.getElementById("contacto")
 
 
-function showHide(section){
- 
+function showHide(section) {
+
     home.style.display = "none"
     about.style.display = "none"
     productosGrl.style.display = "none"
@@ -21,7 +19,7 @@ function showHide(section){
 
     var muestra = section
     document.getElementById(muestra).style.display = "block";
- 
+
 }
 
 
@@ -31,7 +29,7 @@ $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
 
 
 
-    
+
     if (!$(this).next().hasClass('show')) {
         $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
     }
@@ -63,7 +61,7 @@ function llenaCat(params, id) {
         node1.appendChild(tituloCateg)
         categoria.appendChild(node0);
     })
-    
+
 }
 
 llenaCat(faciales, "faciales");
@@ -80,7 +78,7 @@ var nodeTjtIndex = document.getElementById("seccProductos");
 var tarjetas = data222.productos
 
 
-tarjetas.forEach(tarj =>{
+tarjetas.forEach(tarj => {
 
     let nodeT = document.createElement("DIV");
     nodeT.classList.add("col-md-3");
@@ -88,71 +86,99 @@ tarjetas.forEach(tarj =>{
     nodeT.classList.add("animated");
     nodeT.classList.add("fadeInUp");
 
-let nodeT0 = document.createElement("DIV");
-nodeT0.classList.add("card");
-nodeT0.classList.add("fhHeader-bg-Card");
+    let nodeT0 = document.createElement("DIV");
+    nodeT0.classList.add("card");
+    nodeT0.classList.add("fhHeader-bg-Card");
 
-let nodeT1 = document.createElement("DIV");
-nodeT1.classList.add("div-img")
-nodeT1.classList.add("hidden")
+    let nodeT1 = document.createElement("DIV");
+    nodeT1.classList.add("div-img")
+    nodeT1.classList.add("hidden")
 
-let nodeT2 = document.createElement("DIV");
-nodeT2.classList.add("card-body")
+    let nodeT2 = document.createElement("DIV");
+    nodeT2.classList.add("card-body")
 
-let nodeT3 = document.createElement("H3");
-nodeT3.classList.add("tituloCard")
-nodeT3.classList.add("card-title")
-nodeT3a = document.createTextNode(tarj.titulo)
+    let nodeT3 = document.createElement("H3");
+    nodeT3.classList.add("tituloCard")
+    nodeT3.classList.add("card-title")
+    nodeT3a = document.createTextNode(tarj.titulo)
 
-let nodeT4 = document.createElement("IMG");
-nodeT4.classList.add("img")
-nodeT4.setAttribute("src", tarj.imgProductos)
-nodeT4.setAttribute("alt", "fotoIcono")
-
-
-let nodeT5 = document.createElement("DIV");
-nodeT5.classList.add("overlay")
-nodeT5.classList.add("mb-5")
-
-let nodeT6 = document.createElement("DIV");
-nodeT6.classList.add("text")
-
-let nodeT7 = document.createElement("P");
-nodeT7.classList.add("card-text")
-nodeT7.classList.add("mt-2")
-nodeT7a = document.createTextNode(tarj.resumen)
-
-let nodeT8 = document.createElement("A");
-nodeT8.classList.add("btn")
-nodeT8.classList.add("btn-primary")
-nodeT8.classList.add("btn-card")
-nodeT8a = document.createTextNode("Más")
+    let nodeT4 = document.createElement("IMG");
+    nodeT4.classList.add("img")
+    nodeT4.setAttribute("src", tarj.imgProductos)
+    nodeT4.setAttribute("alt", "fotoIcono")
 
 
-nodeTjtIndex.appendChild(nodeT);
-nodeT.appendChild(nodeT0);
-nodeT0.appendChild(nodeT1);
-nodeT1.appendChild(nodeT2);
-nodeT2.appendChild(nodeT3);
-nodeT3.appendChild(nodeT3a);
-nodeT2.appendChild(nodeT4);
-nodeT2.appendChild(nodeT5);
-nodeT2.appendChild(nodeT6);
-nodeT6.appendChild(nodeT7);
-nodeT7.appendChild(nodeT7a);
-nodeT6.appendChild(nodeT8);
-nodeT8.appendChild(nodeT8a);
+    let nodeT5 = document.createElement("DIV");
+    nodeT5.classList.add("overlay")
+    nodeT5.classList.add("mb-5")
+
+    let nodeT6 = document.createElement("DIV");
+    nodeT6.classList.add("text")
+
+    let nodeT7 = document.createElement("P");
+    nodeT7.classList.add("card-text")
+    nodeT7.classList.add("mt-2")
+    nodeT7a = document.createTextNode(tarj.resumen)
+
+    let nodeT8 = document.createElement("A");
+    nodeT8.classList.add("btn")
+    nodeT8.classList.add("btn-primary")
+    nodeT8.classList.add("btn-card")
+    nodeT8.setAttribute("title", tarj.categoria)
+    nodeT8a = document.createTextNode("Más")
+
+
+    nodeTjtIndex.appendChild(nodeT);
+    nodeT.appendChild(nodeT0);
+    nodeT0.appendChild(nodeT1);
+    nodeT1.appendChild(nodeT2);
+    nodeT2.appendChild(nodeT3);
+    nodeT3.appendChild(nodeT3a);
+    nodeT2.appendChild(nodeT4);
+    nodeT2.appendChild(nodeT5);
+    nodeT2.appendChild(nodeT6);
+    nodeT6.appendChild(nodeT7);
+    nodeT7.appendChild(nodeT7a);
+    nodeT6.appendChild(nodeT8);
+    nodeT8.appendChild(nodeT8a);
 
 })
 
+var botonesTarjetas = document.getElementsByClassName("btn-card")
+console.log(botonesTarjetas);
+
+for (let i = 0; i < botonesTarjetas.length; i++) {
+    botonesTarjetas[i].addEventListener("click", function (e) {
+        //Aquí la función que se ejecutará cuando se dispare el evento
+        console.log(e.target.title); //En este caso alertaremos el texto del cliqueado
+        showHide("productosGeneral")
+        switch (e.target.title) {
+            case "faciales":
+                document.getElementById("sFaci").click();
+                break;
+            case "corporal":
+                document.getElementById("sCor").click();
+                break;
+            case "capilar":
+                document.getElementById("sCapi").click();
+                break;
+            case "aromaterapia":
+                document.getElementById("sAro").click();
+                break;
+        }
+        // document.getElementById("sFaci").setAttribute("checked","checked")
+
+
+    });
+}
 
 
 /* =============== LLENA SECCION DE LISTA PRODUCTOS ===============  */
 
 function listaProductos(array) {
     var nodeProduc = document.getElementById("cuadroProductos");
-  
-  array.forEach(prod => {
+
+    array.forEach(prod => {
 
         let nodeP = document.createElement("DIV");
         nodeP.classList.add("col-md-4");
@@ -162,7 +188,7 @@ function listaProductos(array) {
         let nodeP1 = document.createElement("A");
         nodeP1.classList.add("work");
         nodeP1.setAttribute("onclick", `llenaProductDetails(` + prod.categoria + `,` + prod.id + `)`)
-    
+
 
         let nodeP2 = document.createElement("DIV");
         nodeP2.classList.add("work-grid");
@@ -206,7 +232,7 @@ document.getElementById('productosGeneral').addEventListener('change', function 
         console.log(element.categoria);
 
         if (checkeds.includes(element.categoria)) {
-      
+
             aux.push(element);
         }
         console.log(aux);
@@ -229,101 +255,101 @@ function llenaProductDetails(array, id) {
     console.log("funcion llenar detalles de prod");
     showHide("productosDetalles")
 
-	let product = array.filter(prod => prod.id == id);
+    let product = array.filter(prod => prod.id == id);
 
-	let imgPerfil = document.getElementById("imgPerfil")
-	imgPerfil.setAttribute("src", product[0].imgPerfil)
-	let nombreProd = document.getElementById("nombreProducto")
-	nombreProd.innerHTML = product[0].nombre;
-	let detalles = document.getElementById("desProd")
-	detalles.innerHTML = product[0].descripcion;
+    let imgPerfil = document.getElementById("imgPerfil")
+    imgPerfil.setAttribute("src", product[0].imgPerfil)
+    let nombreProd = document.getElementById("nombreProducto")
+    nombreProd.innerHTML = product[0].nombre;
+    let detalles = document.getElementById("desProd")
+    detalles.innerHTML = product[0].descripcion;
 
     let listaIngredi = document.getElementById("ingreProd");
     listaIngredi.innerHTML = ""
-	product[0].ingredientes.forEach(ingr => {
-		let item = document.createElement("LI")
-		let txtItem = document.createTextNode(ingr)
-		item.appendChild(txtItem);
-		listaIngredi.appendChild(item)
-	})
+    product[0].ingredientes.forEach(ingr => {
+        let item = document.createElement("LI")
+        let txtItem = document.createTextNode(ingr)
+        item.appendChild(txtItem);
+        listaIngredi.appendChild(item)
+    })
 
-	if (product[0].versiones != null){
-	let listaVersion = document.getElementById("versionProd")
-    listaVersion.innerHTML = ""
+    if (product[0].versiones != null) {
+        let listaVersion = document.getElementById("versionProd")
+        listaVersion.innerHTML = ""
 
-	let itemH = document.createElement("H3")
-		let txtItemH = document.createTextNode("Versiones")
+        let itemH = document.createElement("H3")
+        let txtItemH = document.createTextNode("Versiones")
 
 
-		let itemUl = document.createElement("UL")
-		itemUl.classList.add("d-flex");
-		itemUl.classList.add("justify-content-around")
+        let itemUl = document.createElement("UL")
+        itemUl.classList.add("d-flex");
+        itemUl.classList.add("justify-content-around")
 
-	product[0].versiones.forEach(vers => {
+        product[0].versiones.forEach(vers => {
 
-		let item = document.createElement("LI")
-		let txtItem = document.createTextNode(vers)
-		
-		listaVersion.appendChild(itemH);
-		itemH.appendChild(txtItemH);
-		
-		listaVersion.appendChild(itemUl);
-		itemUl.appendChild(item);
-		item.appendChild(txtItem);
-		
-	})
-}
+            let item = document.createElement("LI")
+            let txtItem = document.createTextNode(vers)
 
-	let imgGrande = document.getElementById("imgGrande")
-	imgGrande.setAttribute("src", product[0].imgGrande)
+            listaVersion.appendChild(itemH);
+            itemH.appendChild(txtItemH);
+
+            listaVersion.appendChild(itemUl);
+            itemUl.appendChild(item);
+            item.appendChild(txtItem);
+
+        })
+    }
+
+    let imgGrande = document.getElementById("imgGrande")
+    imgGrande.setAttribute("src", product[0].imgGrande)
 
 
     let contenido = document.getElementById("contNetoProd")
-contenido.innerHTML = ""
-	product[0].contenidoNeto.forEach(cont => {
-		let itemC = document.createElement("LI")
-		let txtItemC = document.createTextNode(cont)
-		itemC.appendChild(txtItemC);
-		contenido.appendChild(itemC);
-	})
+    contenido.innerHTML = ""
+    product[0].contenidoNeto.forEach(cont => {
+        let itemC = document.createElement("LI")
+        let txtItemC = document.createTextNode(cont)
+        itemC.appendChild(txtItemC);
+        contenido.appendChild(itemC);
+    })
 
-	let imgVarias = document.getElementById("imgVarias")
+    let imgVarias = document.getElementById("imgVarias")
 
-	product[0].imgVarias.forEach(imgVar => {
+    product[0].imgVarias.forEach(imgVar => {
 
-		let item = document.createElement("DIV")
-item.classList.add("col-6");
+        let item = document.createElement("DIV")
+        item.classList.add("col-6");
 
-let itemP = document.createElement("P")
-itemP.classList.add("animate-box");
-itemP.classList.add("fadeInUp");
-itemP.classList.add("animated-fast");
+        let itemP = document.createElement("P")
+        itemP.classList.add("animate-box");
+        itemP.classList.add("fadeInUp");
+        itemP.classList.add("animated-fast");
 
-let itemI = document.createElement("IMG")
-itemI.classList.add("img-responsiveA");
-itemI.setAttribute("src", imgVar)
-	
-
-
-imgVarias.appendChild(item);
-item.appendChild(itemP);
-itemP.appendChild(itemI);
+        let itemI = document.createElement("IMG")
+        itemI.classList.add("img-responsiveA");
+        itemI.setAttribute("src", imgVar)
 
 
-	})
+
+        imgVarias.appendChild(item);
+        item.appendChild(itemP);
+        itemP.appendChild(itemI);
+
+
+    })
 
 }
 
 /* =============== GALERIA =============== */
 
 
-function galeria(array){
+function galeria(array) {
     var nodeGaleria = document.getElementById("imgGaleria");
-    
+
     array.forEach(gal => {
         let nodeG = document.createElement("DIV");
-nodeG.classList.add("col-sm-6");
-        nodeG.classList.add("col-md-4"); 
+        nodeG.classList.add("col-sm-6");
+        nodeG.classList.add("col-md-4");
         nodeG.classList.add("col-lg-4");
         nodeG.classList.add("col-xl-3");
         nodeG.classList.add("mb-4");
@@ -331,26 +357,26 @@ nodeG.classList.add("col-sm-6");
         let nodeA = document.createElement("A");
         nodeA.classList.add("item-wrap");
         nodeA.setAttribute("data-fancybox", "gallery")
-    
-   
-
-          nodeA.setAttribute("href",   gal.fotos  )
-
-
-          let nodeI = document.createElement("IMG");
-          nodeI.classList.add("img-fluid");
-          nodeI.setAttribute("src",  gal.fotos  )
 
 
 
-  nodeGaleria.appendChild(nodeG);
-  nodeG.appendChild(nodeA);
-  nodeA.appendChild(nodeI);
+        nodeA.setAttribute("href", gal.fotos)
 
 
-    }
-    )}
-galeria(data[1].imagenes); 
+        let nodeI = document.createElement("IMG");
+        nodeI.classList.add("img-fluid");
+        nodeI.setAttribute("src", gal.fotos)
+
+
+
+        nodeGaleria.appendChild(nodeG);
+        nodeG.appendChild(nodeA);
+        nodeA.appendChild(nodeI);
+
+
+    })
+}
+galeria(data[1].imagenes);
 
 fotos = data[1].imagenes
 
@@ -361,27 +387,26 @@ document.getElementById('filtrosGaleria').addEventListener('change', function ()
     /* FILTRA LOS ELEMENTOS SELECCIONADOS */
     var checkeds = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(element => element.value)
 
-if (checkeds.includes("todas")){
-    galeria(data[1].imagenes); 
-}
-else{
-    fotos.forEach(element => {
+    if (checkeds.includes("todas")) {
+        galeria(data[1].imagenes);
+    } else {
+        fotos.forEach(element => {
 
-        console.log(element.categoria);
+            console.log(element.categoria);
 
-        if (checkeds.includes(element.categoria)) {
-      
-            aux.push(element);
-        }
-        console.log(aux);
-        /*    if (checkeds.includes(element.categoria[0].value)) {
-               aux.push(element.id);
-           } */
-    });
+            if (checkeds.includes(element.categoria)) {
 
-  
-    galeria(aux)
-}
+                aux.push(element);
+            }
+            console.log(aux);
+            /*    if (checkeds.includes(element.categoria[0].value)) {
+                   aux.push(element.id);
+               } */
+        });
+
+
+        galeria(aux)
+    }
 
 
 }) //cierra el addEventListener de los checkbox
