@@ -6,7 +6,7 @@ var productosGrl = document.getElementById("productosGeneral")
 var productosDetalles = document.getElementById("productosDetalles")
 var galeriaA = document.getElementById("galeria")
 var contacto = document.getElementById("contacto")
-var aux = [];
+
 
 function showHide(section) {
     
@@ -233,7 +233,7 @@ var productos = data[0].productos
 /* HACER QUE ME DETECTE LOS CAMBIOS EN LOS FILTROS */
 document.getElementById('productosGeneral').addEventListener('change', function () {
 
-    aux = [];
+    let aux = [];
 
     /* FILTRA LOS ELEMENTOS SELECCIONADOS */
     var checkeds = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(element => element.value)
