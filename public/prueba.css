@@ -1,5 +1,11 @@
+body{
+  background-color: red!important;
+}
 
 
+.tamaño{
+  width: 20%;
+}
 
 .tz-gallery .lightbox img {
   width: 100%;

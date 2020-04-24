@@ -1,179 +1,159 @@
+var productos = data222.productos
 
-  AOS.init();
+productos.forEach(prod =>{
 
-
-
-
-// MOSTRAR Y OCULTAR SECCIONES
-
-var home = document.getElementById("home")
-var about = document.getElementById("about")
-var productosGrl = document.getElementById("productosGeneral")
-var productosDetalles = document.getElementById("productosDetalles")
-var galeriaA = document.getElementById("galeria")
-var contacto = document.getElementById("contacto")
+let detalle = prod.produc
+detalle.filter(det =>{
 
 
-function showHide(section){
- 
-    home.style.display = "none"
-    about.style.display = "none"
-    productosGrl.style.display = "none"
-    productosDetalles.style.display = "none"
-    galeriaA.style.display = "none"
-    contacto.style.display = "none"
+let nombreProd = document.getElementById("nombreProducto")
+nombreProd.innerHTML = det.nombre
 
-    var muestra = section
-    document.getElementById(muestra).style.display = "block";
- 
-}
+let descripcion = document.getElementById("desProd")
+descripcion.innerHTML =det.descripcion
 
+let listaIngredi = document.getElementById("ingreProd");
+listaIngredi.innerHTML = ""
+det.ingredientes.forEach(ingr => {
+	let itemLi = document.createElement("LI")
+	let txtItem = document.createTextNode(ingr)
+	itemLi.appendChild(txtItem);
+	listaIngredi.appendChild(itemLi)
 
+}) //Fin forEach ingredientes
 
-
-productosNav= data222.productos;
-
-var nodeProductos = document.getElementById("productosNavBar");
-
-productosNav.forEach(prodNav => {
-
-let nodeP = document.createElement("LI");
-nodeP.classList.add("dropdown-submenu");
-
-nodeP1 = document.createElement("A");
-nodeP1.classList.add("dropdown-item");
-nodeP1.classList.add("dropdown-toggle");
-nodeP1a= document.createTextNode(prodNav.nombreSecc)
-
-nodeP2 = document.createElement("UL");
-nodeP2.classList.add("dropdown-menu");
-
-prodNav.produc.forEach(det =>{
-
-nodeD1 = document.createElement("LI");
-nodeD2 = document.createElement("A");
-nodeD2.classList.add("dropdown-item");
-nodeD2.setAttribute("id", det.id);
-
-nodeD2a= document.createTextNode(det.nombre)
-
-nodeP2.appendChild(nodeD1)
-nodeD1.appendChild(nodeD2)
-nodeD2.appendChild(nodeD2a)
-})
-
-nodeProductos.appendChild(nodeP)
-nodeP.appendChild(nodeP1)
-nodeP1.appendChild(nodeP1a)
-nodeP.appendChild(nodeP2)
-
-});
-
-
-$('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
-
-    if (!$(this).next().hasClass('show')) {
-        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-    }
-    var $subMenu = $(this).next(".dropdown-menu");
-    $subMenu.toggleClass('show');
-
-
-    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-        $('.dropdown-submenu .show').removeClass("show");
-    });
-
-    return false; 
-
-});
-
-
-
-function llenaProductDetails(array, id) {
-    console.log("funcion llenar detalles de prod");
-    showHide("productosDetalles")
-
-	let product = array.filter(prod => prod.id );
-
-	let imgPerfil = document.getElementById("imgPerfil")
-	imgPerfil.setAttribute("src", product[0].imgPerfil)
-	let nombreProd = document.getElementById("nombreProducto")
-	nombreProd.innerHTML = product[0].nombre;
-	let detalles = document.getElementById("desProd")
-	detalles.innerHTML = product[0].descripcion;
-
-    let listaIngredi = document.getElementById("ingreProd");
-    listaIngredi.innerHTML = ""
-	product[0].ingredientes.forEach(ingr => {
-		let item = document.createElement("LI")
-		let txtItem = document.createTextNode(ingr)
-		item.appendChild(txtItem);
-		listaIngredi.appendChild(item)
-	})
-
-	if (product[0].versiones != null){
+if (det.versiones != null) {
 	let listaVersion = document.getElementById("versionProd")
-    listaVersion.innerHTML = ""
+	listaVersion.innerHTML = ""
 
 	let itemH = document.createElement("H3")
-		let txtItemH = document.createTextNode("Versiones")
+	let txtItemH = document.createTextNode("Versiones")
 
 
-		let itemUl = document.createElement("UL")
-		itemUl.classList.add("d-flex");
-		itemUl.classList.add("justify-content-around")
+	let itemUl = document.createElement("UL")
+	itemUl.classList.add("d-flex");
+	itemUl.classList.add("justify-content-around")
 
-	product[0].versiones.forEach(vers => {
+det.versiones.forEach(vers => {
 
-		let item = document.createElement("LI")
+		let itemLi = document.createElement("LI")
 		let txtItem = document.createTextNode(vers)
-		
+
 		listaVersion.appendChild(itemH);
 		itemH.appendChild(txtItemH);
-		
+
 		listaVersion.appendChild(itemUl);
-		itemUl.appendChild(item);
-		item.appendChild(txtItem);
-		
-	})
-}
+		itemUl.appendChild(itemLi);
+		itemLi.appendChild(txtItem);
 
-	let imgGrande = document.getElementById("imgGrande")
-	imgGrande.setAttribute("src", product[0].imgGrande)
+	}) //fin forEach versiones
+} //fin If versiones
 
-
-    let contenido = document.getElementById("contNetoProd")
+let contenido = document.getElementById("contNetoProd")
 contenido.innerHTML = ""
-	product[0].contenidoNeto.forEach(cont => {
-		let itemC = document.createElement("LI")
-		let txtItemC = document.createTextNode(cont)
-		itemC.appendChild(txtItemC);
-		contenido.appendChild(itemC);
-	})
+det.contenidoNeto.forEach(cont => {
+	let itemC = document.createElement("LI")
+	let txtItemC = document.createTextNode(cont)
+	itemC.appendChild(txtItemC);
+	contenido.appendChild(itemC);
+})//fin forEach contenido Neto
 
-	let imgVarias = document.getElementById("imgVarias")
 
-	product[0].imgVarias.forEach(imgVar => {
 
-		let item = document.createElement("DIV")
-item.classList.add("col-6");
+let imgPerfil = document.getElementById("img-carousel")
+imgPerfil = document.createElement("IMG")
+imgPerfil.setAttribute("src", det.imgPerfil)
 
-let itemP = document.createElement("P")
-itemP.classList.add("animate-box");
-itemP.classList.add("fadeInUp");
-itemP.classList.add("animated-fast");
+det.imgVarias.forEach (imgCarousel =>{
 
-let itemI = document.createElement("IMG")
-itemI.classList.add("img-responsiveA");
-itemI.setAttribute("src", imgVar)
+		let nodeP = document.createElement("DIV");
+		nodeP.classList.add("col-md-4");
+		nodeP.classList.add("text-center");
+		nodeP.classList.add("animate-box");
+
+		imgPerfil.appendChild(nodeP);
+
 	
+})//Fin Array Carousel
 
 
-imgVarias.appendChild(item);
-item.appendChild(itemP);
-itemP.appendChild(itemI);
+
+var nodeS = document.getElementById("img-carousel");
+
+/* <div class="carousel-item active">
+<img src="/public/images/productos/natural.png" class=" d-block w-100" alt="...">
+</div>
+ */
+
+det.imgVarias.forEach(slid => {
+
+console.log(slid);
+
+  let nodeS2 = document.createElement("DIV");
+  nodeS2.classList.add("carousel-item");
+  let nodeS3 = document.createElement("IMG");
+  nodeS3.classList.add("d-block");
+  nodeS3.classList.add("w-100");
+  nodeS3.setAttribute("src", slid)
 
 
-	})
+  nodeS.appendChild(nodeS2)
+  nodeS2.appendChild(nodeS3);
+  nodeS.appendChild(nodeS2);
 
+}); //Cierra el forEach que arma el slider
+
+
+/* ARMA LOS BOTONES DE DESPLAZAMIENTO DEL SLIDER */
+
+/* nodeSP para abreviatura de nodeSliderPreview
+nodeSN para abreviatura de nodeSliderNext
+*/
+
+
+/* nodeSP = document.createElement("A")
+nodeSP.classList.add("prev");
+nodeSP.onclick = function () {
+  showSlides(slideIndex += -1);
 }
+nodeSP1 = document.createTextNode("<");
+nodeSN = document.createElement("A")
+nodeSN.classList.add("next");
+nodeSN.onclick = function () {
+  showSlides(slideIndex += +1);
+}
+nodeSN1 = document.createTextNode(">");
+
+nodeSP.appendChild(nodeSP1)
+nodeSN.appendChild(nodeSN1)
+nodeS.appendChild(nodeSP)
+nodeS.appendChild(nodeSN)
+ */
+
+
+/* DESPLAZAMIENTO SLIDER */
+/* var slideIndex = 1;
+showSlides(slideIndex); */
+
+/*     function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	} */
+/* 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+	slideIndex = 1
+  }
+  if (n < 1) {
+	slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+	slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+} */
+
+
+}) //Fin filter detalle
+}) //fin forEach productos
