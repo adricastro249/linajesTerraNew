@@ -7,12 +7,20 @@ body {
   padding: 0;
 }
 
+#home {
+  display: block;
+}
 
-
+#about, #productosGeneral, #productosDetalles, #galeria, #contacto{
+  display: none;
+}
 
 .about, .productosGeneral, .productosDetalles, .galeria, .contacto{
   margin-top: 10%;
 }
+
+
+
 
 /* NAVBAR */
 
@@ -267,11 +275,14 @@ font-size: large !important;
   text-decoration: none;
   }
 
-  #filtroProductos{
-    width: 400px;
-    margin-left: 10% !important;
-  }
-  
+.filtros{
+width: 450px;
+margin-left: 36%;
+}
+
+
+
+
 
 /* Filtros menú izq*/
 
@@ -616,12 +627,14 @@ left: 0 !important;
 
 /* PRODUCTO GENERAL */
 
+ .filtros{
+  width: 200px !important;
+  column-count: 2 !important;
+margin-left: 40%;
+  } 
 
-#filtrosProductos{
-font-size: small;
-  display: flex !important;
-  flex-wrap: wrap;
-margin-left: 40% !important;
+.labelFiltros{
+  font-size: medium;
 }
 
 
