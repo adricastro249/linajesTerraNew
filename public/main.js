@@ -8,8 +8,7 @@
     messagingSenderId: "291695191486",
     appId: "1:291695191486:web:415c5195c0885ba0c605ef"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+ 
 
 
 
@@ -452,8 +451,8 @@ const form = document.getElementById('contactForm'); // Obtenemos la referencia 
       const data = {
         'name': nombre.value,
         'email': email.value,
-        'tlf': intereses.value,
-        'mensaje': mensaje.value
+        'tlf': tlf.value,
+        'message': mensaje.value
       }; // Creamos un objecto con todos los elementos de nuestro formulario.
       saveContactForm(data); // Enviamos la información obtenida por el usuario a la función que se encargara de guardar la información en Firebase
       form.reset(); // borramos todos los campos. 
