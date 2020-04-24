@@ -1,5 +1,6 @@
 
 
+
 .tz-gallery .lightbox img {
   width: 100%;
   margin-bottom: 30px;
@@ -21,4 +22,17 @@
   transition: 0.2s ease-in-out;
   border-radius: 4px;
   box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.pictures{
+  font-size: 0px;
+}
+.pictures .item{
+  position:relative;
+  display:inline-block;
+}
+.pictures .item img{
+  position:relative;
+  z-index: 11;
 }

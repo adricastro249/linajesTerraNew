@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="prueba.css">
   <link rel="stylesheet" href="logoPrueba.css">
   <link rel="stylesheet" href="responsive.css">
+
+
+
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,7 +23,32 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+
+
   <title>PRUEBA</title>
+
+
+
+  <style>
+    .pictures {
+      font-size: 0px;
+    }
+
+    .pictures .item {
+      position: relative;
+      display: inline-block;
+    }
+
+    .pictures .item img {
+      position: relative;
+      z-index: 11;
+    }
+  </style>
 </head>
 
 <body>
@@ -258,44 +287,55 @@
     </div>
   </section>
 
-  <section class="galeria" id="galeria" style="display: block;">
-    <div class="mb-5" id="">
 
-      <div class="container">
-<div class="tz-gallery">
-  <div id="imgGaleria" class="row mb-5 animated fadeIn">
 
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"><a class="lightbox" data-fancybox="gallery"
-        href="images/ferias/feria1.jpeg"><img class="img-fluid" src="images/ferias/feria1.jpeg"></a></div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"><a class="lightbox" data-fancybox="gallery"
-        href="images/ferias/feria2.jpeg"><img class="img-fluid" src="images/ferias/feria2.jpeg"></a></div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"><a class="lightbox" data-fancybox="gallery"
-        href="images/Kits/kitCapilar.jpeg"><img class="img-fluid" src="images/Kits/kitCapilar.jpeg"></a></div>
- 
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"><a class="lightbox" data-fancybox="gallery"
-        href="images/Kits/kitCorporal.jpeg"><img class="img-fluid" src="images/Kits/kitCorporal.jpeg"></a></div>
+    <div class="pictures tz-gallery">
+      <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/ferias/feria1.jpeg"><img
+         src="images/ferias/feria1.jpeg"></a></div>
+      <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/ferias/feria2.jpeg"><img
+          src="images/ferias/feria2.jpeg"></a></div>
+      <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/Kits/kitCapilar.jpeg"><img
+            src="images/Kits/kitCapilar.jpeg"></a></div>
+      <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/Kits/kitCorporal.jpeg"><img
+     src="images/Kits/kitCorporal.jpeg"></a></div>
+      <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/Kits/kitFacial.jpeg"><img
+         src="images/Kits/kitFacial.jpeg"></a></div>
+         <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/ferias/feria1.jpeg"><img
+          src="images/ferias/feria1.jpeg"></a></div>
+       <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/ferias/feria2.jpeg"><img
+           src="images/ferias/feria2.jpeg"></a></div>
+       <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/Kits/kitCapilar.jpeg"><img
+             src="images/Kits/kitCapilar.jpeg"></a></div>
+       <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/Kits/kitCorporal.jpeg"><img
+      src="images/Kits/kitCorporal.jpeg"></a></div>
+       <div class="item"><a class="lightbox" data-fancybox="gallery" href="images/Kits/kitFacial.jpeg"><img
+          src="images/Kits/kitFacial.jpeg"></a></div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"><a class="lightbox" data-fancybox="gallery"
-        href="images/Kits/kitFacial.jpeg"><img class="img-fluid" src="images/Kits/kitFacial.jpeg"></a></div>
 
-    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4"><a class="lightbox" data-fancybox="gallery"
-        href="images/Ingredientes/cacao1.jpg"><img class="img-fluid" src="images/Ingredientes/cacao1.jpg"></a>
     </div>
-  </div>
-</div>
-
-
-      </div>
-    </div>
-  </section>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+
+  <script>
+    // waiting for loading page
+    $(window).on('load', function () {
+      $('.pictures').tjGallery({
+        selector: '.item',
+        margin: 10
+      });
+    })
+
   </script>
+
+
+
+
+  <script src="./jquery-tjgallery.min.js"> </script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>

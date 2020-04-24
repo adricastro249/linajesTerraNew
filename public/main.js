@@ -375,6 +375,7 @@ function galeria(array) {
         nodeG.classList.add("col-md-4");
         nodeG.classList.add("col-lg-4");
         nodeG.classList.add("col-xl-3");
+        nodeG.classList.add("item");
         nodeG.classList.add("mb-4");
 
         let nodeA = document.createElement("A");
@@ -433,6 +434,12 @@ document.getElementById('filtrosGaleria').addEventListener('change', function ()
 
 
 }) //cierra el addEventListener de los checkbox
+
+
+
+
+
+
 
 /* =============== CONTACTO =============== */
 
