@@ -37,7 +37,6 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
-  </style>
 
 </head>
 
@@ -106,10 +105,10 @@
 
         <ul class=" d-flex">
          <li>
-           <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+           <a class="nav-link" href="https://www.instagram.com/linajesterra/" target="_blank"><i class="fab fa-instagram"></i></a>
          </li>
          <li>
-           <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></i></a>
+           <a class="nav-link" href="https://www.facebook.com/linajesterra-109746590429023/" target="_blank"><i class="fab fa-facebook-f"></i></i></a>
          </li>
         </ul>
        </div>
@@ -121,7 +120,7 @@
 
   </nav> 
 
-  <section id="home" style="display:block;" class="home animated fadeIn">
+  <section id="home" class="home animated fadeIn">
     <div id="fh5co-work" class="fhHeader-bg-section headerT">
 
       <div class="container">
@@ -240,7 +239,7 @@
 
   </section>
 
-  <section class="about" id="about" style="display:none;">
+  <section class="about" id="about" >
     <div class="container mt-5">
       <div class="row animated fadeIn">
 
@@ -291,9 +290,10 @@
 
   </section>
 
-  <section class="productosGeneral" id="productosGeneral" style="display:none;">
+  <section class="productosGeneral" id="productosGeneral">
 
-    <form id="filtrosProductos" class="filtros mx-auto d-flex justify-content-between" style="width: 400px;">
+   <div class="filtros">
+    <form id="filtrosProductos" class="d-flex justify-content-around">
 
       <label class="container labelFiltros"> Facial <input id="sFaci" class="check" type="checkbox" name="productos" value="faciales"
           >
@@ -317,15 +317,16 @@
 
 
     </form>
+   </div>
 
     <div class="container">
-      <div class="row mt-3 d-flex flex-wrap animated fadeIn" id="cuadroProductos" style="display: block;">
+      <div class="row mt-3 d-flex flex-wrap animated fadeIn" id="cuadroProductos">
       </div>
     </div>
 
   </section>
 
-  <section class="productosDetalles" id="productosDetalles" style="display:none;">
+  <section class="productosDetalles" id="productosDetalles" >
     <div class="container" id="productDetails">
 
       <div id="fh5co-author">
@@ -391,11 +392,12 @@
     </div>
   </section>
 
-  <section class="galeria" id="galeria" style="display:none">
+  <section class="galeria" id="galeria" >
     <div class="mb-5" id="">
 
       <div class="container">
-        <form id="filtrosGaleria" class="filtros mx-auto d-flex justify-content-between" style="width: 400px;">
+       <div class="filtros">
+        <form id="filtrosGaleria" class="d-flex justify-content-around">
 
           <label class="container labelFiltros"> Todas <input type="checkbox" class="check" name="galeria" value="todas"
               checked="checked">
@@ -418,6 +420,7 @@
           </label>
 
         </form>
+       </div>
         <div class="pictures tz-gallery">
         <div id="imgGaleria" class=" mb-5 animated fadeIn">
         </div>
@@ -426,7 +429,7 @@
     </div>
   </section>
 
-  <section id="contacto" style="display:none;" class="contacto">
+  <section id="contacto" class="contacto">
     <div class="container">
 					<div class="row animated fadeIn">
 								<div class=" col-md-5 fh5co-contact-info">
