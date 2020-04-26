@@ -31,6 +31,10 @@
       productosGrl.style.display = "none"
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
+        $('.pictures').tjGallery({
+          selector: '.item',
+          margin: 8
+        });
       contacto.style.display = "none"
       listaProductos(data222.productos);
       var muestra = section
@@ -398,7 +402,7 @@ nodeP.appendChild(nodeP2)
 
       array.forEach(gal => {
           let nodeG = document.createElement("DIV");
-          nodeG.classList.add("col-lg-3")
+    /*       nodeG.classList.add("col-lg-3") */
           nodeG.classList.add("item");
 
           let nodeA = document.createElement("A");
