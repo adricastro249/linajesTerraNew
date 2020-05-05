@@ -297,10 +297,41 @@ font-size: x-small !important;
 #cuadroProductos, #imgGaleria{
   margin-bottom: 15% !important;
 }
+}
 
 
+@media screen and (min-width: 1200px){
+/*  NAVBAR  */
+
+.espacioLogo{
+  width: 10% !important;
+}
+ 
+.logoNav{
+  width: 100%;
+}
+
+.navbar-nav{
+  margin-left: 20%;
+}
+
+.redes{
+  margin-left: 25% !important;
+}
+
+.fhHeader-bg-section{
+margin-top: 95px;
+  height: 300px !important;
+}      
+
+/* CUADRO PRODUCTOS GENERAL */
+
+#cuadroProductos{
+  margin-bottom: 10% !important;
+}
 
 }
+
 
 @media (min-width:993px)and (max-width: 1024px){
  
@@ -388,9 +419,3 @@ font-size: x-small !important;
 }
 
 }
-
-
-
-
-/*  @media (min-width: 1024px) { 
-} */

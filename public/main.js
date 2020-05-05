@@ -31,10 +31,12 @@
       productosGrl.style.display = "none"
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
+ 
         $('.pictures').tjGallery({
           selector: '.item',
-          margin: 8
+          margin: 10
         });
+
       contacto.style.display = "none"
       listaProductos(data222.productos);
       var muestra = section
@@ -42,8 +44,7 @@
 
   }
 
-  productosNav= data222.productos;
-
+productosNav= data222.productos;
 var nodeProductos = document.getElementById("productosNavBar");
 
 productosNav.forEach(prodNav => {
@@ -60,16 +61,18 @@ nodeP2 = document.createElement("UL");
 nodeP2.classList.add("dropdown-menu");
 nodeP2.classList.add("border-none");
 
-console.log(prodNav.nombreSecc);
-
-
 prodNav.produc.forEach(det =>{
 
 nodeD1 = document.createElement("LI");
 nodeD2 = document.createElement("A");
 nodeD2.classList.add("dropdown-item");
 nodeD2.setAttribute("id", det.id);
-nodeD2.setAttribute("onclick", `llenaProductDetails(` + det.categoria + `,` + det.id + `)`)
+nodeD2.setAttribute("title", det.categoria);
+
+console.log(det.categoria);
+
+
+nodeD2.setAttribute("onclick",  `llenaProductDetails("`+  det.categoria + `",` + det.id + `)`)
 
 nodeD2a= document.createTextNode(det.nombre)
 
@@ -84,8 +87,6 @@ nodeP1.appendChild(nodeP1a)
 nodeP.appendChild(nodeP2)
 
 });
-
-
 
   /* SUB MENU */
 
@@ -202,12 +203,12 @@ nodeP.appendChild(nodeP2)
   })
 
   var botonesTarjetas = document.getElementsByClassName("btn-card")
-  console.log(botonesTarjetas);
+
 
   for (let i = 0; i < botonesTarjetas.length; i++) {
       botonesTarjetas[i].addEventListener("click", function (e) {
           //Aquí la función que se ejecutará cuando se dispare el evento
-          console.log(e.target.title); //En este caso alertaremos el texto del cliqueado
+     /*      console.log(e.target.title);  *///En este caso alertaremos el texto del cliqueado
 
           $("#sFaci").prop('checked', false);
           $("#sCor").prop('checked', false);
@@ -244,7 +245,7 @@ nodeP.appendChild(nodeP2)
     array.forEach (prod =>{
 
         prod.produc.forEach(prod2 => {
-        
+                    
             let nodeP = document.createElement("DIV");
             nodeP.classList.add("col-md-4");
             nodeP.classList.add("text-center");
@@ -252,7 +253,10 @@ nodeP.appendChild(nodeP2)
   
             let nodeP1 = document.createElement("A");
             nodeP1.classList.add("work");
-            nodeP1.setAttribute("onclick", `llenaProductDetails(` + prod2.categoria + `,` + prod2.id + `)`)
+       
+        
+            nodeP1.setAttribute("onclick", `llenaProductDetails("`+  prod2.categoria + `",` + prod2.id + `)`)
+       
   
             let nodeP2 = document.createElement("DIV");
             nodeP2.classList.add("work-grid");
@@ -282,7 +286,6 @@ nodeP.appendChild(nodeP2)
 
   } //Cierra funcion listaProductos
 
-
   /* listaProductos(data222.productos[1].produc); */
 
   listaProductos(data222.productos); //mostrar todos los productos al iniciar la página
@@ -302,13 +305,13 @@ nodeP.appendChild(nodeP2)
 
       productos.forEach(element => {
 
-          console.log(element.categoria);
+  /*         console.log(element.categoria); */
 
           if (checkeds.includes(element.categoria)) {
 
               aux.push(element);
           }
-          console.log(aux);
+    /*       console.log(aux); */
 
       });
 
@@ -322,71 +325,74 @@ nodeP.appendChild(nodeP2)
 
   /* =============== LLENA PAGINA DE DETALLE DE PRODUCTOS =============== */
 
-  function llenaProductDetails(array, id) {
-      console.log("funcion llenar detalles de prod");
-      showHide("productosDetalles")
+  function llenaProductDetails(cat, id) {
+
+	console.log("esta entradno");
+	showHide("productosDetalles")
+
+	console.log(cat);
+
+	var seccion = data222.productos.filter(general => general.categoria == cat)
+	var seccOk = seccion[0].produc
+	console.log(seccOk);
+
+	var producto = seccOk.filter(prod => prod.id == id)
+	console.log(producto);
+
+	let imgPerfil = document.getElementById("imgPerfil")
+	imgPerfil.setAttribute("src", producto[0].imgPerfil)
+
+	let nombreProd = document.getElementById("nombreProducto")
+	nombreProd.innerHTML = producto[0].nombre
+
+	let descripcion = document.getElementById("desProd")
+	descripcion.innerHTML = producto[0].descripcion
+
+	let listaIngredi = document.getElementById("ingreProd");
+	listaIngredi.innerHTML = ""
+	producto[0].ingredientes.forEach(ingr => {
+		let itemLi = document.createElement("LI")
+		let txtItem = document.createTextNode(ingr)
+		listaIngredi.appendChild(itemLi)
+		itemLi.appendChild(txtItem);
+	}) //Fin forEach ingredientes
+
+	if (producto[0].versiones != null) {
+		let listaVersion = document.getElementById("versionProd")
+		listaVersion.innerHTML = ""
+	
+		let itemH = document.createElement("H3")
+		let txtItemH = document.createTextNode("Versiones")
+	
+		let itemUl = document.createElement("UL")
+		itemUl.classList.add("d-flex");
+		itemUl.classList.add("justify-content-around")
+	
+		producto[0].versiones.forEach(vers => {
+	
+			let itemLi = document.createElement("LI")
+			let txtItem = document.createTextNode(vers)
+	
+			listaVersion.appendChild(itemH);
+			itemH.appendChild(txtItemH);
+	
+			listaVersion.appendChild(itemUl);
+			itemUl.appendChild(itemLi);
+			itemLi.appendChild(txtItem);
+	
+		})   //fin forEach versiones
+ 	}  //fin If versiones
 
 
-
-      let product = array.filter(prod2 => prod2.id == id);
-
-      console.log(product);
-      
-      let imgPerfil = document.getElementById("imgPerfil")
-      imgPerfil.setAttribute("src", product[0].imgPerfil)
-      let nombreProd = document.getElementById("nombreProducto")
-
-      
-      nombreProd.innerHTML = product[0].nombre;
-      let detalles = document.getElementById("desProd")
-      detalles.innerHTML = product[0].descripcion;
-
-      let listaIngredi = document.getElementById("ingreProd");
-      listaIngredi.innerHTML = ""
-      product[0].ingredientes.forEach(ingr => {
-          let itemLi = document.createElement("LI")
-          let txtItem = document.createTextNode(ingr)
-          itemLi.appendChild(txtItem);
-          listaIngredi.appendChild(itemLi)
-      })
-
-      if (product[0].versiones != null) {
-          let listaVersion = document.getElementById("versionProd")
-          listaVersion.innerHTML = ""
-
-          let itemH = document.createElement("H3")
-          let txtItemH = document.createTextNode("Versiones")
-
-
-          let itemUl = document.createElement("UL")
-          itemUl.classList.add("d-flex");
-          itemUl.classList.add("justify-content-around")
-
-          product[0].versiones.forEach(vers => {
-
-              let itemLi = document.createElement("LI")
-              let txtItem = document.createTextNode(vers)
-
-              listaVersion.appendChild(itemH);
-              itemH.appendChild(txtItemH);
-
-              listaVersion.appendChild(itemUl);
-              itemUl.appendChild(itemLi);
-              itemLi.appendChild(txtItem);
-
-          })
-      }
-
-      let contenido = document.getElementById("contNetoProd")
-      contenido.innerHTML = ""
-      product[0].contenidoNeto.forEach(cont => {
-          let itemC = document.createElement("LI")
-          let txtItemC = document.createTextNode(cont)
-          itemC.appendChild(txtItemC);
-          contenido.appendChild(itemC);
-      })
-
-  }
+	 let contenido = document.getElementById("contNetoProd")
+	 contenido.innerHTML = ""
+producto[0].contenidoNeto.forEach(cont => {
+		 let itemC = document.createElement("LI")
+		 let txtItemC = document.createTextNode(cont)
+		 itemC.appendChild(txtItemC);
+		 contenido.appendChild(itemC);
+	 }) //fin forEach contenido Neto
+}
 
   /* =============== GALERIA =============== */
 
