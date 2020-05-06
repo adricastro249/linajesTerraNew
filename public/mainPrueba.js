@@ -1,68 +1,55 @@
-function llenaProductDetails(cat, id) {
 
-	console.log("esta entradno");
-	showHide("productosDetalles")
+	var nodeProduc = document.getElementById("img-carousel");
 
-	console.log(cat);
+var pepito = data222.productos
 
-	var seccion = data222.productos.filter(general => general.categoria == cat)
-	var seccOk = seccion[0].produc
-	console.log(seccOk);
+pepito.forEach(prueba => {
+var prueb2 = prueba.produc
 
-	var producto = seccOk.filter(prod => prod.id == id)
-	console.log(producto);
 
-	let imgPerfil = document.getElementById("imgPerfil")
-	imgPerfil.setAttribute("src", producto[0].imgPerfil)
+prueb2.forEach(dos => {
 
-	let nombreProd = document.getElementById("nombreProducto")
-	nombreProd.innerHTML = producto[0].nombre
-
-	let descripcion = document.getElementById("desProd")
-	descripcion.innerHTML = producto[0].descripcion
-
-	let listaIngredi = document.getElementById("ingreProd");
-	listaIngredi.innerHTML = ""
-	producto[0].ingredientes.forEach(ingr => {
-		let itemLi = document.createElement("LI")
-		let txtItem = document.createTextNode(ingr)
-		listaIngredi.appendChild(itemLi)
-		itemLi.appendChild(txtItem);
-	}) //Fin forEach ingredientes
-
-	if (producto[0].versiones != null) {
-		let listaVersion = document.getElementById("versionProd")
-		listaVersion.innerHTML = ""
+	console.log(dos);
 	
-		let itemH = document.createElement("H3")
-		let txtItemH = document.createTextNode("Versiones")
-	
-		let itemUl = document.createElement("UL")
-		itemUl.classList.add("d-flex");
-		itemUl.classList.add("justify-content-around")
-	
-		producto[0].versiones.forEach(vers => {
-	
-			let itemLi = document.createElement("LI")
-			let txtItem = document.createTextNode(vers)
-	
-			listaVersion.appendChild(itemH);
-			itemH.appendChild(txtItemH);
-	
-			listaVersion.appendChild(itemUl);
-			itemUl.appendChild(itemLi);
-			itemLi.appendChild(txtItem);
-	
-		})   //fin forEach versiones
- 	}  //fin If versiones
 
 
-	 let contenido = document.getElementById("contNetoProd")
-	 contenido.innerHTML = ""
-producto[0].contenidoNeto.forEach(cont => {
-		 let itemC = document.createElement("LI")
-		 let txtItemC = document.createTextNode(cont)
-		 itemC.appendChild(txtItemC);
-		 contenido.appendChild(itemC);
-	 }) //fin forEach contenido Neto
-}
+	let nodeImgProducto = document.createElement("DIV");
+	nodeImgProducto.classList.add("carousel-item");
+	nodeImgProducto.classList.add("active");
+
+	let nodeImagenPrincipal = document.createElement("IMG");
+	nodeImagenPrincipal.classList.add("d-block");
+	nodeImagenPrincipal.classList.add("w-100");
+	nodeImagenPrincipal.setAttribute("src", dos.imgPerfil);
+
+	let nodeImgSec = document.createElement("DIV");
+	nodeImgSec.classList.add("carousel-item");
+
+	let nodeImagenCarr = document.createElement("IMG");
+	nodeImagenCarr.classList.add("d-block");
+	nodeImagenCarr.classList.add("w-100");
+	nodeImagenCarr.setAttribute("src", dos.imgGrande);
+
+	nodeProduc.appendChild(nodeImgProducto)
+	nodeImgProducto.appendChild(nodeImagenPrincipal)
+	nodeProduc.appendChild(nodeImgSec)
+	nodeImgSec.appendChild(nodeImagenPrincipal)
+
+
+
+
+})
+
+
+	
+
+
+
+
+
+
+
+})
+
+
+

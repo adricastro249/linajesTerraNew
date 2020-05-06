@@ -1,3 +1,20 @@
+@font-face{
+  font-family: "Brillia";
+  src: url(./style/tipografia/Brillia\ Calligraphy.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: "Caride";
+  src: url(./style/tipografia/Caride\ Script.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: "Savoye";
+  src: url(./style/tipografia/Savoye\ LET.ttc) format("truetype");
+}
+
+
+
 body {
 /*   background: #ECEFF1; */
 /* background: red !important; */
@@ -5,6 +22,12 @@ body {
   font-family:"Montserrat", Arial, sans-serif !important;
   margin: 0;
   padding: 0;
+background-image: url(./images/fondototal.png) !important;
+background-size: 20% !important;
+background-repeat: no-repeat;
+
+
+
 }
 
 #home {
@@ -30,12 +53,13 @@ body {
 }
 
 nav, .dropdown-menu {
-  background: #fcf1e3 !important;
+  background: #f7e6cb !important;
 }
 
 
 .dropdown-item{
-  background: #fcf1e3 !important;
+  background: #f7e6cb !important;
+
 }
 
 .dropdown-item:hover, .dropdown-item:active, .nav-item:active{
@@ -92,11 +116,13 @@ font-size: large !important;
   right: 0;
   padding: 25px 0;
   z-index: 1;
-  background: #fcf1e3;
+/*   background: #fcf1e3; */
+background-image: url(./images/navbar.png) !important;
+background-size: 50% !important; 
 }
 
 .logoNav{
-  width: 25%; 
+  width: 16%; 
   margin-top: 3%;
   margin-left: 3%;
 }
@@ -113,6 +139,18 @@ outline: none !important;
 /* HOME */
 
 /* TARJETAS DE PRODUCTOS INDEX */
+
+
+
+/* HEADER */
+
+
+
+
+.frase1, .frase2{
+  font-family: "Savoye";
+  font-size: 50px !important;
+}
 
 .title-card{
   margin-top: 20%;
@@ -412,10 +450,6 @@ input[type="checkbox"] {
 
 }
 
-.headerT{
-  margin-top:6%
-}
-
 
 .home h1 {
   font-size: x-large ;
@@ -441,9 +475,10 @@ input[type="checkbox"] {
 
 .tituloCard{
   font-weight: bold !important;
-  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-  text-transform: capitalize;
-  font-size: 1rem !important;
+/*   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; */
+font-family: "Savoye";
+/*   text-transform: capitalize; */
+  font-size: 2.2rem !important;
 margin-left: -8%;
 width: 100%;
 }

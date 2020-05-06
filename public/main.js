@@ -68,10 +68,6 @@ nodeD2 = document.createElement("A");
 nodeD2.classList.add("dropdown-item");
 nodeD2.setAttribute("id", det.id);
 nodeD2.setAttribute("title", det.categoria);
-
-console.log(det.categoria);
-
-
 nodeD2.setAttribute("onclick",  `llenaProductDetails("`+  det.categoria + `",` + det.id + `)`)
 
 nodeD2a= document.createTextNode(det.nombre)
@@ -339,8 +335,55 @@ nodeP.appendChild(nodeP2)
 	var producto = seccOk.filter(prod => prod.id == id)
 	console.log(producto);
 
-	let imgPerfil = document.getElementById("imgPerfil")
-	imgPerfil.setAttribute("src", producto[0].imgPerfil)
+/* let imgPerfil = document.getElementById("imgPerfil")
+    imgPerfil.setAttribute("src", producto[0].imgPerfil)  */
+    
+
+    var nodeProduc = document.getElementById("img-carousel");
+    nodeProduc.innerHTML = ""
+    
+    let nodeImgProducto = document.createElement("DIV");
+    nodeImgProducto.classList.add("carousel-item");
+    nodeImgProducto.classList.add("img-responsiveA")
+	nodeImgProducto.classList.add("active");
+
+	let nodeImagenPrincipal = document.createElement("IMG");
+	nodeImagenPrincipal.classList.add("d-block");
+    nodeImagenPrincipal.classList.add("w-100");
+    nodeImagenPrincipal.classList.add("img-responsiveA")
+    nodeImagenPrincipal.setAttribute("src", producto[0].imgPerfil)
+
+	let nodeImgSec = document.createElement("DIV");
+	nodeImgSec.classList.add("carousel-item");
+
+/* 	nodeProduc.appendChild(nodeImgProducto)
+	nodeImgProducto.appendChild(nodeImagenPrincipal)
+	nodeProduc.appendChild(nodeImgSec) */
+
+	let nodeImagenCarr = document.createElement("IMG");
+	nodeImagenCarr.classList.add("d-block");
+ /*    nodeImagenCarr.classList.add("w-100"); */
+    nodeImagenCarr.classList.add("img-responsiveA")
+    nodeImagenCarr.setAttribute("src", producto[0].imgGrande)
+
+ /*    producto[0].imgVarias.forEach(imgV => {
+
+        let nodeImagenCarr = document.createElement("IMG");
+        nodeImagenCarr.classList.add("d-block");
+        nodeImagenCarr.classList.add("w-100");
+        nodeImagenCarr.classList.add("img-responsiveA")
+        nodeImagenCarr.setAttribute("src",imgV)
+
+        nodeImgSec.appendChild(nodeImagenCarr)
+    })
+ */
+
+	nodeProduc.appendChild(nodeImgProducto)
+	nodeImgProducto.appendChild(nodeImagenPrincipal)
+	nodeProduc.appendChild(nodeImgSec)
+	nodeImgSec.appendChild(nodeImagenCarr)
+
+
 
 	let nombreProd = document.getElementById("nombreProducto")
 	nombreProd.innerHTML = producto[0].nombre
