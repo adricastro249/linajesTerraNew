@@ -1,16 +1,7 @@
 @font-face{
-  font-family: "Brillia";
-  src: url(./style/tipografia/Brillia\ Calligraphy.ttf) format("truetype");
-}
-
-@font-face{
-  font-family: "Caride";
-  src: url(./style/tipografia/Caride\ Script.ttf) format("truetype");
-}
-
-@font-face{
   font-family: "Savoye";
   src: url(./style/tipografia/Savoye\ LET.ttc) format("truetype");
+     src: url(./style/tipografia/Savoye\ Regular.ttf) format("truetype");
 }
 
 

@@ -295,7 +295,7 @@ var data222 = {
             "img": "imagen8",
             "id": 8,
             "categoria": "kits",
-            "fotos": "images/Kits/kitFacial2.jpg"
+            "fotos": "images/Kits/kitFacial2.jpeg"
         },
         {
             "img": "imagen9",

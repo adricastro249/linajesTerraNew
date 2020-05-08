@@ -410,7 +410,7 @@ nodeP.appendChild(nodeP2)
 		let itemUl = document.createElement("UL")
 		itemUl.classList.add("d-flex");
 		itemUl.classList.add("justify-content-around")
-	
+        itemUl.classList.add("versiones")
 		producto[0].versiones.forEach(vers => {
 	
 			let itemLi = document.createElement("LI")
