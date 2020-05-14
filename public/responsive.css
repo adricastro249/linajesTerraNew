@@ -140,8 +140,21 @@ font-size: x-small !important;
 margin-left: 10% !important;
 }
 
+
+.testimonios h2{
+  font-size: large;
+}
+
+.testimonios .carousel-item p{
+  font-size: medium !important;
+  width: 65%;
+margin-left: 20%;
+margin-top: 23%;
+}
+
+
 .textAbout{
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 
 
@@ -162,9 +175,15 @@ margin-left: 38%;
 
 .carousel-inner{
   margin-top: -15% !important;
-margin-left: 55% !important;
+/* margin-left: 55% !important; */
 margin-bottom: 15% !important;
 }
+
+
+#imagenesDetalleProductos{
+margin-left: 25% !important;
+}
+
 
 #desProd{
   text-align: justify;
@@ -246,10 +265,10 @@ footer{
 
     .frase1{
       margin-top: 5%;
-      font-size: 28px !important;
+      font-size: 27px !important;
     }
     .frase2{
-     font-size: 26px !important;
+     font-size: 25px !important;
    }
 
 
@@ -337,8 +356,9 @@ font-size: x-small !important;
 
 
 #imgGaleria{
-margin-top: -5% !important;
+margin-top: -1% !important;
 }
+
 }
 
 
@@ -451,17 +471,18 @@ margin-top: 75px;
 
 .fhHeader-bg-section{
   height: 200px !important;
+  margin-top:7%;
 }
 
-#fh5co-work{
+/* #fh5co-work{
   padding-top: 0 !important;
-}
+} */
 
 /* HEADER */
 
 .linHeder{
   margin-left: 10% !important;
-  margin-top: 9%;
+  margin-top: -3%;
 }
 
 .logoHeader{
@@ -536,7 +557,7 @@ margin-top: 75px;
 }
 
 .textAbout{
-  margin-bottom: 5% !important;
+  margin-bottom: 2% !important;
 }
 
 /* CUADRO PRODUCTOS GENERAL */
@@ -577,7 +598,8 @@ margin-top: 75px;
   }
   
   .fhHeader-bg-section{
-    height: 250px !important;
+    margin-top: 7%;
+    height: 300px !important;
   }
   
   
@@ -585,7 +607,8 @@ margin-top: 75px;
   /* HEADER */
   
   .linHeder{
-    margin-top: 8% !important;
+   margin-top: -3%;
+    margin-left: 9% !important;
   }
   
   .logoHeader{
@@ -657,7 +680,7 @@ margin-top: 75px;
 
 
   .textAbout{
-    margin-bottom: 10% !important;
+    margin-bottom: 3% !important;
   }
   
   /* CUADRO PRODUCTOS GENERAL */
@@ -786,7 +809,7 @@ margin-top: 75px;
   
   
     .textAbout{
-      margin-bottom: 10% !important;
+      margin-bottom: 3% !important;
     }
     
     /* CUADRO PRODUCTOS GENERAL */

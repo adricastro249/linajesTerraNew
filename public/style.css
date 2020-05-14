@@ -136,7 +136,9 @@ outline: none !important;
 /* HEADER */
 
 
-
+.linHeder{
+  margin-top: 7%;
+}
 
 .frase1, .frase2{
   font-family: "Savoye";
