@@ -19,6 +19,8 @@
   var contacto = document.getElementById("contacto")
 
 
+
+
   function showHide(section) {
 
       $("#sFaci").prop('checked', false);
@@ -32,11 +34,12 @@
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
  
-        $('.pictures').tjGallery({
-          selector: '.item',
-          margin: 10
-        });
+      $('.pictures').tjGallery({
+  /*       selector: '.item',
+        margin: 10 */
+      });
 
+    
       contacto.style.display = "none"
       listaProductos(data222.productos);
       var muestra = section
@@ -102,27 +105,7 @@ nodeP.appendChild(nodeP2)
       return false;
   });
 
-  /* LLENA CATEGORIAS DEL NAVBAR */
- /*  function llenaCat(params, id) {
 
-      var categoria = document.getElementById(id);
-      params.forEach(elemt => {
-          nameCateg = Object.keys(params)
-          node0 = document.createElement("LI");
-          node1 = document.createElement("A");
-          node1.classList.add("dropdown-item")
-          node1.setAttribute("id", elemt.id)
-          node1.setAttribute("onclick", `llenaProductDetails(` + id + `,` + elemt.id + `)`)
-          var tituloCateg = document.createTextNode(elemt.nombre)
-          node0.appendChild(node1)
-          node1.appendChild(tituloCateg)
-          categoria.appendChild(node0);
-      })
-  }
-  llenaCat(faciales, "faciales");
-  llenaCat(corporales, "corporales");
-  llenaCat(capilares, "capilares");
-  llenaCat(aromaterapia, "aromaterapia"); */
 
 
   /* =============== HOME ===============  */
@@ -282,8 +265,6 @@ nodeP.appendChild(nodeP2)
 
   } //Cierra funcion listaProductos
 
-  /* listaProductos(data222.productos[1].produc); */
-
   listaProductos(data222.productos); //mostrar todos los productos al iniciar la página
 
   
@@ -365,6 +346,9 @@ nodeP.appendChild(nodeP2)
  /*    nodeImagenCarr.classList.add("w-100"); */
     nodeImagenCarr.classList.add("img-responsiveA")
     nodeImagenCarr.setAttribute("src", producto[0].imgGrande)
+
+    console.log( producto[0].imgVarias);
+    
 
  /*    producto[0].imgVarias.forEach(imgV => {
 
@@ -450,22 +434,22 @@ producto[0].contenidoNeto.forEach(cont => {
       /*   nodeG.classList.add("mb-4"); */
 
       array.forEach(gal => {
-          let nodeG = document.createElement("DIV");
-    /*       nodeG.classList.add("col-lg-3") */
-          nodeG.classList.add("item");
+
+         let nodeG = document.createElement("DIV");
+         nodeG.classList.add("item"); 
 
           let nodeA = document.createElement("A");
           nodeA.classList.add("lightbox");
           nodeA.setAttribute("data-fancybox", "gallery")
-          nodeA.setAttribute("href", gal.fotos)
+          nodeA.setAttribute("href", gal.fotos) 
 
           let nodeI = document.createElement("IMG");
           nodeI.classList.add("img-fluid");
           nodeI.setAttribute("src", gal.fotos)
 
           nodeGaleria.appendChild(nodeG);
-          nodeG.appendChild(nodeA);
-          nodeA.appendChild(nodeI);
+      nodeG.appendChild(nodeA);
+              nodeA.appendChild(nodeI);
       })
   }
   galeria(data222.imagenes);

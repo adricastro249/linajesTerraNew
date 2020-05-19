@@ -58,7 +58,7 @@ var data222 = {
                     "categoria": "corporales",
                     "descripcion": "Por una protección confiable y amable con nuestro cuerpo y el medio ambiente.",
                     "imgPerfil": "images/productos/desodorantes.png",
-                    "imgGrande": "images/productos/imgVarias/Desodorante/desodorante5.jpg",
+                    "imgGrande": "images/productos/imgVarias/Desodorante/desodorante2.jpg",
                     "imgVarias": ["images/productos/imgVarias/Desodorante/desodorante2.jpg", "images/productos/imgVarias/Desodorante/desodorante3.jpg"],
                     "ingredientes": ["Aceite de coco extra virgen", "Manteca de cacao", "Manteca de karité", "Fécula de Maiz", "Bicarbonato de sodio", "Cera de abejas", "Óxido de zinc", "Vit e", "Aceites esenciales"],
                     "versiones": ["Lavanda", "Lemongras"],
