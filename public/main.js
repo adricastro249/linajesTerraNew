@@ -18,9 +18,6 @@
   var galeriaA = document.getElementById("galeria")
   var contacto = document.getElementById("contacto")
 
-
-
-
   function showHide(section) {
 
       $("#sFaci").prop('checked', false);
@@ -34,10 +31,7 @@
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
 
-      $('.pictures').tjGallery({
-          /*       selector: '.item',
-                margin: 10 */
-      });
+      
 
 
       contacto.style.display = "none"
@@ -46,6 +40,10 @@
       document.getElementById(muestra).style.display = "block";
 
   }
+  $('.pictures').tjGallery({
+    /*       selector: '.item',
+          margin: 10 */
+});
 
   productosNav = data222.productos;
   var nodeProductos = document.getElementById("productosNavBar");
@@ -311,13 +309,9 @@
 
       var seccion = data222.productos.filter(general => general.categoria == cat)
       var seccOk = seccion[0].produc
-      console.log(seccOk);
 
       var producto = seccOk.filter(prod => prod.id == id)
       console.log(producto);
-
-      /* let imgPerfil = document.getElementById("imgPerfil")
-          imgPerfil.setAttribute("src", producto[0].imgPerfil)  */
 
 
       var nodeProduc = document.getElementById("img-carousel");
@@ -333,86 +327,58 @@
       nodeImagenPrincipal.classList.add("w-100");
       nodeImagenPrincipal.classList.add("img-responsiveA")
       nodeImagenPrincipal.setAttribute("src", producto[0].imgPerfil)
-/*
-      let nodeImgSec = document.createElement("DIV");
-      nodeImgSec.classList.add("carousel-item");*/
-
-      /* 	nodeProduc.appendChild(nodeImgProducto)
-      	nodeImgProducto.appendChild(nodeImagenPrincipal)
-      	nodeProduc.appendChild(nodeImgSec) */
-
-
-/*
-      let nodeImagenCarr = document.createElement("IMG");
-      nodeImagenCarr.classList.add("d-block"); */
-      /*    nodeImagenCarr.classList.add("w-100"); */
-     /* nodeImagenCarr.classList.add("img-responsiveA")
-      nodeImagenCarr.setAttribute("src", producto[0].imgGrande) */
 
 
       producto[0].imgVarias.forEach(img => {
           let nodeImgSec = document.createElement("DIV");
-      nodeImgSec.classList.add("carousel-item");
+          nodeImgSec.classList.add("carousel-item");
           let nodeImagenCarr = document.createElement("IMG");
           nodeImagenCarr.classList.add("d-block");
           nodeImagenCarr.classList.add("img-responsiveA")
-          
+
           nodeImagenCarr.setAttribute("src", img)
-        
+
           nodeProduc.appendChild(nodeImgSec);
           nodeImgSec.appendChild(nodeImagenCarr)
       })
       console.log(producto[0].imgVarias);
 
-      
 
 
-      /*    producto[0].imgVarias.forEach(imgV => {
+      // creando los a del carrusel
+      var aPrev = document.createElement("A");
+      aPrev.classList.add("carousel-control-prev")
+      aPrev.setAttribute("href", "#carouselImgPrdocutos")
+      aPrev.setAttribute("role", "button")
+      aPrev.setAttribute("data-slide", "prev")
+      var span1Prev = document.createElement("SPAN")
+      span1Prev.classList.add("carousel-control-prev-icon")
+      span1Prev.setAttribute("aria-hidden", "true")
+      var span2Prev = document.createElement("SPAN")
+      span2Prev.classList.add("sr-only")
+      var textSpan2prev = document.createTextNode("Previous")
+      span2Prev.appendChild(textSpan2prev)
+      span2Prev.setAttribute("aria-hidden", "true")
 
-             let nodeImagenCarr = document.createElement("IMG");
-             nodeImagenCarr.classList.add("d-block");
-             nodeImagenCarr.classList.add("w-100");
-             nodeImagenCarr.classList.add("img-responsiveA")
-             nodeImagenCarr.setAttribute("src",imgV)
+      aPrev.appendChild(span1Prev)
+      aPrev.appendChild(span2Prev)
 
-             nodeImgSec.appendChild(nodeImagenCarr)
-         })
-      */
+      var aNext = document.createElement("A");
+      aNext.classList.add("carousel-control-next")
+      aNext.setAttribute("href", "#carouselImgPrdocutos")
+      aNext.setAttribute("role", "button")
+      aNext.setAttribute("data-slide", "next")
+      var span1Next = document.createElement("SPAN")
+      span1Next.classList.add("carousel-control-next-icon")
+      span1Next.setAttribute("aria-hidden", "true")
+      var span2Next = document.createElement("SPAN")
+      span2Next.classList.add("sr-only")
+      var textSpan2Next = document.createTextNode("Next")
+      span2Next.appendChild(textSpan2Next)
+      span2Next.setAttribute("aria-hidden", "true")
 
-// creando los a del carrusel
-var aPrev = document.createElement("A");
-aPrev.classList.add("carousel-control-prev")
-aPrev.setAttribute("href", "#carouselImgPrdocutos")
-aPrev.setAttribute("role", "button")
-aPrev.setAttribute("data-slide", "prev")
-var span1Prev = document.createElement("SPAN")
-span1Prev.classList.add("carousel-control-prev-icon")
-span1Prev.setAttribute("aria-hidden", "true")
-var span2Prev = document.createElement("SPAN")
-span2Prev.classList.add("sr-only")
-var textSpan2prev = document.createTextNode("Previous")
-span2Prev.appendChild(textSpan2prev)
-span2Prev.setAttribute("aria-hidden", "true")
-
-aPrev.appendChild(span1Prev)
-aPrev.appendChild(span2Prev)
-
-var aNext = document.createElement("A");
-aNext.classList.add("carousel-control-next")
-aNext.setAttribute("href", "#carouselImgPrdocutos")
-aNext.setAttribute("role", "button")
-aNext.setAttribute("data-slide", "next")
-var span1Next = document.createElement("SPAN")
-span1Next.classList.add("carousel-control-next-icon")
-span1Next.setAttribute("aria-hidden", "true")
-var span2Next = document.createElement("SPAN")
-span2Next.classList.add("sr-only")
-var textSpan2Next = document.createTextNode("Next")
-span2Next.appendChild(textSpan2Next)
-span2Next.setAttribute("aria-hidden", "true")
-
-aNext.appendChild(span1Next)
-aNext.appendChild(span2Next)
+      aNext.appendChild(span1Next)
+      aNext.appendChild(span2Next)
 
 
 
@@ -420,22 +386,10 @@ aNext.appendChild(span2Next)
       nodeProduc.appendChild(aPrev)
       nodeProduc.appendChild(aNext)
 
-    /*  nodeProduc=+`<a class="carousel-control-prev" href="#carouselImgPrdocutos" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselImgPrdocutos" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>`*/
-
+      
       nodeImgProducto.appendChild(nodeImagenPrincipal)
 
-    //   nodeProduc.appendChild(nodeImgSec)
-    //  nodeImgSec.appendChild(nodeImagenCarr)
-
-
-
+     
       let nombreProd = document.getElementById("nombreProducto")
       nombreProd.innerHTML = producto[0].nombre
 
@@ -493,13 +447,7 @@ aNext.appendChild(span2Next)
 
   function galeria(array) {
       var nodeGaleria = document.getElementById("imgGaleria");
-      /*       nodeG.classList.add("col-sm-6"); */
-      /*         nodeG.classList.add("col-md-4"); */
-      /*         nodeG.classList.add("col-lg-4");
-              nodeG.classList.add("col-xl-3"); */
-
-      /*   nodeG.classList.add("mb-4"); */
-
+     
       array.forEach(gal => {
 
           let nodeG = document.createElement("DIV");
@@ -542,9 +490,7 @@ aNext.appendChild(span2Next)
                   aux.push(element);
               }
               console.log(aux);
-              /*    if (checkeds.includes(element.categoria[0].value)) {
-                     aux.push(element.id);
-                 } */
+              
           });
 
 
@@ -558,11 +504,6 @@ aNext.appendChild(span2Next)
   /* =============== CONTACTO =============== */
 
   $("#mensajeEnviado").hide();
-
-  /* $("#btnEnviar").click(function () {
-      $("#mensajeEnviado").show();
-
-  }) */
 
   const form = document.getElementById('contactForm'); // Obtenemos la referencia al formulario
 

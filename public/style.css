@@ -244,6 +244,12 @@ outline: none !important;
 }
 
 /* ABOUT */
+#tituloAbout{
+  font-family: "Savoye";
+  font-size: xx-large;
+  font-weight: bold;
+}
+
 .logoAbout {
   width: 30%;
   margin-left: 30%;
@@ -311,7 +317,10 @@ width: 450px;
 margin-left: 39%;
 }
 
-
+.labelFiltros{
+  font-family: "Savoye";
+  font-size: 4rem;
+}
 
 
 
@@ -427,6 +436,12 @@ input[type="checkbox"] {
 .ingreProd {
   column-count: 2 ;
 } 
+
+#nombreProducto {
+  font-family: "Savoye" ;
+  font-size: 3rem;
+  font-weight: bold;
+}
 
 .img-responsiveA {
   display: block;
