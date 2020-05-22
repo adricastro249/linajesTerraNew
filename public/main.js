@@ -33,13 +33,13 @@
       productosGrl.style.display = "none"
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
- 
+
       $('.pictures').tjGallery({
-  /*       selector: '.item',
-        margin: 10 */
+          /*       selector: '.item',
+                margin: 10 */
       });
 
-    
+
       contacto.style.display = "none"
       listaProductos(data222.productos);
       var muestra = section
@@ -47,45 +47,45 @@
 
   }
 
-productosNav= data222.productos;
-var nodeProductos = document.getElementById("productosNavBar");
+  productosNav = data222.productos;
+  var nodeProductos = document.getElementById("productosNavBar");
 
-productosNav.forEach(prodNav => {
+  productosNav.forEach(prodNav => {
 
-let nodeP = document.createElement("LI");
-nodeP.classList.add("dropdown-submenu");
+      let nodeP = document.createElement("LI");
+      nodeP.classList.add("dropdown-submenu");
 
-nodeP1 = document.createElement("A");
-nodeP1.classList.add("dropdown-item");
-nodeP1.classList.add("dropdown-toggle");
-nodeP1a= document.createTextNode(prodNav.nombreSecc)
+      nodeP1 = document.createElement("A");
+      nodeP1.classList.add("dropdown-item");
+      nodeP1.classList.add("dropdown-toggle");
+      nodeP1a = document.createTextNode(prodNav.nombreSecc)
 
-nodeP2 = document.createElement("UL");
-nodeP2.classList.add("dropdown-menu");
-nodeP2.classList.add("border-none");
+      nodeP2 = document.createElement("UL");
+      nodeP2.classList.add("dropdown-menu");
+      nodeP2.classList.add("border-none");
 
-prodNav.produc.forEach(det =>{
+      prodNav.produc.forEach(det => {
 
-nodeD1 = document.createElement("LI");
-nodeD2 = document.createElement("A");
-nodeD2.classList.add("dropdown-item");
-nodeD2.setAttribute("id", det.id);
-nodeD2.setAttribute("title", det.categoria);
-nodeD2.setAttribute("onclick",  `llenaProductDetails("`+  det.categoria + `",` + det.id + `)`)
+          nodeD1 = document.createElement("LI");
+          nodeD2 = document.createElement("A");
+          nodeD2.classList.add("dropdown-item");
+          nodeD2.setAttribute("id", det.id);
+          nodeD2.setAttribute("title", det.categoria);
+          nodeD2.setAttribute("onclick", `llenaProductDetails("` + det.categoria + `",` + det.id + `)`)
 
-nodeD2a= document.createTextNode(det.nombre)
+          nodeD2a = document.createTextNode(det.nombre)
 
-nodeP2.appendChild(nodeD1)
-nodeD1.appendChild(nodeD2)
-nodeD2.appendChild(nodeD2a)
-})
+          nodeP2.appendChild(nodeD1)
+          nodeD1.appendChild(nodeD2)
+          nodeD2.appendChild(nodeD2a)
+      })
 
-nodeProductos.appendChild(nodeP)
-nodeP.appendChild(nodeP1)
-nodeP1.appendChild(nodeP1a)
-nodeP.appendChild(nodeP2)
+      nodeProductos.appendChild(nodeP)
+      nodeP.appendChild(nodeP1)
+      nodeP1.appendChild(nodeP1a)
+      nodeP.appendChild(nodeP2)
 
-});
+  });
 
   /* SUB MENU */
 
@@ -187,7 +187,7 @@ nodeP.appendChild(nodeP2)
   for (let i = 0; i < botonesTarjetas.length; i++) {
       botonesTarjetas[i].addEventListener("click", function (e) {
           //Aquí la función que se ejecutará cuando se dispare el evento
-     /*      console.log(e.target.title);  *///En este caso alertaremos el texto del cliqueado
+          /*      console.log(e.target.title);  */ //En este caso alertaremos el texto del cliqueado
 
           $("#sFaci").prop('checked', false);
           $("#sCor").prop('checked', false);
@@ -221,53 +221,53 @@ nodeP.appendChild(nodeP2)
       var nodeProduc = document.getElementById("cuadroProductos");
       nodeProduc.innerHTML = "";
 
-    array.forEach (prod =>{
+      array.forEach(prod => {
 
-        prod.produc.forEach(prod2 => {
-                    
-            let nodeP = document.createElement("DIV");
-            nodeP.classList.add("col-md-4");
-            nodeP.classList.add("text-center");
-            nodeP.classList.add("animate-box");
-  
-            let nodeP1 = document.createElement("A");
-            nodeP1.classList.add("work");
-       
-        
-            nodeP1.setAttribute("onclick", `llenaProductDetails("`+  prod2.categoria + `",` + prod2.id + `)`)
-       
-  
-            let nodeP2 = document.createElement("DIV");
-            nodeP2.classList.add("work-grid");
-            nodeP2.style.backgroundImage = "url(' " + prod2.imgPerfil + " ' )"
-  
-            let nodeP3 = document.createElement("DIV");
-            nodeP3.classList.add("inner");
-  
-            let nodeP4 = document.createElement("DIV");
-            nodeP4.classList.add("desc");
-            nodeP4.classList.add("titProd");
-  
-            let nodeP5 = document.createElement("H3");
-            nodeP5 = document.createTextNode(prod2.nombre)
-  
-            nodeProduc.appendChild(nodeP);
-            nodeP.appendChild(nodeP1)
-            nodeP1.appendChild(nodeP2)
-            nodeP2.appendChild(nodeP3)
-            nodeP3.appendChild(nodeP4)
-            nodeP4.appendChild(nodeP5)
-  
-        }); //Cierra el forEach2 la lista de productos
+          prod.produc.forEach(prod2 => {
+
+              let nodeP = document.createElement("DIV");
+              nodeP.classList.add("col-md-4");
+              nodeP.classList.add("text-center");
+              nodeP.classList.add("animate-box");
+
+              let nodeP1 = document.createElement("A");
+              nodeP1.classList.add("work");
 
 
-    })//Cierra el forEach1 la lista de productos
+              nodeP1.setAttribute("onclick", `llenaProductDetails("` + prod2.categoria + `",` + prod2.id + `)`)
+
+
+              let nodeP2 = document.createElement("DIV");
+              nodeP2.classList.add("work-grid");
+              nodeP2.style.backgroundImage = "url(' " + prod2.imgPerfil + " ' )"
+
+              let nodeP3 = document.createElement("DIV");
+              nodeP3.classList.add("inner");
+
+              let nodeP4 = document.createElement("DIV");
+              nodeP4.classList.add("desc");
+              nodeP4.classList.add("titProd");
+
+              let nodeP5 = document.createElement("H3");
+              nodeP5 = document.createTextNode(prod2.nombre)
+
+              nodeProduc.appendChild(nodeP);
+              nodeP.appendChild(nodeP1)
+              nodeP1.appendChild(nodeP2)
+              nodeP2.appendChild(nodeP3)
+              nodeP3.appendChild(nodeP4)
+              nodeP4.appendChild(nodeP5)
+
+          }); //Cierra el forEach2 la lista de productos
+
+
+      }) //Cierra el forEach1 la lista de productos
 
   } //Cierra funcion listaProductos
 
   listaProductos(data222.productos); //mostrar todos los productos al iniciar la página
 
-  
+
 
   /* =============== FILTRO PRODUCTOS =============== */
   var productos = data222.productos
@@ -282,13 +282,13 @@ nodeP.appendChild(nodeP2)
 
       productos.forEach(element => {
 
-  /*         console.log(element.categoria); */
+          /*         console.log(element.categoria); */
 
           if (checkeds.includes(element.categoria)) {
 
               aux.push(element);
           }
-    /*       console.log(aux); */
+          /*       console.log(aux); */
 
       });
 
@@ -304,122 +304,189 @@ nodeP.appendChild(nodeP2)
 
   function llenaProductDetails(cat, id) {
 
-	console.log("esta entradno");
-	showHide("productosDetalles")
+      console.log("esta entradno");
+      showHide("productosDetalles")
 
-	console.log(cat);
+      console.log(cat);
 
-	var seccion = data222.productos.filter(general => general.categoria == cat)
-	var seccOk = seccion[0].produc
-	console.log(seccOk);
+      var seccion = data222.productos.filter(general => general.categoria == cat)
+      var seccOk = seccion[0].produc
+      console.log(seccOk);
 
-	var producto = seccOk.filter(prod => prod.id == id)
-	console.log(producto);
+      var producto = seccOk.filter(prod => prod.id == id)
+      console.log(producto);
 
-/* let imgPerfil = document.getElementById("imgPerfil")
-    imgPerfil.setAttribute("src", producto[0].imgPerfil)  */
-    
-
-    var nodeProduc = document.getElementById("img-carousel");
-    nodeProduc.innerHTML = ""
-    
-    let nodeImgProducto = document.createElement("DIV");
-    nodeImgProducto.classList.add("carousel-item");
-    nodeImgProducto.classList.add("img-responsiveA")
-	nodeImgProducto.classList.add("active");
-
-	let nodeImagenPrincipal = document.createElement("IMG");
-	nodeImagenPrincipal.classList.add("d-block");
-    nodeImagenPrincipal.classList.add("w-100");
-    nodeImagenPrincipal.classList.add("img-responsiveA")
-    nodeImagenPrincipal.setAttribute("src", producto[0].imgPerfil)
-
-	let nodeImgSec = document.createElement("DIV");
-	nodeImgSec.classList.add("carousel-item");
-
-/* 	nodeProduc.appendChild(nodeImgProducto)
-	nodeImgProducto.appendChild(nodeImagenPrincipal)
-	nodeProduc.appendChild(nodeImgSec) */
-
-	let nodeImagenCarr = document.createElement("IMG");
-	nodeImagenCarr.classList.add("d-block");
- /*    nodeImagenCarr.classList.add("w-100"); */
-    nodeImagenCarr.classList.add("img-responsiveA")
-    nodeImagenCarr.setAttribute("src", producto[0].imgGrande)
-
-    console.log( producto[0].imgVarias);
-    
-
- /*    producto[0].imgVarias.forEach(imgV => {
-
-        let nodeImagenCarr = document.createElement("IMG");
-        nodeImagenCarr.classList.add("d-block");
-        nodeImagenCarr.classList.add("w-100");
-        nodeImagenCarr.classList.add("img-responsiveA")
-        nodeImagenCarr.setAttribute("src",imgV)
-
-        nodeImgSec.appendChild(nodeImagenCarr)
-    })
- */
-
-	nodeProduc.appendChild(nodeImgProducto)
-	nodeImgProducto.appendChild(nodeImagenPrincipal)
-	nodeProduc.appendChild(nodeImgSec)
-	nodeImgSec.appendChild(nodeImagenCarr)
+      /* let imgPerfil = document.getElementById("imgPerfil")
+          imgPerfil.setAttribute("src", producto[0].imgPerfil)  */
 
 
+      var nodeProduc = document.getElementById("img-carousel");
+      nodeProduc.innerHTML = ""
 
-	let nombreProd = document.getElementById("nombreProducto")
-	nombreProd.innerHTML = producto[0].nombre
+      let nodeImgProducto = document.createElement("DIV");
+      nodeImgProducto.classList.add("carousel-item");
+      nodeImgProducto.classList.add("img-responsiveA")
+      nodeImgProducto.classList.add("active");
 
-	let descripcion = document.getElementById("desProd")
-	descripcion.innerHTML = producto[0].descripcion
+      let nodeImagenPrincipal = document.createElement("IMG");
+      nodeImagenPrincipal.classList.add("d-block");
+      nodeImagenPrincipal.classList.add("w-100");
+      nodeImagenPrincipal.classList.add("img-responsiveA")
+      nodeImagenPrincipal.setAttribute("src", producto[0].imgPerfil)
+/*
+      let nodeImgSec = document.createElement("DIV");
+      nodeImgSec.classList.add("carousel-item");*/
 
-	let listaIngredi = document.getElementById("ingreProd");
-	listaIngredi.innerHTML = ""
-	producto[0].ingredientes.forEach(ingr => {
-		let itemLi = document.createElement("LI")
-		let txtItem = document.createTextNode(ingr)
-		listaIngredi.appendChild(itemLi)
-		itemLi.appendChild(txtItem);
-	}) //Fin forEach ingredientes
-
-	if (producto[0].versiones != null) {
-		let listaVersion = document.getElementById("versionProd")
-		listaVersion.innerHTML = ""
-	
-		let itemH = document.createElement("H3")
-		let txtItemH = document.createTextNode("Versiones")
-	
-		let itemUl = document.createElement("UL")
-		itemUl.classList.add("d-flex");
-		itemUl.classList.add("justify-content-around")
-        itemUl.classList.add("versiones")
-		producto[0].versiones.forEach(vers => {
-	
-			let itemLi = document.createElement("LI")
-			let txtItem = document.createTextNode(vers)
-	
-			listaVersion.appendChild(itemH);
-			itemH.appendChild(txtItemH);
-	
-			listaVersion.appendChild(itemUl);
-			itemUl.appendChild(itemLi);
-			itemLi.appendChild(txtItem);
-	
-		})   //fin forEach versiones
- 	}  //fin If versiones
+      /* 	nodeProduc.appendChild(nodeImgProducto)
+      	nodeImgProducto.appendChild(nodeImagenPrincipal)
+      	nodeProduc.appendChild(nodeImgSec) */
 
 
-	 let contenido = document.getElementById("contNetoProd")
-	 contenido.innerHTML = ""
-producto[0].contenidoNeto.forEach(cont => {
-		 let itemC = document.createElement("LI")
-		 let txtItemC = document.createTextNode(cont)
-		 itemC.appendChild(txtItemC);
-		 contenido.appendChild(itemC);
-	 }) //fin forEach contenido Neto
-}
+/*
+      let nodeImagenCarr = document.createElement("IMG");
+      nodeImagenCarr.classList.add("d-block"); */
+      /*    nodeImagenCarr.classList.add("w-100"); */
+     /* nodeImagenCarr.classList.add("img-responsiveA")
+      nodeImagenCarr.setAttribute("src", producto[0].imgGrande) */
+
+
+      producto[0].imgVarias.forEach(img => {
+          let nodeImgSec = document.createElement("DIV");
+      nodeImgSec.classList.add("carousel-item");
+          let nodeImagenCarr = document.createElement("IMG");
+          nodeImagenCarr.classList.add("d-block");
+          nodeImagenCarr.classList.add("img-responsiveA")
+          nodeImagenCarr.classList.add("carousel-item");
+          nodeImagenCarr.setAttribute("src", img)
+        
+          nodeProduc.appendChild(nodeImgSec);
+          nodeImgSec.appendChild(nodeImagenCarr)
+      })
+      console.log(producto[0].imgVarias);
+
+      
+
+
+      /*    producto[0].imgVarias.forEach(imgV => {
+
+             let nodeImagenCarr = document.createElement("IMG");
+             nodeImagenCarr.classList.add("d-block");
+             nodeImagenCarr.classList.add("w-100");
+             nodeImagenCarr.classList.add("img-responsiveA")
+             nodeImagenCarr.setAttribute("src",imgV)
+
+             nodeImgSec.appendChild(nodeImagenCarr)
+         })
+      */
+
+// creando los a del carrusel
+var aPrev = document.createElement("A");
+aPrev.classList.add("carousel-control-prev")
+aPrev.setAttribute("href", "#carouselImgPrdocutos")
+aPrev.setAttribute("role", "button")
+aPrev.setAttribute("data-slide", "prev")
+var span1Prev = document.createElement("SPAN")
+span1Prev.classList.add("carousel-control-prev-icon")
+span1Prev.setAttribute("aria-hidden", "true")
+var span2Prev = document.createElement("SPAN")
+span2Prev.classList.add("sr-only")
+var textSpan2prev = document.createTextNode("Previous")
+span2Prev.appendChild(textSpan2prev)
+span2Prev.setAttribute("aria-hidden", "true")
+
+aPrev.appendChild(span1Prev)
+aPrev.appendChild(span2Prev)
+
+var aNext = document.createElement("A");
+aNext.classList.add("carousel-control-next")
+aNext.setAttribute("href", "#carouselImgPrdocutos")
+aNext.setAttribute("role", "button")
+aNext.setAttribute("data-slide", "next")
+var span1Next = document.createElement("SPAN")
+span1Next.classList.add("carousel-control-next-icon")
+span1Next.setAttribute("aria-hidden", "true")
+var span2Next = document.createElement("SPAN")
+span2Next.classList.add("sr-only")
+var textSpan2Next = document.createTextNode("Next")
+span2Next.appendChild(textSpan2Next)
+span2Next.setAttribute("aria-hidden", "true")
+
+aNext.appendChild(span1Next)
+aNext.appendChild(span2Next)
+
+
+
+      nodeProduc.appendChild(nodeImgProducto)
+      nodeProduc.appendChild(aPrev)
+      nodeProduc.appendChild(aNext)
+
+    /*  nodeProduc=+`<a class="carousel-control-prev" href="#carouselImgPrdocutos" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselImgPrdocutos" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>`*/
+
+      nodeImgProducto.appendChild(nodeImagenPrincipal)
+
+    //   nodeProduc.appendChild(nodeImgSec)
+    //  nodeImgSec.appendChild(nodeImagenCarr)
+
+
+
+      let nombreProd = document.getElementById("nombreProducto")
+      nombreProd.innerHTML = producto[0].nombre
+
+      let descripcion = document.getElementById("desProd")
+      descripcion.innerHTML = producto[0].descripcion
+
+      let listaIngredi = document.getElementById("ingreProd");
+      listaIngredi.innerHTML = ""
+      producto[0].ingredientes.forEach(ingr => {
+          let itemLi = document.createElement("LI")
+          let txtItem = document.createTextNode(ingr)
+          listaIngredi.appendChild(itemLi)
+          itemLi.appendChild(txtItem);
+      }) //Fin forEach ingredientes
+
+      if (producto[0].versiones != null) {
+          let listaVersion = document.getElementById("versionProd")
+          listaVersion.innerHTML = ""
+
+          let itemH = document.createElement("H3")
+          let txtItemH = document.createTextNode("Versiones")
+
+          let itemUl = document.createElement("UL")
+          itemUl.classList.add("d-flex");
+          itemUl.classList.add("justify-content-around")
+          itemUl.classList.add("versiones")
+          producto[0].versiones.forEach(vers => {
+
+              let itemLi = document.createElement("LI")
+              let txtItem = document.createTextNode(vers)
+
+              listaVersion.appendChild(itemH);
+              itemH.appendChild(txtItemH);
+
+              listaVersion.appendChild(itemUl);
+              itemUl.appendChild(itemLi);
+              itemLi.appendChild(txtItem);
+
+          }) //fin forEach versiones
+      } //fin If versiones
+
+
+      let contenido = document.getElementById("contNetoProd")
+      contenido.innerHTML = ""
+      producto[0].contenidoNeto.forEach(cont => {
+          let itemC = document.createElement("LI")
+          let txtItemC = document.createTextNode(cont)
+          itemC.appendChild(txtItemC);
+          contenido.appendChild(itemC);
+      }) //fin forEach contenido Neto
+  }
 
   /* =============== GALERIA =============== */
 
@@ -435,21 +502,21 @@ producto[0].contenidoNeto.forEach(cont => {
 
       array.forEach(gal => {
 
-         let nodeG = document.createElement("DIV");
-         nodeG.classList.add("item"); 
+          let nodeG = document.createElement("DIV");
+          nodeG.classList.add("item");
 
           let nodeA = document.createElement("A");
           nodeA.classList.add("lightbox");
           nodeA.setAttribute("data-fancybox", "gallery")
-          nodeA.setAttribute("href", gal.fotos) 
+          nodeA.setAttribute("href", gal.fotos)
 
           let nodeI = document.createElement("IMG");
           nodeI.classList.add("img-fluid");
           nodeI.setAttribute("src", gal.fotos)
 
           nodeGaleria.appendChild(nodeG);
-      nodeG.appendChild(nodeA);
-              nodeA.appendChild(nodeI);
+          nodeG.appendChild(nodeA);
+          nodeA.appendChild(nodeI);
       })
   }
   galeria(data222.imagenes);
@@ -492,10 +559,10 @@ producto[0].contenidoNeto.forEach(cont => {
 
   $("#mensajeEnviado").hide();
 
-/* $("#btnEnviar").click(function () {
-    $("#mensajeEnviado").show();
+  /* $("#btnEnviar").click(function () {
+      $("#mensajeEnviado").show();
 
-}) */
+  }) */
 
   const form = document.getElementById('contactForm'); // Obtenemos la referencia al formulario
 
@@ -522,7 +589,7 @@ producto[0].contenidoNeto.forEach(cont => {
   function saveContactForm(data) {
       firebase.database().ref('contact').push(data) // Hacemos referencia al método database de el SDK y hacemos referencia el nombre del objeto que contendrá nuestros registros y empujamos los nuevos envios de datos
           .then(function () {
-            $("#mensajeEnviado").show();
+              $("#mensajeEnviado").show();
               alert('mensaje guardado'); // Si la petición es correcta y almaceno los datos mostramos un mensaje al usuario.
           })
           .catch(function () {
