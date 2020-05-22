@@ -248,6 +248,7 @@
 
               let nodeP5 = document.createElement("H3");
               nodeP5 = document.createTextNode(prod2.nombre)
+              
 
               nodeProduc.appendChild(nodeP);
               nodeP.appendChild(nodeP1)
