@@ -356,7 +356,7 @@
           let nodeImagenCarr = document.createElement("IMG");
           nodeImagenCarr.classList.add("d-block");
           nodeImagenCarr.classList.add("img-responsiveA")
-          nodeImagenCarr.classList.add("carousel-item");
+          
           nodeImagenCarr.setAttribute("src", img)
         
           nodeProduc.appendChild(nodeImgSec);
