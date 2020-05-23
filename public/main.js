@@ -31,7 +31,7 @@
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
 
-      
+
 
 
       contacto.style.display = "none"
@@ -41,9 +41,9 @@
 
   }
   $('.pictures').tjGallery({
-    /*       selector: '.item',
-          margin: 10 */
-});
+      /*       selector: '.item',
+            margin: 10 */
+  });
 
   productosNav = data222.productos;
   var nodeProductos = document.getElementById("productosNavBar");
@@ -248,7 +248,7 @@
 
               let nodeP5 = document.createElement("H3");
               nodeP5 = document.createTextNode(prod2.nombre)
-              
+
 
               nodeProduc.appendChild(nodeP);
               nodeP.appendChild(nodeP1)
@@ -387,10 +387,10 @@
       nodeProduc.appendChild(aPrev)
       nodeProduc.appendChild(aNext)
 
-      
+
       nodeImgProducto.appendChild(nodeImagenPrincipal)
 
-     
+
       let nombreProd = document.getElementById("nombreProducto")
       nombreProd.innerHTML = producto[0].nombre
 
@@ -448,7 +448,7 @@
 
   function galeria(array) {
       var nodeGaleria = document.getElementById("imgGaleria");
-     
+
       array.forEach(gal => {
 
           let nodeG = document.createElement("DIV");
@@ -491,7 +491,7 @@
                   aux.push(element);
               }
               console.log(aux);
-              
+
           });
 
 
@@ -538,3 +538,45 @@
               alert('mensaje No guardado'); // En caso de ocurrir un error le mostramos al usuario que ocurrió un error.
           });
   };
+
+  //   TRAE TESTIMONIALES
+
+  
+      var testiNotas = data222.testimoniales
+      var testi = document.getElementById("testimo")
+console.log(testiNotas);
+console.log(testi);
+
+
+      testiNotas.forEach(nota => {
+          console.log(nota.autor)
+
+var divPpal = document.createElement("DIV")
+divPpal.classList.add("carousel-item")
+divPpal.classList.add("mb-5")
+divPpal.setAttribute("id", nota.id)
+testi.appendChild(divPpal)
+if (nota.id == 1){
+    divPpal.classList.add("active")
+}
+
+var blockquote = document.createElement("blockquote")
+var pBlock = document.createElement("P")
+var textPBlock = document.createTextNode('"'+ nota.testimonio+ '"')
+pBlock.appendChild(textPBlock)
+blockquote.appendChild(pBlock)
+divPpal.appendChild(blockquote)
+
+var divAutor = document.createElement("DIV")
+divAutor.classList.add("d-flex")
+divAutor.classList.add("align-items-center")
+divAutor.classList.add("justify-content-center")
+var pAutor = document.createElement("P")
+var pAutorText = document.createTextNode(nota.autor)
+pAutor.appendChild(pAutorText)
+divAutor.appendChild(pAutor)
+divPpal.appendChild(divAutor)
+
+
+      })
+  
