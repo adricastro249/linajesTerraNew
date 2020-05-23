@@ -1,21 +1,21 @@
-@font-face{
+@font-face {
   font-family: "Savoye";
   src: url(./style/tipografia/Savoye\ LET.ttc) format("truetype");
-     src: url(./style/tipografia/Savoye\ Regular.ttf) format("truetype");
+  src: url(./style/tipografia/Savoye\ Regular.ttf) format("truetype");
 }
 
 
 
 body {
-/*   background: #ECEFF1; */
-/* background: red !important; */
+  /*   background: #ECEFF1; */
+  /* background: red !important; */
   color: rgba(0, 0, 0, 0.87);
-  font-family:"Montserrat", Arial, sans-serif !important;
+  font-family: "Montserrat", Arial, sans-serif !important;
   margin: 0;
   padding: 0;
-background-image: url(./images/fondototal.png) !important;
-background-size: 20% !important;
-background-repeat: no-repeat;
+  background-image: url(./images/fondototal.png) !important;
+  background-size: 20% !important;
+  background-repeat: no-repeat;
 
 
 
@@ -25,11 +25,19 @@ background-repeat: no-repeat;
   display: block;
 }
 
-#about, #productosGeneral, #productosDetalles, #galeria, #contacto{
+#about,
+#productosGeneral,
+#productosDetalles,
+#galeria,
+#contacto {
   display: none;
 }
 
-.about, .productosGeneral, .productosDetalles, .galeria, .contacto{
+.about,
+.productosGeneral,
+.productosDetalles,
+.galeria,
+.contacto {
   margin-top: 10%;
 }
 
@@ -39,27 +47,31 @@ background-repeat: no-repeat;
 /* NAVBAR */
 
 
-.navbar{
+.navbar {
   position: fixed !important;
 }
 
-nav, .dropdown-menu {
+nav,
+.dropdown-menu {
   background: #f7e6cb !important;
 }
 
 
-.dropdown-item{
+.dropdown-item {
   background: #f7e6cb !important;
 
 }
 
-.dropdown-item:hover, .dropdown-item:active, .nav-item:active{
-color: #000000;
-font-weight: bold !important;
+.dropdown-item:hover,
+.dropdown-item:active,
+.nav-item:active {
+  color: #000000;
+  font-weight: bold !important;
 }
 
 
-.nav-link:hover, .nav-link:active{
+.nav-link:hover,
+.nav-link:active {
   color: #000000 !important;
 }
 
@@ -68,34 +80,34 @@ font-weight: bold !important;
   width: 33.33%;
 }
 
-.redes{
+.redes {
   margin-left: 34% !important;
 }
 
 
 .redes ul li {
-text-decoration: none  !important;
-list-style: none;
-font-size: large !important;
+  text-decoration: none !important;
+  list-style: none;
+  font-size: large !important;
 }
 
-.fab{
-  color:#cabcab !important;
+.fab {
+  color: #cabcab !important;
   font-weight: bold;
 }
 
-.fab:hover{
+.fab:hover {
   color: black !important;
 }
 
 
-.imgHeader{
+.imgHeader {
   margin-top: 1%;
   width: 300px !important;
 }
 
 
-.navFont  {
+.navFont {
   margin: 0;
   font-size: small;
   padding: 0;
@@ -107,13 +119,13 @@ font-size: large !important;
   right: 0;
   padding: 25px 0;
   z-index: 1;
-/*   background: #fcf1e3; */
-background-image: url(./images/navbar.png) !important;
-background-size: 50% !important; 
+  /*   background: #fcf1e3; */
+  background-image: url(./images/navbar.png) !important;
+  background-size: 50% !important;
 }
 
-.logoNav{
-  width: 16%; 
+.logoNav {
+  width: 16%;
   margin-top: 3%;
   margin-left: 3%;
 }
@@ -122,9 +134,9 @@ background-size: 50% !important;
 
 
 
-button:focus{
-/*   text-decoration: none !important; */
-outline: none !important;
+button:focus {
+  /*   text-decoration: none !important; */
+  outline: none !important;
 }
 
 /* HOME */
@@ -136,20 +148,22 @@ outline: none !important;
 /* HEADER */
 
 
-.linHeder{
+.linHeder {
   margin-top: 7%;
 }
 
-.frase1, .frase2{
+.frase1,
+.frase2 {
   font-family: "Savoye";
   font-size: 50px !important;
 }
 
-.title-card{
+.title-card {
   margin-top: 20%;
   margin-left: -70% !important;
 
 }
+
 .card-bg {
   width: 45%;
   height: 45%;
@@ -157,13 +171,13 @@ outline: none !important;
   left: 60px;
   margin: 0 auto;
 
-} 
+}
 
 .div-img {
   display: block;
-  margin-left: 15% ;
+  margin-left: 15%;
   margin-right: auto;
-} 
+}
 
 .div-img .img {
   display: block;
@@ -199,6 +213,7 @@ outline: none !important;
   -ms-transition: all 600ms ease-in;
   -o-transition: all 600ms ease-in;
 }
+
 .div-img .overlay {
   position: absolute;
   z-index: -1;
@@ -206,10 +221,10 @@ outline: none !important;
   left: 0;
   width: 100%;
   height: 600%;
-  background: rgb(255,237,229);
-  background: linear-gradient(0deg, rgba(255,237,229,0.01) 0%, rgba(247,211,195,1) 100%);
+  background: rgb(255, 237, 229);
+  background: linear-gradient(0deg, rgba(255, 237, 229, 0.01) 0%, rgba(247, 211, 195, 1) 100%);
   border: none !important;
-/*   opacity: 0; */
+  /*   opacity: 0; */
   transition: opacity 190ms;
   -webkit-transition: opacity 190ms ease-in-out;
   -moz-transition: opacity 190ms ease-in-out;
@@ -218,7 +233,7 @@ outline: none !important;
 }
 
 
-.btn-card{
+.btn-card {
   z-index: 1;
 }
 
@@ -238,19 +253,20 @@ outline: none !important;
   opacity: 1;
 }
 
-.testimonios{
+.testimonios {
   margin-top: 5%;
   margin-bottom: 3.8%;
 }
 
-.notasTesti, .notasTestiAutor{
+.notasTesti,
+.notasTestiAutor {
   margin-bottom: 0% !important;
 
 }
 
 
 /* ABOUT */
-#tituloAbout{
+#tituloAbout {
   font-family: "Savoye";
   font-size: xx-large;
   font-weight: bold;
@@ -285,48 +301,50 @@ outline: none !important;
   width: 100%;
   margin-bottom: 30px;
   transition: 0.2s ease-in-out;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 
-.tz-gallery .lightbox img:hover{
+.tz-gallery .lightbox img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .tz-gallery img {
   border-radius: 4px;
 }
 
-.pictures{
+.pictures {
   font-size: 0px;
 }
-.pictures .item{
-  position:relative;
-  display:inline-block;
+
+.pictures .item {
+  position: relative;
+  display: inline-block;
 }
-.pictures .item img{
-  position:relative;
+
+.pictures .item img {
+  position: relative;
   z-index: 11;
 }
 
 
 /* SECCION PRODUCTOS GENERAL */
 
-.titProd{
+.titProd {
   color: #000000;
   text-decoration: none;
   font-family: "Savoye";
   font-size: xx-large;
   font-weight: bold;
-  }
-
-.filtros{
-width: 450px;
-margin-left: 39%;
 }
 
-.labelFiltros{
+.filtros {
+  width: 450px;
+  margin-left: 39%;
+}
+
+.labelFiltros {
   font-family: "Savoye";
   font-size: 4rem;
 }
@@ -335,14 +353,14 @@ margin-left: 39%;
 
 /* Filtros menú izq*/
 
-.labelFiltros{
+.labelFiltros {
   position: relative;
-font-weight: initial;
-font-size: 18px;
-padding: 2px;
+  font-weight: initial;
+  font-size: 18px;
+  padding: 2px;
 }
 
-.labelFiltros:hover{
+.labelFiltros:hover {
   font-weight: initial;
   color: #00C4C1;
   cursor: pointer;
@@ -350,11 +368,11 @@ padding: 2px;
 
 input[type="checkbox"] {
   cursor: pointer;
-} 
+}
 
 
 /* Escnder el checkbox original */
-.container  .check {
+.container .check {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -374,12 +392,12 @@ input[type="checkbox"] {
 }
 
 /* Hover del input */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #00C4C1;
 }
 
 /* Fondo del input cuando se selecciona */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   border: #00C4C1;
   background-color: #00C4C1;
 }
@@ -392,14 +410,14 @@ input[type="checkbox"] {
 }
 
 
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
 
 .container .checkmark:after {
   left: 0.35rem;
-  top:0.02rem;
+  top: 0.02rem;
   width: 6px;
   height: 14px;
   border: solid #FFFFFF;
@@ -415,17 +433,19 @@ input[type="checkbox"] {
 .dropdown-submenu {
   position: relative;
   font-size: small !important;
-  
+
 }
 
 .dropdown-submenu a::after {
   transform: rotate(-90deg);
   position: absolute;
-/*   right: 6px; */
+  /*   right: 6px; */
   top: 10px;
 }
 
-#faciales, #corporales, #capilares{
+#faciales,
+#corporales,
+#capilares {
   font-size: small !important;
 }
 
@@ -443,11 +463,11 @@ input[type="checkbox"] {
 /* DETALLES PRODUCTOS */
 
 .ingreProd {
-  column-count: 2 ;
-} 
+  column-count: 2;
+}
 
 #nombreProducto {
-  font-family: "Savoye" ;
+  font-family: "Savoye";
   font-size: 3rem;
   font-weight: bold;
 }
@@ -469,35 +489,37 @@ input[type="checkbox"] {
 
 
 .home h1 {
-  font-size: x-large ;
+  font-size: x-large;
 }
 
 .home h2 {
-  font-size: large ;
+  font-size: large;
 }
+
 .home h3 {
-  font-size: medium 
+  font-size: medium
 }
+
 .home p {
   font-size: smaller !important
 }
 
-.fhHeader-bg-Card{
-  background: rgb(252,241,227);
-  background: linear-gradient(0deg, rgba(252,241,227,1) 0%, rgba(247,211,195,1) 90%);
+.fhHeader-bg-Card {
+  background: rgb(252, 241, 227);
+  background: linear-gradient(0deg, rgba(252, 241, 227, 1) 0%, rgba(247, 211, 195, 1) 90%);
   border: none !important;
   height: 80%;
 
 }
 
-.tituloCard{
+.tituloCard {
   font-weight: bold !important;
-/*   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; */
-font-family: "Savoye";
-/*   text-transform: capitalize; */
+  /*   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; */
+  font-family: "Savoye";
+  /*   text-transform: capitalize; */
   font-size: 2.2rem !important;
-margin-left: -8%;
-width: 100%;
+  margin-left: -8%;
+  width: 100%;
 }
 
 
@@ -506,21 +528,27 @@ width: 100%;
 /* CONTACTO */
 
 
-.subtitulo-seccion{
+.subtitulo-seccion {
   font-size: large;
 }
 
-.fh5co-contact-info ul li a{
- color:#cabcab !important;
+.fh5co-contact-info ul li a {
+  color: #cabcab !important;
 }
 
 
 footer {
   position: fixed;
-/*   left: 0;
+  /*   left: 0;
   right: 0; */
   bottom: 0;
   width: 100%;
   text-align: center;
+  height: 2%;
 }
 
+.firma {
+  font-family: "savoye";
+  text-decoration-color: none !important;
+  font-size: medium;
+}
