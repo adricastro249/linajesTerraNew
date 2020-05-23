@@ -243,6 +243,12 @@ outline: none !important;
   margin-bottom: 3.8%;
 }
 
+.notasTesti, .notasTestiAutor{
+  margin-bottom: 0% !important;
+
+}
+
+
 /* ABOUT */
 #tituloAbout{
   font-family: "Savoye";

@@ -541,42 +541,39 @@
 
   //   TRAE TESTIMONIALES
 
-  
-      var testiNotas = data222.testimoniales
-      var testi = document.getElementById("testimo")
-console.log(testiNotas);
-console.log(testi);
+
+  var testiNotas = data222.testimoniales
+  var testi = document.getElementById("testimo")
+
+  testiNotas.forEach(nota => {
+      console.log(nota.autor)
+
+      var divPpal = document.createElement("DIV")
+      divPpal.classList.add("carousel-item")
+      divPpal.classList.add("mb-5")
+      divPpal.classList.add("notasTesti")
+      testi.appendChild(divPpal)
+      if (nota.id == 1) {
+          divPpal.classList.add("active")
+      }
+
+      var blockquote = document.createElement("blockquote")
+      var pBlock = document.createElement("P")
+      var textPBlock = document.createTextNode('"' + nota.testimonio + '"')
+      pBlock.appendChild(textPBlock)
+      blockquote.appendChild(pBlock)
+      divPpal.appendChild(blockquote)
+
+      var divAutor = document.createElement("DIV")
+      divAutor.classList.add("d-flex")
+      divAutor.classList.add("notasTestiAutor")
+      divAutor.classList.add("align-items-center")
+      divAutor.classList.add("justify-content-center")
+      var pAutor = document.createElement("P")
+      var pAutorText = document.createTextNode(nota.autor)
+      pAutor.appendChild(pAutorText)
+      divAutor.appendChild(pAutor)
+      divPpal.appendChild(divAutor)
 
 
-      testiNotas.forEach(nota => {
-          console.log(nota.autor)
-
-var divPpal = document.createElement("DIV")
-divPpal.classList.add("carousel-item")
-divPpal.classList.add("mb-5")
-divPpal.setAttribute("id", nota.id)
-testi.appendChild(divPpal)
-if (nota.id == 1){
-    divPpal.classList.add("active")
-}
-
-var blockquote = document.createElement("blockquote")
-var pBlock = document.createElement("P")
-var textPBlock = document.createTextNode('"'+ nota.testimonio+ '"')
-pBlock.appendChild(textPBlock)
-blockquote.appendChild(pBlock)
-divPpal.appendChild(blockquote)
-
-var divAutor = document.createElement("DIV")
-divAutor.classList.add("d-flex")
-divAutor.classList.add("align-items-center")
-divAutor.classList.add("justify-content-center")
-var pAutor = document.createElement("P")
-var pAutorText = document.createTextNode(nota.autor)
-pAutor.appendChild(pAutorText)
-divAutor.appendChild(pAutor)
-divPpal.appendChild(divAutor)
-
-
-      })
-  
+  })
