@@ -548,10 +548,17 @@ footer {
 }
 #pFooter{
   margin-top: 0%;
+  margin-bottom: -0.7rem;
 }
 
 .firma {
   font-family: "savoye";
   text-decoration-color: none !important;
   font-size: medium;
+}
+
+.firma a{
+
+  color: rgba(105, 40, 139) !important;
+
 }

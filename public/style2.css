@@ -423,7 +423,7 @@
   #fh5co-work2,
   #fh5co-about,
   #fh5co-contact,
-  #fh5co-footer, #fh5co-galeria {
+  #fh5co-galeria {
     padding-top: 2.5em;
     padding-left: 4em;
     padding-right: 4em;
@@ -433,6 +433,13 @@
     padding-bottom: 6em;
   }
 
+
+  #fh5co-footer{
+    padding-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    clear: both;
+  }
 
   @media screen and (max-width: 768px) {
     #fh5co-started,
