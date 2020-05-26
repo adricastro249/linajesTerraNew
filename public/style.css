@@ -253,16 +253,6 @@ button:focus {
   opacity: 1;
 }
 
-.testimonios {
-  margin-top: 5%;
-  margin-bottom: 3.8%;
-}
-
-.notasTesti,
-.notasTestiAutor {
-  margin-bottom: 0% !important;
-
-}
 
 
 /* ABOUT */
@@ -291,6 +281,21 @@ button:focus {
   bottom: -90px;
   right: -90px;
   background: #f8f9fa;
+}
+
+.testimonios {
+  margin-top: 5%;
+  margin-bottom: 3.8%;
+}
+
+.notasTesti{
+  margin-bottom: 0% !important;
+}
+
+
+.notasTesti blockquote p {
+  width: 50%;
+  margin-left: 25%;
 }
 
 

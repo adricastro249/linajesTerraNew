@@ -237,67 +237,73 @@ var data222 = {
             "img": "imagen1",
             "id": 1,
             "categoria": "ferias",
-            "fotos": "images/ferias/feria1.jpeg"
+            "fotos": "images/ferias/feria1.png"
         },
         {
             "img": "imagen2",
             "id": 2,
             "categoria": "ferias",
-            "fotos": "images/ferias/feria2.jpeg"
+            "fotos": "images/ferias/feria2.png"
         },
         {
             "img": "imagen3",
             "id": 3,
             "categoria": "ferias",
-            "fotos": "images/ferias/feria3.jpeg"
+            "fotos": "images/ferias/feria3.png"
         },
         {
             "img": "imagen4",
             "id": 4,
             "categoria": "kits",
-            "fotos": "images/Kits/kitCapilar.jpeg"
+            "fotos": "images/Kits/kitCapilar.png"
         },
         {
             "img": "imagen5",
             "id": 5,
             "categoria": "kits",
-            "fotos": "images/Kits/kitCorporal.jpeg"
+            "fotos": "images/Kits/kitCorporal.png"
         },
         {
             "img": "imagen6",
             "id": 6,
             "categoria": "kits",
-            "fotos": "images/Kits/kitCorporal2.jpeg"
+            "fotos": "images/Kits/kitCorporal2.png"
         },
         {
             "img": "imagen7",
             "id": 7,
             "categoria": "kits",
-            "fotos": "images/Kits/kitFacial.jpeg"
+            "fotos": "images/Kits/kitFacial.png"
         },
         {
             "img": "imagen8",
             "id": 8,
             "categoria": "kits",
-            "fotos": "images/Kits/kitFacial2.jpeg"
+            "fotos": "images/Kits/kitFacial2.png"
         },
         {
             "img": "imagen9",
             "id": 9,
             "categoria": "ingredientes",
-            "fotos": "images/Ingredientes/cacao1.jpg"
+            "fotos": "images/Ingredientes/cacao1.png"
         },
         {
             "img": "imagen10",
             "id": 10,
             "categoria": "ingredientes",
-            "fotos": "images/Ingredientes/cacao2.jpg"
+            "fotos": "images/Ingredientes/cacao2.png"
         },
-        {
+        {      
             "img": "imagen11",
             "id": 11,
-            "categoria": "ingredientes",
-            "fotos": "images/Ingredientes/cacao3.jpg"
+            "categoria": "combos",
+            "fotos": "images/Combo/combo1.png"
+        },
+        {      
+            "img": "imagen12",
+            "id": 12,
+            "categoria": "combos",
+            "fotos": "images/Combo/combo2.png"
         }
     ],
     "testimoniales": [{
@@ -325,7 +331,7 @@ var data222 = {
             "testimonio": "Estoy amando el desodorante que me mandaste, es un espectáculo, sobretodo porque sudo haciendo la práctica y dando clases y sigo oliendo rico. Bueno, tambien amo el serum, la bomba capilar, los óleos. ",
         },
         {
-            "id": 5,  
+            "id": 5,
             "categoria": "testimonial",
             "autor": "Paola Romero",
             "testimonio": "Despues de estar usando el serum facial noto menos reseca la piel debajo de los ojos",

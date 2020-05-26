@@ -452,6 +452,8 @@
       array.forEach(gal => {
 
           let nodeG = document.createElement("DIV");
+          nodeG.classList.add("col-sm-6");
+          nodeG.classList.add("col-md-4");
           nodeG.classList.add("item");
 
           let nodeA = document.createElement("A");
