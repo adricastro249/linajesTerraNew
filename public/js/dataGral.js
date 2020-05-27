@@ -274,12 +274,12 @@ var data222 = {
             "categoria": "kits",
             "fotos": "style/images/Kits/kitFacial.png"
         },
-        {
+        /*{
             "img": "imagen8",
             "id": 8,
             "categoria": "kits",
             "fotos": "style/images/Kits/kitFacial2.png"
-        },
+        },*/
         {
             "img": "imagen9",
             "id": 9,
