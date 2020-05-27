@@ -402,7 +402,7 @@
   
   
   .fhHeader-bg-section{
- background-image: url(/public/style/images/header/fondoLinajes.png);
+    background-image: url("../images/header/fondoLinajes.png");
   background-size: 100%;
   background-repeat: no-repeat;
   }
