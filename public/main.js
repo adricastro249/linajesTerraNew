@@ -534,11 +534,21 @@
       firebase.database().ref('contact').push(data) // Hacemos referencia al método database de el SDK y hacemos referencia el nombre del objeto que contendrá nuestros registros y empujamos los nuevos envios de datos
           .then(function () {
               $("#mensajeEnviado").show();
-              alert('mensaje guardado'); // Si la petición es correcta y almaceno los datos mostramos un mensaje al usuario.
-          })
+              swal({
+                title: "¡Muy bien!",
+                text: "Mensaje enviado",
+                icon: "success",
+                button: "Aceptar",
+              });
+     })
           .catch(function () {
-              alert('mensaje No guardado'); // En caso de ocurrir un error le mostramos al usuario que ocurrió un error.
-          });
+
+            swal({
+                title: "¡Error!",
+                text: "Mensaje no enviado, intenta de nuevo",
+                icon: "warning",
+                button: "Aceptar",
+              });  });
   };
 
   //   TRAE TESTIMONIALES

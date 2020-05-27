@@ -541,6 +541,12 @@ input[type="checkbox"] {
   color: #cabcab !important;
 }
 
+.swal-button, .swal-button--confirm {
+  background-color: #cabcab !important;
+}
+
+/*FOOTER*/
+
 
 footer {
   position: fixed;
