@@ -9,7 +9,9 @@
   };
 
 
-  // MOSTRAR Y OCULTAR SECCIONES
+  /*--------------------------------------------------------------
+  # MOSTRAR Y OCULTAR SECCIONES
+  --------------------------------------------------------------*/
 
   var home = document.getElementById("home")
   var about = document.getElementById("about")
@@ -30,26 +32,23 @@
       productosGrl.style.display = "none"
       productosDetalles.style.display = "none"
       galeriaA.style.display = "none"
-
-
-
-
       contacto.style.display = "none"
       listaProductos(data222.productos);
       var muestra = section
       document.getElementById(muestra).style.display = "block";
 
   }
-  $('.pictures').tjGallery({
-      /*       selector: '.item',
-            margin: 10 */
-  });
+  $('.pictures').tjGallery({});
+
+
+  /*--------------------------------------------------------------
+# CREAR NAVBAR DATA
+--------------------------------------------------------------*/
 
   productosNav = data222.productos;
   var nodeProductos = document.getElementById("productosNavBar");
 
   productosNav.forEach(prodNav => {
-
       let nodeP = document.createElement("LI");
       nodeP.classList.add("dropdown-submenu");
 
@@ -85,7 +84,9 @@
 
   });
 
-  /* SUB MENU */
+  /*--------------------------------------------------------------
+  # SUB-MENU
+  --------------------------------------------------------------*/
 
   $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
 
@@ -104,11 +105,10 @@
   });
 
 
+  /*--------------------------------------------------------------
+  # TARJETAS INDEX
+  --------------------------------------------------------------*/
 
-
-  /* =============== HOME ===============  */
-
-  /* TARJETAS INDEX */
   var nodeTjtIndex = document.getElementById("seccProductos");
 
   var tarjetas = data222.productos
@@ -162,7 +162,6 @@
       nodeT8.setAttribute("title", tarj.categoria)
       nodeT8a = document.createTextNode("Más")
 
-
       nodeTjtIndex.appendChild(nodeT);
       nodeT.appendChild(nodeT0);
       nodeT0.appendChild(nodeT1);
@@ -184,9 +183,6 @@
 
   for (let i = 0; i < botonesTarjetas.length; i++) {
       botonesTarjetas[i].addEventListener("click", function (e) {
-          //Aquí la función que se ejecutará cuando se dispare el evento
-          /*      console.log(e.target.title);  */ //En este caso alertaremos el texto del cliqueado
-
           $("#sFaci").prop('checked', false);
           $("#sCor").prop('checked', false);
           $("#sCapi").prop('checked', false);
@@ -206,14 +202,12 @@
                   document.getElementById("sAro").click();
                   break;
           }
-
-
-
       });
   }
 
-
-  /* =============== LLENA SECCION DE LISTA PRODUCTOS ===============  */
+  /*--------------------------------------------------------------
+  # LLENA SECCION DE LISTA PRODUCTOS
+  --------------------------------------------------------------*/
 
   function listaProductos(array) {
       var nodeProduc = document.getElementById("cuadroProductos");
@@ -231,9 +225,7 @@
               let nodeP1 = document.createElement("A");
               nodeP1.classList.add("work");
 
-
               nodeP1.setAttribute("onclick", `llenaProductDetails("` + prod2.categoria + `",` + prod2.id + `)`)
-
 
               let nodeP2 = document.createElement("DIV");
               nodeP2.classList.add("work-grid");
@@ -248,7 +240,6 @@
 
               let nodeP5 = document.createElement("H3");
               nodeP5 = document.createTextNode(prod2.nombre)
-
 
               nodeProduc.appendChild(nodeP);
               nodeP.appendChild(nodeP1)
@@ -267,28 +258,18 @@
   listaProductos(data222.productos); //mostrar todos los productos al iniciar la página
 
 
+  /*--------------------------------------------------------------
+  # FILTRO PRODUCTOS
+  --------------------------------------------------------------*/
 
-  /* =============== FILTRO PRODUCTOS =============== */
   var productos = data222.productos
-
-  /* HACER QUE ME DETECTE LOS CAMBIOS EN LOS FILTROS */
   document.getElementById('productosGeneral').addEventListener('change', function () {
-
       let aux = [];
-
-      /* FILTRA LOS ELEMENTOS SELECCIONADOS */
       var checkeds = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(element => element.value)
-
       productos.forEach(element => {
-
-          /*         console.log(element.categoria); */
-
           if (checkeds.includes(element.categoria)) {
-
               aux.push(element);
           }
-          /*       console.log(aux); */
-
       });
 
       document.getElementById("cuadroProductos").innerHTML = "";
@@ -299,21 +280,16 @@
   }) //cierra el addEventListener de los checkbox
 
 
-  /* =============== LLENA PAGINA DE DETALLE DE PRODUCTOS =============== */
-
+  /*--------------------------------------------------------------
+  # LLENA PAGINA DE DETALLE DE PRODUCTOS
+  --------------------------------------------------------------*/
   function llenaProductDetails(cat, id) {
-
-      console.log("esta entradno");
       showHide("productosDetalles")
-
-      console.log(cat);
 
       var seccion = data222.productos.filter(general => general.categoria == cat)
       var seccOk = seccion[0].produc
 
       var producto = seccOk.filter(prod => prod.id == id)
-      console.log(producto);
-
 
       var nodeProduc = document.getElementById("img-carousel");
       nodeProduc.innerHTML = ""
@@ -328,7 +304,6 @@
       nodeImagenPrincipal.classList.add("w-100");
       nodeImagenPrincipal.classList.add("img-responsiveA")
       nodeImagenPrincipal.setAttribute("src", producto[0].imgPerfil)
-
 
       producto[0].imgVarias.forEach(img => {
           let nodeImgSec = document.createElement("DIV");
@@ -345,8 +320,6 @@
       console.log(producto[0].imgVarias);
 
 
-
-      // creando los a del carrusel
       var aPrev = document.createElement("A");
       aPrev.classList.add("carousel-control-prev")
       aPrev.setAttribute("href", "#carouselImgPrdocutos")
@@ -381,15 +354,11 @@
       aNext.appendChild(span1Next)
       aNext.appendChild(span2Next)
 
-
-
       nodeProduc.appendChild(nodeImgProducto)
       nodeProduc.appendChild(aPrev)
       nodeProduc.appendChild(aNext)
 
-
       nodeImgProducto.appendChild(nodeImagenPrincipal)
-
 
       let nombreProd = document.getElementById("nombreProducto")
       nombreProd.innerHTML = producto[0].nombre
@@ -443,8 +412,9 @@
       }) //fin forEach contenido Neto
   }
 
-  /* =============== GALERIA =============== */
-
+  /*--------------------------------------------------------------
+  # GALERIA
+  --------------------------------------------------------------*/
 
   function galeria(array) {
       var nodeGaleria = document.getElementById("imgGaleria");
@@ -504,7 +474,9 @@
   }) //cierra el addEventListener de los checkbox
 
 
-  /* =============== CONTACTO =============== */
+  /*--------------------------------------------------------------
+  # CONTACTO
+  --------------------------------------------------------------*/
 
   $("#mensajeEnviado").hide();
 
@@ -535,25 +507,26 @@
           .then(function () {
               $("#mensajeEnviado").show();
               swal({
-                title: "¡Muy bien!",
-                text: "Mensaje enviado",
-                icon: "success",
-                button: "Aceptar",
+                  title: "¡Muy bien!",
+                  text: "Mensaje enviado",
+                  icon: "success",
+                  button: "Aceptar",
               });
-     })
+          })
           .catch(function () {
 
-            swal({
-                title: "¡Error!",
-                text: "Mensaje no enviado, intenta de nuevo",
-                icon: "warning",
-                button: "Aceptar",
-              });  });
+              swal({
+                  title: "¡Error!",
+                  text: "Mensaje no enviado, intenta de nuevo",
+                  icon: "warning",
+                  button: "Aceptar",
+              });
+          });
   };
 
-  //   TRAE TESTIMONIALES
-
-
+  /*--------------------------------------------------------------
+  # TESTIMONIALES
+  --------------------------------------------------------------*/
   var testiNotas = data222.testimoniales
   var testi = document.getElementById("testimo")
 
@@ -586,6 +559,4 @@
       pAutor.appendChild(pAutorText)
       divAutor.appendChild(pAutor)
       divPpal.appendChild(divAutor)
-
-
   })

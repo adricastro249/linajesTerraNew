@@ -1,24 +1,17 @@
 @font-face {
   font-family: "Savoye";
-  src: url(./style/tipografia/Savoye\ LET.ttc) format("truetype");
-  src: url(./style/tipografia/Savoye\ Regular.ttf) format("truetype");
+  src: url(/public/style/tipografia/Savoye\ LET.ttc) format("truetype");
+  src: url(/public/style/tipografia/Savoye\ Regular.ttf) format("truetype");
 }
 
-
-
 body {
-  /*   background: #ECEFF1; */
-  /* background: red !important; */
   color: rgba(0, 0, 0, 0.87);
   font-family: "Montserrat", Arial, sans-serif !important;
   margin: 0;
   padding: 0;
-  background-image: url(./images/fondototal.png) !important;
+  background-image: url(/public/style/images/fondototal.png) !important;
   background-size: 20% !important;
   background-repeat: no-repeat;
-
-
-
 }
 
 #home {
@@ -43,8 +36,9 @@ body {
 
 
 
-
-/* NAVBAR */
+/*--------------------------------------------------------------
+# NAVBAR
+--------------------------------------------------------------*/
 
 
 .navbar {
@@ -106,7 +100,6 @@ nav,
   width: 300px !important;
 }
 
-
 .navFont {
   margin: 0;
   font-size: small;
@@ -119,8 +112,7 @@ nav,
   right: 0;
   padding: 25px 0;
   z-index: 1;
-  /*   background: #fcf1e3; */
-  background-image: url(./images/navbar.png) !important;
+  background-image: url(/public/style/images/navbar.png) !important;
   background-size: 50% !important;
 }
 
@@ -130,28 +122,59 @@ nav,
   margin-left: 3%;
 }
 
-
-
-
-
 button:focus {
-  /*   text-decoration: none !important; */
   outline: none !important;
 }
 
-/* HOME */
 
-/* TARJETAS DE PRODUCTOS INDEX */
-
-
+/*--------------------------------------------------------------
+# HOME
+--------------------------------------------------------------*/
 
 /* HEADER */
-
 
 .linHeder {
   margin-top: 7%;
 }
 
+.logoHeader {
+  width: 50%;
+}
+
+.home h1 {
+  font-size: x-large;
+}
+
+.home h2 {
+  font-size: large;
+}
+
+.home h3 {
+  font-size: medium
+}
+
+.home p {
+  font-size: smaller !important
+}
+
+
+
+/* TARJETAS */
+
+.fhHeader-bg-Card {
+  background: rgb(252, 241, 227);
+  background: linear-gradient(0deg, rgba(252, 241, 227, 1) 0%, rgba(247, 211, 195, 1) 90%);
+  border: none !important;
+  height: 80%;
+}
+
+.tituloCard {
+  font-weight: bold !important;
+  font-family: "Savoye";
+  font-size: 2.2rem !important;
+  margin-left: -8%;
+  width: 100%;
+}
 .frase1,
 .frase2 {
   font-family: "Savoye";
@@ -224,7 +247,6 @@ button:focus {
   background: rgb(255, 237, 229);
   background: linear-gradient(0deg, rgba(255, 237, 229, 0.01) 0%, rgba(247, 211, 195, 1) 100%);
   border: none !important;
-  /*   opacity: 0; */
   transition: opacity 190ms;
   -webkit-transition: opacity 190ms ease-in-out;
   -moz-transition: opacity 190ms ease-in-out;
@@ -246,16 +268,14 @@ button:focus {
 }
 
 
-/* .div-img:hover .overlay {
-  opacity: 1;
-} */
 .div-img:hover .text {
   opacity: 1;
 }
 
 
-
-/* ABOUT */
+/*--------------------------------------------------------------
+# ABOUT
+--------------------------------------------------------------*/
 #tituloAbout {
   font-family: "Savoye";
   font-size: xx-large;
@@ -300,7 +320,9 @@ button:focus {
 
 
 
-/* SECCION GALERIA */
+/*--------------------------------------------------------------
+# GALERIA
+--------------------------------------------------------------*/
 
 #filtrosGaleria{
   margin-left: -30% !important;
@@ -338,7 +360,9 @@ button:focus {
 }
 
 
-/* SECCION PRODUCTOS GENERAL */
+/*--------------------------------------------------------------
+# SECCION PRODUCTO GENERAL
+--------------------------------------------------------------*/
 
 .titProd {
   color: #000000;
@@ -355,7 +379,6 @@ button:focus {
 
 .labelFiltros {
   font-family: "Savoye";
-/*   font-size: 4rem; */
 }
 
 
@@ -437,7 +460,9 @@ input[type="checkbox"] {
 }
 
 
-/* ============ SUBMENU ============ */
+/*--------------------------------------------------------------
+# SUBMENU
+--------------------------------------------------------------*/
 
 .dropdown-submenu {
   position: relative;
@@ -448,7 +473,6 @@ input[type="checkbox"] {
 .dropdown-submenu a::after {
   transform: rotate(-90deg);
   position: absolute;
-  /*   right: 6px; */
   top: 10px;
 }
 
@@ -469,7 +493,9 @@ input[type="checkbox"] {
   font-size: small !important;
 }
 
-/* DETALLES PRODUCTOS */
+/*--------------------------------------------------------------
+# DETALLE DE PRODUCTO
+--------------------------------------------------------------*/
 
 .ingreProd {
   column-count: 2;
@@ -488,53 +514,10 @@ input[type="checkbox"] {
 }
 
 
-/* CSS  HOME */
 
-
-.logoHeader {
-  width: 50%;
-
-}
-
-
-.home h1 {
-  font-size: x-large;
-}
-
-.home h2 {
-  font-size: large;
-}
-
-.home h3 {
-  font-size: medium
-}
-
-.home p {
-  font-size: smaller !important
-}
-
-.fhHeader-bg-Card {
-  background: rgb(252, 241, 227);
-  background: linear-gradient(0deg, rgba(252, 241, 227, 1) 0%, rgba(247, 211, 195, 1) 90%);
-  border: none !important;
-  height: 80%;
-
-}
-
-.tituloCard {
-  font-weight: bold !important;
-  /*   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; */
-  font-family: "Savoye";
-  /*   text-transform: capitalize; */
-  font-size: 2.2rem !important;
-  margin-left: -8%;
-  width: 100%;
-}
-
-
-
-
-/* CONTACTO */
+/*--------------------------------------------------------------
+# CONTACTO
+--------------------------------------------------------------*/
 
 
 .subtitulo-seccion {
@@ -554,12 +537,10 @@ input[type="checkbox"] {
 
 footer {
   position: fixed;
-  /*   left: 0;
-  right: 0; */
   bottom: 0;
   width: 100%;
   text-align: center;
-  /* height: 7%; */
+
 }
 #pFooter{
   margin-top: 0%;
@@ -573,7 +554,5 @@ footer {
 }
 
 .firma a{
-
   color: rgba(105, 40, 139) !important;
-
 }
