@@ -302,6 +302,10 @@ button:focus {
 
 /* SECCION GALERIA */
 
+#filtrosGaleria{
+  margin-left: -30% !important;
+}
+
 .tz-gallery .lightbox img {
   width: 100%;
   margin-bottom: 30px;
@@ -346,7 +350,7 @@ button:focus {
 
 .filtros {
   width: 450px;
-  margin-left: 39%;
+  margin-left: 37%;
 }
 
 .labelFiltros {
