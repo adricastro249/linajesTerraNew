@@ -38,7 +38,7 @@
       document.getElementById(muestra).style.display = "block";
 
   }
-  $('.pictures').tjGallery({});
+/*   $('.pictures').tjGallery({}); */
 
 
   /*--------------------------------------------------------------
