@@ -145,16 +145,21 @@ margin-left: 10% !important;
   font-size: large;
 }
 
-.testimonios .carousel-item p{
-  font-size: medium !important;
-  width: 65%;
-margin-left: 20%;
-margin-top: 23%;
-}
-
 
 .textAbout{
   margin-bottom: 3%;
+}
+
+
+.testimonios {
+  margin-top: 5%;
+  margin-bottom: 2.8%;
+}
+
+
+.notasTesti blockquote p {
+margin-top: 15%;
+font-size: medium;
 }
 
 
@@ -208,7 +213,7 @@ margin-left: 25% !important;
 /* FOOTER */
 
 footer{
-  font-size: x-small;
+  font-size: xx-small;
 }
 
 }
