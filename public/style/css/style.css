@@ -112,7 +112,7 @@ nav,
   right: 0;
   padding: 25px 0;
   z-index: 1;
-/*   background-image: url("../images/navbar.png") !important; */
+  background-image: url("../images/navbar.png") !important;
   background-size: 50% !important;
 }
 
@@ -497,7 +497,7 @@ input[type="checkbox"] {
 # DETALLE DE PRODUCTO
 --------------------------------------------------------------*/
 
-.ingreProd {
+.ingreProd{
   column-count: 2;
 }
 

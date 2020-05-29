@@ -367,6 +367,7 @@
       descripcion.innerHTML = producto[0].descripcion
 
       let listaIngredi = document.getElementById("ingreProd");
+ 
       listaIngredi.innerHTML = ""
       producto[0].ingredientes.forEach(ingr => {
           let itemLi = document.createElement("LI")
@@ -383,12 +384,13 @@
           let txtItemH = document.createTextNode("Versiones")
 
           let itemUl = document.createElement("UL")
-          itemUl.classList.add("d-flex");
-          itemUl.classList.add("justify-content-around")
-          itemUl.classList.add("versiones")
+       /*    itemUl.classList.add("d-flex");
+          itemUl.classList.add("justify-content-around")*/
+          itemUl.classList.add("versiones") 
           producto[0].versiones.forEach(vers => {
 
               let itemLi = document.createElement("LI")
+              
               let txtItem = document.createTextNode(vers)
 
               listaVersion.appendChild(itemH);
