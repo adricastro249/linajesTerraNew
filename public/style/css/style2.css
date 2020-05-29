@@ -481,8 +481,8 @@ figure {
 #fh5co-contact,
 #fh5co-galeria {
   padding-top: 2.5em;
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 2.7em;
+  padding-right: 2.7em;
   clear: both;
 }
 
@@ -1552,9 +1552,19 @@ blockquote .person cite {
   margin: 0;
 }
 
-.role .ingreProd li, .versionProd li, .contNetoProd li {
+.role .ingreProd li{
   list-style: none;
-  padding: 0;
+padding: 0;
+}
+
+.versionProd li {
+  list-style: none;
+  margin-left: 0.9em;
+}
+
+ .contNetoProd li {
+  list-style: none;
+  padding-right: 2rem;
 }
 
 .role .ingreProd li::before {

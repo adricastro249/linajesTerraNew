@@ -317,8 +317,6 @@
           nodeProduc.appendChild(nodeImgSec);
           nodeImgSec.appendChild(nodeImagenCarr)
       })
-      console.log(producto[0].imgVarias);
-
 
       var aPrev = document.createElement("A");
       aPrev.classList.add("carousel-control-prev")
@@ -384,15 +382,15 @@
           let txtItemH = document.createTextNode("Versiones")
 
           let itemUl = document.createElement("UL")
-       /*    itemUl.classList.add("d-flex");
-          itemUl.classList.add("justify-content-around")*/
+          itemUl.classList.add("d-flex");
+          itemUl.classList.add("justify-content-around")
           itemUl.classList.add("versiones") 
           producto[0].versiones.forEach(vers => {
 
               let itemLi = document.createElement("LI")
-              
+        /*       itemLi.classList.add("orueba"); */
               let txtItem = document.createTextNode(vers)
-
+           
               listaVersion.appendChild(itemH);
               itemH.appendChild(txtItemH);
 
@@ -533,8 +531,6 @@
   var testi = document.getElementById("testimo")
 
   testiNotas.forEach(nota => {
-      console.log(nota.autor)
-
       var divPpal = document.createElement("DIV")
       divPpal.classList.add("carousel-item")
       divPpal.classList.add("mb-5")
