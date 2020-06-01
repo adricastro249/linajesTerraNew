@@ -180,7 +180,6 @@ margin-left: 38%;
 
 .carousel-inner{
   margin-top: -15% !important;
-/* margin-left: 55% !important; */
 margin-bottom: 15% !important;
 }
 
@@ -194,9 +193,14 @@ margin-left: 25% !important;
   text-align: justify;
 }
 
+.role .ingreProd li, .versionProd li,  .contNetoProd li{
+font-size: 13px;
+}
+
+
 #contNetoProd{
-  margin-top: -10%;
-  margin-left: 40%;
+  margin-top: -8%;
+  margin-left: 35%;
 }
 
 .versiones, #ingreProd{

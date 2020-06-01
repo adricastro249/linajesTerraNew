@@ -36,7 +36,7 @@ var data222 = {
                     "imgPerfil": "style/images/productos/barraLimpiadora.png",
                     "imgVarias": ["style/images/productos/imgVarias/BarraLimpiadoraDeGlicerina/blg1.png", "style/images/productos/imgVarias/BarraLimpiadoraDeGlicerina/blg2.png"],
                     "ingredientes": ["Glicerina vegetal", "Plantas", "Avena", "Cacao", "Carbón activado" ],
-                    "versiones": ["Avena, caléndula y manzanilla", "Mandarina y carbón activado"],
+                    "versiones": ["Avena, caléndula y manzanilla", "Cacao", "Mandarina y carbón activado", "Rosas y lavanda"],
                     "contenidoNeto": ["70gr"]
 
                 },
