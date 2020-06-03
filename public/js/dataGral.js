@@ -25,8 +25,8 @@ var data222 = {
                     "imgPerfil": "style/images/productos/arcillasFaciales.png",
                     "imgVarias": ["style/images/productos/imgVarias/arcillaFacial/arcillaFacial1.png", "style/images/productos/imgVarias/arcillaFacial/arcillaFacial2.png", "style/images/productos/imgVarias/arcillaFacial/arcillaFacial3.png","style/images/productos/imgVarias/arcillaFacial/arcillaFacial4.png","style/images/productos/imgVarias/arcillaFacial/arcillaFacial5.png"],
                     "ingredientes": ["Arcilla blanca", "Cacao", "Carbón activado", "Cúrcuma"],
-                    "versiones": ["Arcilla blanca", "Carbón activado", "Curcuma"],
-                    "contenidoNeto": ["10 aplicaciones"]
+                    "versiones": ["Arcilla blanca", "Carbón activado", "Cúrcuma"],
+                    "contenidoNeto": ["Rinde de 10 a 12 aplicaciones"]
                 },
                 {
                     "nombre": "Barras limpiadoras de glicerina",
@@ -56,8 +56,8 @@ var data222 = {
                     "descripcion": "Por una protección confiable y amable con nuestro cuerpo y el medio ambiente.",
                     "imgPerfil": "style/images/productos/desodorantes.png",
                     "imgVarias": ["style/images/productos/imgVarias/Desodorante/desodorante1.png", "style/images/productos/imgVarias/Desodorante/desodorante2.png","style/images/productos/imgVarias/Desodorante/desodorante3.png","style/images/productos/imgVarias/Desodorante/desodorante4.png","style/images/productos/imgVarias/Desodorante/desodorante5.png"],
-                    "ingredientes": ["Aceite de coco extra virgen", "Manteca de cacao", "Manteca de karité", "Fécula de Maiz", "Bicarbonato de sodio", "Cera de abejas", "Óxido de zinc", "Vit e", "Aceites esenciales"],
-                    "versiones": ["Lavanda", "Lemongras"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Manteca de cacao", "Manteca de karité", "Fécula de Maiz", "Bicarbonato de sodio", "Cera de abejas", "Óxido de zinc", "Vitamina e", "Aceites esenciales"],
+                    "versiones": ["Lavanda", "Lemongrass"],
                     "contenidoNeto": ["30gr", "50gr"]
                 },
                 {
@@ -67,7 +67,7 @@ var data222 = {
                     "descripcion": "Pomada medicinal para tratar la dermatitis, alergias y sarpullido.",
                     "imgPerfil": "style/images/productos/calma.png",
                     "imgVarias": ["style/images/productos/imgVarias/Calma/calma1.png"],
-                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí", "Aceite de oliva", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Vit e"],
+                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí", "Aceite de oliva", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["30g"],
                     "href": "./productoDetails.html"
@@ -79,7 +79,7 @@ var data222 = {
                     "descripcion": "Combate la irritación, inflamación y enrojecimiento de la piel de tu bebé.",
                     "imgPerfil": "style/images/productos/japipompi.png",
                     "imgVarias": ["style/images/productos/imgVarias/Japi/japi1.png"],
-                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí", "Aceite de oliva", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Óxido de zinc", "Vit e"],
+                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí", "Aceite de oliva", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Óxido de zinc", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["30g"]
                 },
@@ -102,7 +102,7 @@ var data222 = {
                     "descripcion": "Humecta y nutre profundamente, mientras se derrite sobre tu piel.",
                     "imgPerfil": "style/images/productos/mantequilla.png",
                     "imgVarias": ["style/images/productos/imgVarias/Mantequilla/mantquilla1.png", "style/images/productos/imgVarias/Mantequilla/mantquilla2.png","style/images/productos/imgVarias/Mantequilla/mantquilla3.png"],
-                    "ingredientes": ["Manteca de cacao", "Coco", "Aceite de coco extra virgen", "Aceite esencial de rosa"],
+                    "ingredientes": ["Manteca de cacao", "Aceite de coco extra virgen", "Aceite esencial de rosas"],
                     "versiones": [],
                     "contenidoNeto": ["220gr"]
                 },
@@ -113,40 +113,40 @@ var data222 = {
                     "descripcion": "Estimula la circulación y elimina con delicadeza la piel muerta de todo tu cuerpo.",
                     "imgPerfil": "style/images/productos/jabonExfoliante.png",
                     "imgVarias": ["style/images/productos/imgVarias/JabonExfoliante/jabonExfoliante1.png"],
-                    "ingredientes": ["Base de jabón", "Azúcar", "Café", "Cascarilla de cacao", "Aceite de coco virgen", "Plantas", "Vit e"],
+                    "ingredientes": ["Base de jabón", "Azúcar", "Café", "Cascarilla de cacao", "Aceite de coco virgen", "Plantas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["200gr"]
                 },
                 {
-                    "nombre": "Herbal: bálsamo huméctante",
+                    "nombre": "Herbal: bálsamo humectante",
                     "id": 10,
                     "categoria": "corporales",
                     "descripcion": "Humecta, nutre y revitaliza tu piel.",
                     "imgPerfil": "style/images/productos/herbal.png",
                     "imgVarias": ["style/images/productos/imgVarias/Herbal/herbal1.png", "style/images/productos/imgVarias/Herbal/herbal2.png","style/images/productos/imgVarias/Herbal/herbal3.png"],
-                    "ingredientes": ["Aceite de cacao", "Manteca de cacao", "Cera de abejas", "Vit e", "Aceites esenciales"],
+                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Cera de abejas", "Vitamina e", "Aceites esenciales"],
                     "versiones": [],
                     "contenidoNeto": ["20gr"]
                 },
                 {
-                    "nombre": "Chocoamor: bálsamo huméctante",
+                    "nombre": "Chocoamor: bálsamo humectante",
                     "id": 11,
                     "categoria": "corporales",
                     "descripcion": "Humecta, nutre y revitaliza tu piel.",
                     "imgPerfil": "style/images/productos/chocoamor.png",
                     "imgVarias": ["style/images/productos/imgVarias/Chocoamor/chocoamor1.png", "style/images/productos/imgVarias/Chocoamor/chocoamor2.png","style/images/productos/imgVarias/Chocoamor/chocoamor3.png"],
-                    "ingredientes": ["Aceite de cacao", "Manteca de cacao", "Licor de cacao", "Cera e abejas", "Vitamina e"],
+                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Licor de cacao", "Cera de abejas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["20gr"]
                 },
                 {
-                    "nombre": "Natural: bálsamo huméctante",
+                    "nombre": "Natural: bálsamo humectante",
                     "id": 12,
                     "categoria": "corporales",
                     "descripcion": "Humecta, nutre y revitaliza tu piel.",
                     "imgPerfil": "style/images/productos/natural.png",
                     "imgVarias": ["style/images/productos/imgVarias/Natural/natural1.png", "style/images/productos/imgVarias/Natural/natural2.png"],
-                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Cera e abejas", "Vitamina e"],
+                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Cera de abejas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["20gr"]
          
@@ -167,7 +167,7 @@ var data222 = {
                     "descripcion": "Única y deliciosa mixtura de aceites vegetales, enriquecida con la magia de las plantas. Repara, protege, nutre y estimula el crecimiento del cabello.",
                     "imgPerfil": "style/images/productos/bomba.png",
                     "imgVarias": ["style/images/productos/imgVarias/Bomba/bomba1.png", "style/images/productos/imgVarias/Bomba/bomba2.png", "style/images/productos/imgVarias/Bomba/bomba3.png", "style/images/productos/imgVarias/Bomba/bomba4.png"],
-                    "ingredientes": ["Aceite vegetal de coco", "Semilla aguacate", "Ajonjolí", "Ricino", "Aceite vegetal de linaza", "Oliva", "Aceite esencial de romero", "Plantas"],
+                    "ingredientes": ["Aceite vegetal de coco", "Semilla aguacate", "Aceite de ajonjolí", "Aceite de ricino", "Aceite vegetal de linaza", "Aceite de oliva", "Aceite esencial de romero", "Plantas"],
                     "versiones": [],
                     "contenidoNeto": ["30ml"]
    
@@ -179,7 +179,7 @@ var data222 = {
                     "descripcion": "Define tu peinado, a la vez que nutre tu cabello.",
                     "imgPerfil": "style/images/productos/linaza.png",
                     "imgVarias": ["style/images/productos/imgVarias/Linaza/linaza1.png"],
-                    "ingredientes": ["Infusión de clavos", "Linaza", "Extracto de cola de caballo y Jarilla", "Aceite de coco", "Aceite esencial de naranja"],
+                    "ingredientes": ["Infusión de clavos", "Linaza", "Extracto de cola de caballo", "Jarilla", "Aceite de coco", "Aceite esencial de naranja"],
                     "versiones": [],
                     "contenidoNeto": ["120ml"]
              
@@ -204,7 +204,7 @@ var data222 = {
             "titulo": "Aromaterapia",
             "imgProductos": "style/images/tarjetas/aromaterapia.svg",
             "descripcion": "Nuestros óleos son una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que mejoran nuestro ánimo,calman la ansiedad, estimulan la creatividad, armonizan cuerpo y mente.",
-            "resumen": " Una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que  armonizan cuerpo y mente.",
+            "resumen": " Una armoniosa combinación de aceites esenciales y aceites vegetales de primera calidad, que  armonizan cuerpo, mente y espíritu.",
             "categoria": "aromaterapia",
             "produc": [{
                     "nombre": "Oleos Macerados",
@@ -214,7 +214,7 @@ var data222 = {
                     "imgPerfil": "style/images/productos/oleosMacerados.png",
                     "imgVarias": ["style/images/productos/imgVarias/Oleos/oleoMacerados1.png", "style/images/productos/imgVarias/Oleos/oleoMacerados2.png","style/images/productos/imgVarias/Oleos/oleoMacerados3.png","style/images/productos/imgVarias/Oleos/oleoMacerados4.png","style/images/productos/imgVarias/Oleos/oleoMacerados5.png","style/images/productos/imgVarias/Oleos/oleoMacerados6.png"],
                     "ingredientes": ["Aceite de coco virgen", "Plantas"],
-                    "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosa"],
+                    "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosas"],
                     "contenidoNeto": ["10ml"]
                 },
                 {
