@@ -13,7 +13,7 @@ var data222 = {
                     "descripcion": "Para una piel suave, sana y luminosa.",
                     "imgPerfil": "style/images/productos/serum.png",
                     "imgVarias": ["style/images/productos/imgVarias/Serum/serum1.png", "style/images/productos/imgVarias/Serum/serum2.png","style/images/productos/imgVarias/Serum/serum3.png", "style/images/productos/imgVarias/Serum/serum4.png","style/images/productos/imgVarias/Serum/serum5.png"],
-                    "ingredientes": ["Aceite de semilla de uva", "Aceite de oliva extra virgen", "Aceite de ajonjolí"],
+                    "ingredientes": ["Aceite de semilla de uva", "Aceite de oliva extra virgen", "Aceite de ajonjolí extra virgen"],
                     "versiones": [],
                     "contenidoNeto": ["10ml"]
                 },
@@ -67,10 +67,9 @@ var data222 = {
                     "descripcion": "Pomada medicinal para tratar la dermatitis, alergias y sarpullido.",
                     "imgPerfil": "style/images/productos/calma.png",
                     "imgVarias": ["style/images/productos/imgVarias/Calma/calma1.png"],
-                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí", "Aceite de oliva", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Vitamina e"],
+                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí extra virgen", "Aceite de oliva extra virgen", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["30g"],
-                    "href": "./productoDetails.html"
                 },
                 {
                     "nombre": "Japipompi",
@@ -79,7 +78,7 @@ var data222 = {
                     "descripcion": "Combate la irritación, inflamación y enrojecimiento de la piel de tu bebé.",
                     "imgPerfil": "style/images/productos/japipompi.png",
                     "imgVarias": ["style/images/productos/imgVarias/Japi/japi1.png"],
-                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí", "Aceite de oliva", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Óxido de zinc", "Vitamina e"],
+                    "ingredientes": ["Caléndula", "Manzanilla", "Aceite de ajonjolí extra virgen", "Aceite de oliva extra virgen", "Manteca de cacao", "Manteca de karité", "Cera de abejas", "Óxido de zinc", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["30g"]
                 },
@@ -113,7 +112,7 @@ var data222 = {
                     "descripcion": "Estimula la circulación y elimina con delicadeza la piel muerta de todo tu cuerpo.",
                     "imgPerfil": "style/images/productos/jabonExfoliante.png",
                     "imgVarias": ["style/images/productos/imgVarias/JabonExfoliante/jabonExfoliante1.png"],
-                    "ingredientes": ["Base de jabón", "Azúcar", "Café", "Cascarilla de cacao", "Aceite de coco virgen", "Plantas", "Vitamina e"],
+                    "ingredientes": ["Base de jabón", "Azúcar", "Café", "Cascarilla de cacao", "Aceite de coco extra virgen", "Plantas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["200gr"]
                 },
@@ -124,7 +123,7 @@ var data222 = {
                     "descripcion": "Humecta, nutre y revitaliza tu piel.",
                     "imgPerfil": "style/images/productos/herbal.png",
                     "imgVarias": ["style/images/productos/imgVarias/Herbal/herbal1.png", "style/images/productos/imgVarias/Herbal/herbal2.png","style/images/productos/imgVarias/Herbal/herbal3.png"],
-                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Cera de abejas", "Vitamina e", "Aceites esenciales"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Manteca de cacao", "Cera de abejas", "Vitamina e", "Aceites esenciales"],
                     "versiones": [],
                     "contenidoNeto": ["20gr"]
                 },
@@ -135,7 +134,7 @@ var data222 = {
                     "descripcion": "Humecta, nutre y revitaliza tu piel.",
                     "imgPerfil": "style/images/productos/chocoamor.png",
                     "imgVarias": ["style/images/productos/imgVarias/Chocoamor/chocoamor1.png", "style/images/productos/imgVarias/Chocoamor/chocoamor2.png","style/images/productos/imgVarias/Chocoamor/chocoamor3.png"],
-                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Licor de cacao", "Cera de abejas", "Vitamina e"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Manteca de cacao", "Licor de cacao", "Cera de abejas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["20gr"]
                 },
@@ -146,7 +145,7 @@ var data222 = {
                     "descripcion": "Humecta, nutre y revitaliza tu piel.",
                     "imgPerfil": "style/images/productos/natural.png",
                     "imgVarias": ["style/images/productos/imgVarias/Natural/natural1.png", "style/images/productos/imgVarias/Natural/natural2.png"],
-                    "ingredientes": ["Aceite de coco", "Manteca de cacao", "Cera de abejas", "Vitamina e"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Manteca de cacao", "Cera de abejas", "Vitamina e"],
                     "versiones": [],
                     "contenidoNeto": ["20gr"]
          
@@ -167,7 +166,7 @@ var data222 = {
                     "descripcion": "Única y deliciosa mixtura de aceites vegetales, enriquecida con la magia de las plantas. Repara, protege, nutre y estimula el crecimiento del cabello.",
                     "imgPerfil": "style/images/productos/bomba.png",
                     "imgVarias": ["style/images/productos/imgVarias/Bomba/bomba1.png", "style/images/productos/imgVarias/Bomba/bomba2.png", "style/images/productos/imgVarias/Bomba/bomba3.png", "style/images/productos/imgVarias/Bomba/bomba4.png"],
-                    "ingredientes": ["Aceite vegetal de coco", "Semilla aguacate", "Aceite de ajonjolí", "Aceite de ricino", "Aceite vegetal de linaza", "Aceite de oliva", "Aceite esencial de romero", "Plantas"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Aceite de semilla aguacate extra virgen", "Aceite de ajonjolí extra virgen", "Aceite de ricino extra virgen", "Aceite de linaza extra virgen", "Aceite de oliva extra virgen", "Aceite esencial de romero", "Plantas"],
                     "versiones": [],
                     "contenidoNeto": ["30ml"]
    
@@ -179,7 +178,7 @@ var data222 = {
                     "descripcion": "Define tu peinado, a la vez que nutre tu cabello.",
                     "imgPerfil": "style/images/productos/linaza.png",
                     "imgVarias": ["style/images/productos/imgVarias/Linaza/linaza1.png"],
-                    "ingredientes": ["Infusión de clavos", "Linaza", "Extracto de cola de caballo", "Jarilla", "Aceite de coco", "Aceite esencial de naranja"],
+                    "ingredientes": ["Infusión de clavos", "Linaza", "Extracto de cola de caballo", "Jarilla", "Aceite de coco extra virgen", "Aceite esencial de naranja"],
                     "versiones": [],
                     "contenidoNeto": ["120ml"]
              
@@ -191,7 +190,7 @@ var data222 = {
                     "descripcion": "Fortalece y estimula el crecimiento del vello y del cabello.",
                     "imgPerfil": "style/images/productos/activador.png",
                     "imgVarias": ["style/images/productos/imgVarias/Activador/activador1.png"],
-                    "ingredientes": ["Aceite de ricino", "Aceite de coco"],
+                    "ingredientes": ["Aceite de ricino extra virgen", "Aceite de coco extra virgen"],
                     "versiones": [],
                     "contenidoNeto": ["10ml"]
       
@@ -213,7 +212,7 @@ var data222 = {
                     "descripcion": "Aceites vegetales portadores de propiedades curativas y aromáticas. Conecta con la sutileza de las plantas.",
                     "imgPerfil": "style/images/productos/oleosMacerados.png",
                     "imgVarias": ["style/images/productos/imgVarias/Oleos/oleoMacerados1.png", "style/images/productos/imgVarias/Oleos/oleoMacerados2.png","style/images/productos/imgVarias/Oleos/oleoMacerados3.png","style/images/productos/imgVarias/Oleos/oleoMacerados4.png","style/images/productos/imgVarias/Oleos/oleoMacerados5.png","style/images/productos/imgVarias/Oleos/oleoMacerados6.png"],
-                    "ingredientes": ["Aceite de coco virgen", "Plantas"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Plantas"],
                     "versiones": ["Eucalipto", "Lavanda", "Romero", "Rosas"],
                     "contenidoNeto": ["10ml"]
                 },
@@ -224,7 +223,7 @@ var data222 = {
                     "descripcion": "Déjate seducir por la magia que creará este óleo sobre tu cuerpo. Elaborado para consentir y cuidar de ti.",
                     "imgPerfil": "style/images/productos/oleosMasajes.png",
                     "imgVarias": ["style/images/productos/imgVarias/OleoMasajes/oleoM1.png", "style/images/productos/imgVarias/OleoMasajes/oleoM2.png","style/images/productos/imgVarias/OleoMasajes/oleoM3.png","style/images/productos/imgVarias/OleoMasajes/oleoM4.png","style/images/productos/imgVarias/OleoMasajes/oleoM5.png"],
-                    "ingredientes": ["Aceite de coco virgen", "Aceites esenciales", "Plantas"],
+                    "ingredientes": ["Aceite de coco extra virgen", "Aceites esenciales", "Plantas"],
                     "versiones": ["Canela", "Herbal", "Naranja"],
                     "contenidoNeto": ["24ml"]
                 }

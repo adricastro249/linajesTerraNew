@@ -11,7 +11,7 @@
   
 .redes .d-flex{
 margin-bottom: 0 !important;
-margin-left: -12%;
+margin-left: -8%;
 }
 
   .logoNav{
@@ -188,9 +188,9 @@ margin-bottom: 15% !important;
 margin-left: 25% !important;
 }
 
-
 #desProd{
   text-align: justify;
+  width: 90%;
 }
 
 .role .ingreProd li, .versionProd li,  .contNetoProd li{
@@ -198,13 +198,16 @@ font-size: 13px;
 }
 
 
-#contNetoProd{
-  margin-top: -8%;
-  margin-left: 35%;
+.role .ingreProd li{
+  width: 90%;
 }
 
+#contNetoProd{
+  margin-top: -7%;
+}
 .versiones, #ingreProd{
-  margin-top: -3% !important;
+  margin-top: -2% !important;
+  column-count: 1;
 }
 
 
@@ -212,6 +215,9 @@ font-size: 13px;
   margin-left: 20% !important;
 }
 
+ .role ul {
+  width: 90%;
+}
 
 /* CONTACTO */
 .btnEnviar{
