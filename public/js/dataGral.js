@@ -178,7 +178,7 @@ var data222 = {
                     "descripcion": "Define tu peinado, a la vez que nutre tu cabello.",
                     "imgPerfil": "style/images/productos/linaza.png",
                     "imgVarias": ["style/images/productos/imgVarias/Linaza/linaza1.png"],
-                    "ingredientes": ["Infusión de clavos", "Linaza", "Extracto de cola de caballo", "Jarilla", "Aceite de coco extra virgen", "Aceite esencial de naranja"],
+                    "ingredientes": ["Infusión de clavos de olor", "Linaza", "Extracto de cola de caballo", "Jarilla", "Aceite de coco extra virgen", "Aceite esencial de naranja"],
                     "versiones": [],
                     "contenidoNeto": ["120ml"]
              
