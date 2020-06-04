@@ -314,25 +314,61 @@ var data222 = {
             "id": 2,
             "categoria": "testimonial",
             "autor": "Jioeyan Agreda",
-            "testimonio": "Te quería comentar que alucinamos mi hijo y yo con el sabor de los aceites de romero y albahaca... ¡Dios! de verdad tus productos son muy muy buenos... te felicito",
+            "testimonio": "Te quería comentar que alucinamos mi hijo y yo con el sabor de los aceites de romero y albahaca... ¡Dios! de verdad tus productos son muy muy buenos... te felicito.",
         },
         {
             "id": 3,
             "categoria": "testimonial",
-            "autor": "Barbara Ramírez",
+            "autor": "Diana Alvis",
             "testimonio": "Encantada con el sérum. Me ha parecido una maravilla. Y con el desodorante, no huelo a nada, creo que hasta la axila está un poco más clara y no me irrita cuando me rasuro.",
         },
         {
             "id": 4,
             "categoria": "testimonial",
             "autor": " Indira Pino",
-            "testimonio": "Estoy amando el desodorante que me mandaste, es un espectáculo, sobretodo porque sudo haciendo la práctica y dando clases y sigo oliendo rico. Bueno, tambien amo el serum, la bomba capilar, los óleos. ",
+            "testimonio": "Estoy amando el desodorante que me mandaste, es un espectáculo, sobretodo porque sudo haciendo la práctica y dando clases y sigo oliendo rico. Bueno, también amo el sérum, la bomba capilar, los óleos.",
         },
         {
             "id": 5,
             "categoria": "testimonial",
-            "autor": "Marian Avila",
-            "testimonio": "Despues de estar usando el serum facial noto menos reseca la piel debajo de los ojos",
+            "autor": "Blanca Venegas",
+            "testimonio": "Despues de estar usando el sérum facial noto menos reseca la piel debajo de los ojos.",
+        },
+        {
+            "id": 6,
+            "categoria": "testimonial",
+            "autor": "Franciosi",
+            "testimonio": "Además de lo fabuloso de cada producto, en serio, son una caricia para nuestro cuerpo y al sentirnos así tan cuidada también para nuestra alma.",
+        },
+        {
+            "id": 7,
+            "categoria": "testimonial",
+            "autor": "Angeline",
+            "testimonio": "¡Tengo mi piel pomposa y divina! Ando felíz y radiante.",
+        },
+        {
+            "id": 8,
+            "categoria": "testimonial",
+            "autor": "Génesis Peyarez",
+            "testimonio": "Probé el carbón activado y estoy impresionada por como me quedó, sobretodo la nariz, me eliminó todos los puntos negros.",
+        },
+        {
+            "id": 9,
+            "categoria": "testimonial",
+            "autor": "Angeline",
+            "testimonio": "Me realicé la aplicación por primera vez del kit capilar. Mi cabello quedó hidratado, brillante y hermoso. El desodorante, una maravilla.",
+        },
+        {
+            "id": 10,
+            "categoria": "testimonial",
+            "autor": "Bárbara Ramírez",
+            "testimonio": "Amo la crema de linajes terra para pañalitis, es muy buena. No ha tenído ni un brote.",
+        },
+        {
+            "id": 11,
+            "categoria": "testimonial",
+            "autor": "Karen Figueredo",
+            "testimonio": "Te juro que me provoca comerme los óleos, que olor tan divino. Por cierto, el desodorante es una maravilla, siento hasta que me está blanqueando las axilas.",
         }
     ]
 
